@@ -1,0 +1,1 @@
+enum UnitType { imperial, metric }

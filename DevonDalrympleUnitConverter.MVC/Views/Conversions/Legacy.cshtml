@@ -1,0 +1,217 @@
+﻿@{
+    ViewData["Title"] = "Conversions Page";
+}
+
+<h1>Choose your conversion</h1>
+<br>
+<div>
+    <div class="container-fluid" style="padding-bottom">
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Miles To Kilometers</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="MiTKilo" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goMilesToKilometers()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Kilometers To Miles</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="KiloToMi" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goKilometersToMiles()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Celsius To Fahrenheit</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="CtoF" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goCelsiusToFahrenheit()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Fahrenheit To Celsius</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="FtoC" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goFahrenheitToCelsius()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Tons of TNT To Average Phone Capacity (5V and 4Ah)</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="TNTToPhone" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goTonsOfTNTToPhoneCapacity()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Average Phone Capacity (5V and 4Ah) To Tons of TNT</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="PhoneToTNT" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goPhoneCapacityToTonsOfTNT()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Pounds To Kilograms</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="PoundsToKilograms" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goPoundsToKilograms()">Solve</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 48px">
+            <div class="col-sm">
+                <h4>Kilograms To Pounds</h4>
+            </div>
+            <div class="col-sm"  style="padding-top:12px; padding-bottom: 16px">
+                <input type="number" id="KilogramsToPounds" />
+            </div>
+            <div class="col-sm" >
+                <button type="button" class="btn btn-info" onclick="goKilogramsToPounds()">Solve</button>
+            </div>
+        </div>
+
+        <a href="https://www.flexsealproducts.com/"><img src="https://i.kym-cdn.com/photos/images/newsfeed/001/630/235/7b2.gif" alt="Flex Tape Ad"/> Flex Tape, You Know You Want It! (Ad)</a>
+    </div>
+
+    <a asp-controller="Conversions" asp-action="" class="btn btn-info">Use Modern Version</a>
+   
+    <script>
+
+        //https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+        //https://stackoverflow.com/questions/30137059/how-can-i-extract-and-then-change-the-url-path-using-javascript
+        function getUrlStart()
+        {
+            var initialURL = window.location.pathname;
+            var fixedURL = initialURL.replace("/Legacy", "");
+            return fixedURL;
+        }
+
+        function changeUrl(currentURL)
+        {
+            window.location.href = currentURL;
+        }
+
+        function checkValidNumber(id)
+        {
+            if (document.getElementById(id).value == null || document.getElementById(id).value == 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        function goMilesToKilometers()
+        {
+            if (!checkValidNumber("MiTKilo"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/MilesToKilometers/" + document.getElementById("MiTKilo").value;
+            changeUrl(currentURL);
+        }
+
+        function goKilometersToMiles()
+        {
+            if (!checkValidNumber("KiloToMi"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/KilometersToMiles/" + document.getElementById("KiloToMi").value;
+            changeUrl(currentURL);
+        }
+
+        function goCelsiusToFahrenheit()
+        {
+            if (!checkValidNumber("CtoF"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/CelsiusToFahrenheit/" + document.getElementById("CtoF").value;
+            changeUrl(currentURL);
+        }
+
+        function goFahrenheitToCelsius()
+        {
+            if (!checkValidNumber("FtoC"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/FahrenheitToCelsius/" + document.getElementById("FtoC").value;
+            changeUrl(currentURL);
+        }
+
+        function goTonsOfTNTToPhoneCapacity()
+        {
+            if (!checkValidNumber("TNTToPhone"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/TonsOfTNTToAveragePhoneCapacity/" + document.getElementById("TNTToPhone").value;
+            changeUrl(currentURL);
+        }
+
+        function goPhoneCapacityToTonsOfTNT()
+        {
+            if (!checkValidNumber("PhoneToTNT"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/AveragePhoneCapacityToTonsOfTNT/" + document.getElementById("PhoneToTNT").value;
+            changeUrl(currentURL);
+        }
+
+        function goPoundsToKilograms()
+        {
+            if (!checkValidNumber("PoundsToKilograms"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/PoundsToKilograms/" + document.getElementById("PoundsToKilograms").value;
+            changeUrl(currentURL);
+        }
+
+        function goKilogramsToPounds()
+        {
+           if (!checkValidNumber("KilogramsToPounds"))
+            {
+                return;
+            }
+            var currentURL = getUrlStart() + "/KilogramsToPounds/" + document.getElementById("KilogramsToPounds").value;
+            changeUrl(currentURL);
+        }
+
+    </script>
+
+</div>

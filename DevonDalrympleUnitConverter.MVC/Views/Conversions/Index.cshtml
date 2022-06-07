@@ -1,0 +1,118 @@
+﻿
+@section styles{
+
+    <link href="~/css/conversion.css" rel="stylesheet" />
+}
+
+@model DevonDalrympleUnitConverter.MVC.ViewModels.Values
+
+@{
+    ViewData["Title"] = "Conversions Page";
+}
+
+<h1>Choose your conversion</h1>
+<br>
+<div>
+
+    <!--Miles to Kilometers-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="MilesModel.Miles" class="form-element"></label>
+        <input type="text" asp-for="MilesModel.Miles" class="form-element" />
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="MilesModel.Miles" class="form-element bad-validation"></span>
+    </form>
+
+    <!--Kilometers to Miles-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="KilometersModel.Kilometers" class="form-element"></label>
+        <input type="number" asp-for="KilometersModel.Kilometers" class="form-element" />
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="KilometersModel.Kilometers" class="form-element bad-validation"></span>
+       
+    </form>
+
+    <!--Celsius to Fahrenheit-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="CelsiusModel.Celsius" class="form-element"></label>
+        <textarea rows="2" cols="20" asp-for="CelsiusModel.Celsius" class="form-element"></textarea>
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="CelsiusModel.Celsius" class="form-element bad-validation"></span>
+        
+    </form>
+
+    <!--Fahrenheit to Celsius-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="FahrenheitModel.Fahrenheit" class="form-element"></label>
+        <input type="number" asp-for="FahrenheitModel.Fahrenheit" class="form-element" />
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="FahrenheitModel.Fahrenheit" class="form-element bad-validation"></span>
+       
+    </form>
+
+     <!--Tons of TNT to Average Phone Capacity-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="TonsOfTNTModel.TonsOfTNT" class="form-element"></label>
+        <input type="range" asp-for="TonsOfTNTModel.TonsOfTNT" min="-2000000000" max="2000000000" step="1" class="form-element" onclick="updateTextInput(this.value);" />
+        <div id="rangeValue">0</div>
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="TonsOfTNTModel.TonsOfTNT" class="form-element bad-validation"></span>
+       
+    </form>
+
+     <!--Average Phone Capacity to Tons of TNT-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="AveragePhoneCapacityModel.AveragePhoneCapacity" class="form-element"></label>
+        <input type="number" asp-for="AveragePhoneCapacityModel.AveragePhoneCapacity" class="form-element" />
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="AveragePhoneCapacityModel.AveragePhoneCapacity" class="form-element bad-validation"></span>
+       
+    </form>
+
+     <!--Pounds to Kilograms-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="PoundsModel.Pounds" class="form-element"></label>
+        <input type="number" asp-for="PoundsModel.Pounds" class="form-element" />
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="PoundsModel.Pounds" class="form-element bad-validation"></span>
+       
+    </form>
+
+     <!--Kilograms to Pounds-->
+    <form action="/Conversions/Index" method="post" class="form-elements">
+        
+        <label asp-for="KilogramsModel.Kilograms" class="form-element"></label>
+        <input type="number" asp-for="KilogramsModel.Kilograms" class="form-element" />
+        <input type="submit" class="btn btn-info" value="Submit Value" class="form-element" />
+        <span asp-validation-for="KilogramsModel.Kilograms" class="form-element bad-validation"></span>
+       
+    </form>
+
+    <!-- Need assistance to get working
+    <form action="/Conversions/Index" method="post" class="form-elements"> 
+        <select asp-for="DropDownModel.SelectedValue" asp-items="Model.DropDownModel.Items"></select>
+        <input type="range" asp-for="DropDownModel.SelectedValue" />
+    </form> -->
+    
+
+
+    <a asp-controller="Conversions" asp-action="Legacy" class="btn btn-info" style="margin-bottom: 1em">Use Legacy Version</a> 
+    <p>The legacy version requires the use of JavaScript. Data will send through the URL.</p>
+    
+    <!--https://stackoverflow.com/questions/1064786/where-do-you-store-images-for-asp-net-mvc-projects-and-how-do-you-reference-them/21120310-->
+    <img src="/images/ALIENS.jfif" />
+</div>
+
+<script>
+    function updateTextInput(val)
+    {
+        //https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value
+        document.getElementById("rangeValue").innerHTML = val; 
+    }
+</script>

@@ -1,0 +1,24 @@
+﻿.form-elements
+{
+    width: 100%;
+    padding-top:12px; 
+    padding-bottom: 16px;
+}
+
+.form-element
+{
+    width: 25%;
+}
+
+/*https://stackoverflow.com/questions/2830431/red-border-around-textbox-when-validation-fails */
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.bad-validation
+{
+    color: red;
+    font-style: italic;
+}
+

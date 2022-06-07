@@ -1,0 +1,24 @@
+﻿@model DevonDalrympleUnitConverter.MVC.Models.CelsiusModel
+
+@{
+    ViewData["Title"] = "Celsius to Fahrenheit Conversions Page";
+}
+
+<br />
+<div>
+    <a asp-controller="Conversions" asp-action="" class="btn btn-info">Go Back</a>
+    <h3>Your Conversion has Completed</h3>
+
+    @if (@Model == null)
+    { 
+        <h3>Celsius: @ViewData["Celsius"]</h3>
+        <h3>Fahrenheit: @ViewData["Fahrenheit "]</h3>
+    }
+    else
+    {
+        <h3>Celsius: @Model.Celsius.</h3>
+        <h3>Fahrenheit: @Model.OutputValue</h3>
+    }
+
+    
+</div>

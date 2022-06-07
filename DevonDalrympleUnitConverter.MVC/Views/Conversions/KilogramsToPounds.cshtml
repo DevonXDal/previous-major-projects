@@ -1,0 +1,24 @@
+﻿@model DevonDalrympleUnitConverter.MVC.Models.KilogramsModel
+
+@{
+    ViewData["Title"] = "Kilograms to Pounds Conversions Page";
+}
+
+<br />
+<div>
+    <a asp-controller="Conversions" asp-action="" class="btn btn-info">Go Back</a>
+    <h3>Your Conversion has Completed</h3>
+
+    @if (@Model == null)
+    { 
+        <h3>Kilograms: @ViewData["Kilograms"]</h3>
+        <h3>Pounds: @ViewData["Pounds"]</h3>
+    }
+    else
+    {
+        <h3>Kilograms: @Model.Kilograms.</h3>
+        <h3>Pounds: @Model.OutputValue</h3>
+    }
+
+    
+</div>

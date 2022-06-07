@@ -1,0 +1,24 @@
+﻿@model DevonDalrympleUnitConverter.MVC.Models.KilometersModel
+
+@{
+    ViewData["Title"] = "Tons Of TNT to Average Phone Capacity Conversions Page";
+}
+
+<br />
+<div>
+    <a asp-controller="Conversions" asp-action="" class="btn btn-info">Go Back</a>
+    <h3>Your Conversion has Completed</h3>
+
+    @if (@Model == null)
+    { 
+        <h3>Kilometers: @ViewData["Kilometers"]</h3>
+        <h3>Miles: @ViewData["Miles"]</h3>
+    }
+    else
+    {
+        <h3>Kilometers: @Model.Kilometers</h3>
+        <h3>Miles: @Model.OutputValue</h3>
+    }
+
+    
+</div>

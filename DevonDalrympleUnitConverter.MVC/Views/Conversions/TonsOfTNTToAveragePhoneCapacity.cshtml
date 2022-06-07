@@ -1,0 +1,24 @@
+﻿@model DevonDalrympleUnitConverter.MVC.Models.TonsOfTNTModel
+
+@{
+    ViewData["Title"] = "Tons Of TNT to Average Phone Capacity Conversions Page";
+}
+
+<br />
+<div>
+    <a asp-controller="Conversions" asp-action="" class="btn btn-info">Go Back</a>
+    <h3>Your Conversion has Completed</h3>
+
+    @if (@Model == null)
+    { 
+        <h3>Tons Of TNT: @ViewData["TonsOfTNT"]</h3>
+        <h3>Average Phone Capacity: @ViewData["AveragePhoneCharge"]</h3>
+    }
+    else
+    {
+        <h3>Tons Of TNT: @Model.TonsOfTNT.</h3>
+        <h3>Average Phone Capacity: @Model.OutputValue</h3>
+    }
+
+    
+</div>

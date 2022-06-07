@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Server::Models::ApplicationUser</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IdentityUser</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Models.ApplicationUser</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IdentityUser</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Models.ApplicationUser</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IdentityUser</label>
+      </node>
+    </collaborationgraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Models/ApplicationUser.cs" line="5" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Models/ApplicationUser.cs" bodystart="6" bodyend="7"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

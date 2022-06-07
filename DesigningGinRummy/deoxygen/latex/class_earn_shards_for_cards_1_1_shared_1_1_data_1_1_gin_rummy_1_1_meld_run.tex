@@ -1,0 +1,135 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run Class Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}\index{EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{Meld\+Run}} is more of a virtual game support object than a real-\/world object. It represents the three or more cards that a player lays down at the end of each round that form a sequence of cards of the same suit that are one rank higher than each other. An example of a \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{Meld\+Run}} would be the ranks forming (‘\+Ace of Hearts’, ‘\+Two of Hearts’, ‘\+Three of Hearts’, ‘\+Four of Hearts’).  
+
+
+
+
+Inheritance diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a2f48ff4f11396edcda90f63acd89bddb}{Can\+Add\+New\+Card}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} new\+Card)
+\begin{DoxyCompactList}\small\item\em Verifies that a new card can be added to the meld run \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a1d4ea378e65b7dfbd118c6d24053e23c}{Deadwood\+Removed\+By\+Meld}} ()
+\begin{DoxyCompactList}\small\item\em Determines the deadwood that is removed from this run being formed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}}? \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_abeaa1e41060f3bc0b922ac41a157f07e}{Generate\+Meld\+From\+Cards}} (IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ cards)
+\begin{DoxyCompactList}\small\item\em Create a meld run from three or four cards that have the same rank \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_acbf9f45976655c3c063395a666ae2072}{Insert}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} card)
+\begin{DoxyCompactList}\small\item\em Adds a card to the meld without verification that the card can be added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_af8303d789a74eff30cc7dc1c17fd8491}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_af8303d789a74eff30cc7dc1c17fd8491}} 
+IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ {\bfseries Cards}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{Meld\+Run}} is more of a virtual game support object than a real-\/world object. It represents the three or more cards that a player lays down at the end of each round that form a sequence of cards of the same suit that are one rank higher than each other. An example of a \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{Meld\+Run}} would be the ranks forming (‘\+Ace of Hearts’, ‘\+Two of Hearts’, ‘\+Three of Hearts’, ‘\+Four of Hearts’). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a2f48ff4f11396edcda90f63acd89bddb}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a2f48ff4f11396edcda90f63acd89bddb}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}!CanAddNewCard@{CanAddNewCard}}
+\index{CanAddNewCard@{CanAddNewCard}!EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}}
+\doxysubsubsection{\texorpdfstring{CanAddNewCard()}{CanAddNewCard()}}
+{\footnotesize\ttfamily bool Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run.\+Can\+Add\+New\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}}}]{new\+Card }\end{DoxyParamCaption})}
+
+
+
+Verifies that a new card can be added to the meld run 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Card} & The new card to be added to the set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the new card can be added
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_ae7ebf694fe6f35520df8aebbeb66fea3}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a1d4ea378e65b7dfbd118c6d24053e23c}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a1d4ea378e65b7dfbd118c6d24053e23c}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}!DeadwoodRemovedByMeld@{DeadwoodRemovedByMeld}}
+\index{DeadwoodRemovedByMeld@{DeadwoodRemovedByMeld}!EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}}
+\doxysubsubsection{\texorpdfstring{DeadwoodRemovedByMeld()}{DeadwoodRemovedByMeld()}}
+{\footnotesize\ttfamily int Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run.\+Deadwood\+Removed\+By\+Meld (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines the deadwood that is removed from this run being formed. 
+
+\begin{DoxyReturn}{Returns}
+The deadwood removed by the set
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_af30147828a676f8393401ff110427ac0}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_abeaa1e41060f3bc0b922ac41a157f07e}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_abeaa1e41060f3bc0b922ac41a157f07e}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}!GenerateMeldFromCards@{GenerateMeldFromCards}}
+\index{GenerateMeldFromCards@{GenerateMeldFromCards}!EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}}
+\doxysubsubsection{\texorpdfstring{GenerateMeldFromCards()}{GenerateMeldFromCards()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}}? Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run.\+Generate\+Meld\+From\+Cards (\begin{DoxyParamCaption}\item[{IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{cards }\end{DoxyParamCaption})}
+
+
+
+Create a meld run from three or four cards that have the same rank 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cards} & The cards used to create the meld\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Either the meld that was created, or if the meld cannot be formed by the cards, null
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_a170659e4d07e30e4915bde695d409ae1}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_acbf9f45976655c3c063395a666ae2072}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_acbf9f45976655c3c063395a666ae2072}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}!Insert@{Insert}}
+\index{Insert@{Insert}!EarnShardsForCards.Shared.Data.GinRummy.MeldRun@{EarnShardsForCards.Shared.Data.GinRummy.MeldRun}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+Adds a card to the meld without verification that the card can be added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be added\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_aae2b858b42ad3c944ea5bc08cb993b55}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Gin\+Rummy/Meld\+Run.\+cs\end{DoxyCompactItemize}

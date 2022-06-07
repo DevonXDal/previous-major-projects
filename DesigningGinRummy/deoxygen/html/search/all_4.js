@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['controllers_0',['Controllers',['../namespace_earn_shards_for_cards_1_1_server_1_1_controllers.html',1,'EarnShardsForCards::Server']]],
+  ['data_1',['Data',['../namespace_earn_shards_for_cards_1_1_server_1_1_data.html',1,'EarnShardsForCards.Server.Data'],['../namespace_earn_shards_for_cards_1_1_shared_1_1_data.html',1,'EarnShardsForCards.Shared.Data']]],
+  ['earnshardsforcards_2',['EarnShardsForCards',['../namespace_earn_shards_for_cards.html',1,'']]],
+  ['eliminatedeadwood_3',['EliminateDeadwood',['../class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler.html#a3caafaad80f51a61e1987827d68a53d4',1,'EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler']]],
+  ['eliminatedeadwooddata_4',['EliminateDeadwoodData',['../namespace_earn_shards_for_cards_1_1_shared_1_1_models_1_1_records.html#a867528e3d9e30d4ee6d8e264912783bc',1,'EarnShardsForCards::Shared::Models::Records']]],
+  ['endofrounddata_5',['EndOfRoundData',['../namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_records.html#a82538dd7b5234464c895bf0b75e1b4d5',1,'EarnShardsForCards::Shared::Data::Records']]],
+  ['endofrounddisplayisfinished_6',['EndOfRoundDisplayIsFinished',['../class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller.html#af6e429e06f0a984b649d8bb20d9d7af7',1,'EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.EndOfRoundDisplayIsFinished()'],['../interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller.html#a4816d74a729913f29897c008d331a918',1,'EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.EndOfRoundDisplayIsFinished()']]],
+  ['enumerations_7',['Enumerations',['../namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations.html',1,'EarnShardsForCards::Shared::Data']]],
+  ['equals_8',['Equals',['../class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card.html#ad52a09c4cc7a7ed52cfb56a0cd7de2e8',1,'EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard']]],
+  ['errormodel_9',['ErrorModel',['../class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model.html',1,'EarnShardsForCards::Server::Pages']]],
+  ['genericgameobjects_10',['GenericGameObjects',['../namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects.html',1,'EarnShardsForCards::Shared::Data']]],
+  ['ginrummy_11',['GinRummy',['../namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy.html',1,'EarnShardsForCards::Shared::Data']]],
+  ['interfaces_12',['Interfaces',['../namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces.html',1,'EarnShardsForCards::Shared::Data']]],
+  ['migrations_13',['Migrations',['../namespace_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations.html',1,'EarnShardsForCards::Server::Data']]],
+  ['models_14',['Models',['../namespace_earn_shards_for_cards_1_1_server_1_1_models.html',1,'EarnShardsForCards.Server.Models'],['../namespace_earn_shards_for_cards_1_1_shared_1_1_models.html',1,'EarnShardsForCards.Shared.Models'],['../namespace_earn_shards_for_cards_1_1_test_1_1_models.html',1,'EarnShardsForCards.Test.Models']]],
+  ['pages_15',['Pages',['../namespace_earn_shards_for_cards_1_1_server_1_1_pages.html',1,'EarnShardsForCards::Server']]],
+  ['records_16',['Records',['../namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_records.html',1,'EarnShardsForCards.Shared.Data.Records'],['../namespace_earn_shards_for_cards_1_1_shared_1_1_models_1_1_records.html',1,'EarnShardsForCards.Shared.Models.Records']]],
+  ['server_17',['Server',['../namespace_earn_shards_for_cards_1_1_server.html',1,'EarnShardsForCards']]],
+  ['shared_18',['Shared',['../namespace_earn_shards_for_cards_1_1_shared.html',1,'EarnShardsForCards']]],
+  ['test_19',['Test',['../namespace_earn_shards_for_cards_1_1_test.html',1,'EarnShardsForCards']]]
+];

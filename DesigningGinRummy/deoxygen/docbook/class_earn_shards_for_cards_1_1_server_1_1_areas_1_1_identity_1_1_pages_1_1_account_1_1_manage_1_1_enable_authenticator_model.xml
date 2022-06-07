@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1107da827852c137257bb655efd6e36b1.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_16942b43780d16a4b32715746c1f59949.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_19079ea63d3e419285011cfc668c3ba8c">InputModel</link></para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1a95dbdbdc09996e4b080b28713f9491b7"/><emphasis role="strong">EnableAuthenticatorModel</emphasis> (UserManager&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; userManager, ILogger&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model">EnableAuthenticatorModel</link> &gt; logger, UrlEncoder urlEncoder)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1a3ac7ea714d99c2d4199a0ed6d3907ad0"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnGetAsync</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1ac7506b7731284db796e1e6a209ae0690"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnPostAsync</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1a05fefb6d4d61bed57470efb73eedfe66"/>string <emphasis role="strong">SharedKey</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1abf474b910f125abca007cadb1b9d502a"/>string <emphasis role="strong">AuthenticatorUri</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1a58a55f6e469e82cf13de2f3a8c97f811"/>string[] <emphasis role="strong">RecoveryCodes</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1a92e02abf558227a9070696ee0ebf37c6"/>string <emphasis role="strong">StatusMessage</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model_1a91b07d46ac67c3d71a534b867e74ac15"/><link linkend="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_19079ea63d3e419285011cfc668c3ba8c">InputModel</link> <emphasis role="strong">Input</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Classwork/ObjectOrientedDesign/CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs</section>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_card_test" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Test::Models::CardTest</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>Tests the implementations of the Card class </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/CardTest.cs" line="15" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/CardTest.cs" bodystart="16" bodyend="18"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

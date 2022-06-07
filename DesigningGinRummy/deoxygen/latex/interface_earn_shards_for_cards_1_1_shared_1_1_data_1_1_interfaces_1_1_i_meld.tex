@@ -1,0 +1,119 @@
+\hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld Interface Reference}
+\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}\index{EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}}
+
+
+This \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} represents melds (sets/runs) from the game, Gin Rummy. It provides the common functionality for the melds and allows them to be stored together in a collection. Implementing classes should make use of a private constructor.  
+
+
+
+
+Inheritance diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}}? \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_a170659e4d07e30e4915bde695d409ae1}{Generate\+Meld\+From\+Cards}} (IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ cards)
+\begin{DoxyCompactList}\small\item\em Create a meld set from three or four cards that have the same rank \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_ae7ebf694fe6f35520df8aebbeb66fea3}{Can\+Add\+New\+Card}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} new\+Card)
+\begin{DoxyCompactList}\small\item\em Verifies that a new card is able to become part of the meld. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_aae2b858b42ad3c944ea5bc08cb993b55}{Insert}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} card)
+\begin{DoxyCompactList}\small\item\em Adds a card to the meld without verification that the card can be added. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_af30147828a676f8393401ff110427ac0}{Deadwood\+Removed\+By\+Meld}} ()
+\begin{DoxyCompactList}\small\item\em Determines the deadwood that is removed from this meld being formed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} represents melds (sets/runs) from the game, Gin Rummy. It provides the common functionality for the melds and allows them to be stored together in a collection. Implementing classes should make use of a private constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_ae7ebf694fe6f35520df8aebbeb66fea3}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_ae7ebf694fe6f35520df8aebbeb66fea3}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}!CanAddNewCard@{CanAddNewCard}}
+\index{CanAddNewCard@{CanAddNewCard}!EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}}
+\doxysubsubsection{\texorpdfstring{CanAddNewCard()}{CanAddNewCard()}}
+{\footnotesize\ttfamily bool Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld.\+Can\+Add\+New\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}}}]{new\+Card }\end{DoxyParamCaption})}
+
+
+
+Verifies that a new card is able to become part of the meld. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Card} & The new card to add to the meld\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a2f48ff4f11396edcda90f63acd89bddb}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run}}, and \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ab56cee12c949199cb576cb200748ff30}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_af30147828a676f8393401ff110427ac0}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_af30147828a676f8393401ff110427ac0}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}!DeadwoodRemovedByMeld@{DeadwoodRemovedByMeld}}
+\index{DeadwoodRemovedByMeld@{DeadwoodRemovedByMeld}!EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}}
+\doxysubsubsection{\texorpdfstring{DeadwoodRemovedByMeld()}{DeadwoodRemovedByMeld()}}
+{\footnotesize\ttfamily int Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld.\+Deadwood\+Removed\+By\+Meld (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines the deadwood that is removed from this meld being formed. 
+
+\begin{DoxyReturn}{Returns}
+The deadwood removed by the meld
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_a1d4ea378e65b7dfbd118c6d24053e23c}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run}}, and \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_acfd2556ab07511a86abc42f65e0ba3f6}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_a170659e4d07e30e4915bde695d409ae1}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_a170659e4d07e30e4915bde695d409ae1}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}!GenerateMeldFromCards@{GenerateMeldFromCards}}
+\index{GenerateMeldFromCards@{GenerateMeldFromCards}!EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}}
+\doxysubsubsection{\texorpdfstring{GenerateMeldFromCards()}{GenerateMeldFromCards()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}}? Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld.\+Generate\+Meld\+From\+Cards (\begin{DoxyParamCaption}\item[{IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{cards }\end{DoxyParamCaption})}
+
+
+
+Create a meld set from three or four cards that have the same rank 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cards} & The cards used to create the meld\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Either the meld that was created, or if the meld cannot be formed by the cards, null
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_abeaa1e41060f3bc0b922ac41a157f07e}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run}}, and \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_a0c276dfc0735edc2abb83147679fee4c}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_aae2b858b42ad3c944ea5bc08cb993b55}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_aae2b858b42ad3c944ea5bc08cb993b55}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}!Insert@{Insert}}
+\index{Insert@{Insert}!EarnShardsForCards.Shared.Data.Interfaces.IMeld@{EarnShardsForCards.Shared.Data.Interfaces.IMeld}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+Adds a card to the meld without verification that the card can be added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be added\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_acbf9f45976655c3c063395a666ae2072}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Run}}, and \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ac98530fd7d6b59ad398d705d1370e9c4}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Interfaces/IMeld.\+cs\end{DoxyCompactItemize}

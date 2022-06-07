@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_ee5c59d9cedb892e9a5c6df0e1805da4" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces</compoundname>
+    <innerfile refid="_i_deck_8cs">IDeck.cs</innerfile>
+    <innerfile refid="_i_gin_rummy_controller_8cs">IGinRummyController.cs</innerfile>
+    <innerfile refid="_i_meld_8cs">IMeld.cs</innerfile>
+    <innerfile refid="_i_subscribe_8cs">ISubscribe.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/"/>
+  </compounddef>
+</doxygen>

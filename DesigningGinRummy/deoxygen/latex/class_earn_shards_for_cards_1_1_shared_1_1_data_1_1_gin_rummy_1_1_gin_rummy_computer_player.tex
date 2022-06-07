@@ -1,0 +1,109 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Computer\+Player\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Gin\+Rummy\+Computer\+Player}} is a virtual game support object related to a real-\/world player. This player makes decisions in order to beat the human player. It represents the other player playing against the one playing the game. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty.  
+
+
+
+
+Inheritance diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Computer\+Player\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Computer\+Player\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_adb3a47ed6efa7909a2be43f3fc82671e}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_adb3a47ed6efa7909a2be43f3fc82671e}} 
+{\bfseries Gin\+Rummy\+Computer\+Player} ()
+\begin{DoxyCompactList}\small\item\em Create a new computer player with an empty hand with a skill level of beginner. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_a699689b074c74f0436cd67f868e80cfc}{Should\+Draw\+From\+Discard\+Pile}} (T top\+Card\+Of\+Discard\+Pile)
+\begin{DoxyCompactList}\small\item\em Check to see if the discard pile card will be drawn by the computer player. If the discard pile is not drawn, the computer player will choose to draw a card from the deck or pass. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_aa3cd569f9020926478cde1b779db6ece}{Select\+And\+Remove\+Discarded\+Card}} ()
+\begin{DoxyCompactList}\small\item\em Return a card that will be removed from the hand as a discard action \end{DoxyCompactList}\item 
+T? \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_abf5862e7896a3f77dea6ff5890d389cd}{Determine\+Knock\+Or\+Discard\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether or not to knock or discard. Returns null if a knock is not performed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_a358895aef81a0b1cc22c5753df809286}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_a358895aef81a0b1cc22c5753df809286}} 
+\mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a29d9c7022be5beaaf7d28bfc536bcbed}{Skill\+Level}} {\bfseries Skill\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Gin\+Rummy\+Computer\+Player}} is a virtual game support object related to a real-\/world player. This player makes decisions in order to beat the human player. It represents the other player playing against the one playing the game. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A playing card or a subtype of playing card\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Playing\+Card}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_abf5862e7896a3f77dea6ff5890d389cd}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_abf5862e7896a3f77dea6ff5890d389cd}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}!DetermineKnockOrDiscardAction@{DetermineKnockOrDiscardAction}}
+\index{DetermineKnockOrDiscardAction@{DetermineKnockOrDiscardAction}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DetermineKnockOrDiscardAction()}{DetermineKnockOrDiscardAction()}}
+{\footnotesize\ttfamily T? \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Computer\+Player}}$<$ T $>$.Determine\+Knock\+Or\+Discard\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether or not to knock or discard. Returns null if a knock is not performed. 
+
+\begin{DoxyReturn}{Returns}
+Either null or a card from the hand that the computer wishes to knock with
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_aa3cd569f9020926478cde1b779db6ece}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_aa3cd569f9020926478cde1b779db6ece}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}!SelectAndRemoveDiscardedCard@{SelectAndRemoveDiscardedCard}}
+\index{SelectAndRemoveDiscardedCard@{SelectAndRemoveDiscardedCard}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SelectAndRemoveDiscardedCard()}{SelectAndRemoveDiscardedCard()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Computer\+Player}}$<$ T $>$.Select\+And\+Remove\+Discarded\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a card that will be removed from the hand as a discard action 
+
+\begin{DoxyReturn}{Returns}
+The card that the computer player removed from their hand to discard
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_a699689b074c74f0436cd67f868e80cfc}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_a699689b074c74f0436cd67f868e80cfc}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}!ShouldDrawFromDiscardPile@{ShouldDrawFromDiscardPile}}
+\index{ShouldDrawFromDiscardPile@{ShouldDrawFromDiscardPile}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ShouldDrawFromDiscardPile()}{ShouldDrawFromDiscardPile()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Computer\+Player}}$<$ T $>$.Should\+Draw\+From\+Discard\+Pile (\begin{DoxyParamCaption}\item[{T}]{top\+Card\+Of\+Discard\+Pile }\end{DoxyParamCaption})}
+
+
+
+Check to see if the discard pile card will be drawn by the computer player. If the discard pile is not drawn, the computer player will choose to draw a card from the deck or pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Card\+Of\+Discard\+Pile} & What the card on the discard pile was\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the computer chose to draw the discard pile card
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Gin\+Rummy/Gin\+Rummy\+Computer\+Player.\+cs\end{DoxyCompactItemize}

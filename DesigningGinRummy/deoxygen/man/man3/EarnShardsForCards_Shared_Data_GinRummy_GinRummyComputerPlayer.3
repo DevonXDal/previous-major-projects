@@ -1,0 +1,98 @@
+.TH "EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer< T >" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer< T > \- A \fBGinRummyComputerPlayer\fP is a virtual game support object related to a real-world player\&. This player makes decisions in order to beat the human player\&. It represents the other player playing against the one playing the game\&. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Player< T >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGinRummyComputerPlayer\fP ()"
+.br
+.RI "Create a new computer player with an empty hand with a skill level of beginner\&. "
+.ti -1c
+.RI "bool \fBShouldDrawFromDiscardPile\fP (T topCardOfDiscardPile)"
+.br
+.RI "Check to see if the discard pile card will be drawn by the computer player\&. If the discard pile is not drawn, the computer player will choose to draw a card from the deck or pass\&. "
+.ti -1c
+.RI "T \fBSelectAndRemoveDiscardedCard\fP ()"
+.br
+.RI "Return a card that will be removed from the hand as a discard action "
+.ti -1c
+.RI "T? \fBDetermineKnockOrDiscardAction\fP ()"
+.br
+.RI "Determines whether or not to knock or discard\&. Returns null if a knock is not performed\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBSkillLevel\fP \fBSkillLevel\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBGinRummyComputerPlayer\fP is a virtual game support object related to a real-world player\&. This player makes decisions in order to beat the human player\&. It represents the other player playing against the one playing the game\&. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIT\fP A playing card or a subtype of playing card
+.RE
+.PP
+
+.PP
+\fBType Constraints\fP
+.TP
+\fIT\fP : \fIPlayingCard\fP
+.SH "Member Function Documentation"
+.PP 
+.SS "T? \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyComputerPlayer\fP< T >\&.DetermineKnockOrDiscardAction ()"
+
+.PP
+Determines whether or not to knock or discard\&. Returns null if a knock is not performed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Either null or a card from the hand that the computer wishes to knock with
+.RE
+.PP
+
+.SS "T \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyComputerPlayer\fP< T >\&.SelectAndRemoveDiscardedCard ()"
+
+.PP
+Return a card that will be removed from the hand as a discard action 
+.PP
+\fBReturns\fP
+.RS 4
+The card that the computer player removed from their hand to discard
+.RE
+.PP
+
+.SS "bool \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyComputerPlayer\fP< T >\&.ShouldDrawFromDiscardPile (T topCardOfDiscardPile)"
+
+.PP
+Check to see if the discard pile card will be drawn by the computer player\&. If the discard pile is not drawn, the computer player will choose to draw a card from the deck or pass\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItopCardOfDiscardPile\fP What the card on the discard pile was
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Whether the computer chose to draw the discard pile card
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

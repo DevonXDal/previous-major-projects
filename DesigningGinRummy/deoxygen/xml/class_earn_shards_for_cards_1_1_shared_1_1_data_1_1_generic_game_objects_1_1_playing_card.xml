@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</compoundname>
+    <basecompoundref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card" prot="public" virt="non-virtual">EarnShardsForCards.Shared.Data.GenericGameObjects.Card</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a86b5ce631c6cd445086deac91b432fa5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631" kindref="member">Rank</ref></type>
+        <definition>Rank EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Rank</definition>
+        <argsstring></argsstring>
+        <name>Rank</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" line="20" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a29850c0a593512b08101556ce26f7f5e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85" kindref="member">Suit</ref></type>
+        <definition>Suit EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Suit</definition>
+        <argsstring></argsstring>
+        <name>Suit</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Suit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" line="21" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1abe91023e83846d105df0a008ecebb00f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" line="22" column="20" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a2fd9bcf0ccacbe755dd7933a8618acf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.PlayingCard</definition>
+        <argsstring>(Rank rank, Suit suit, int value)</argsstring>
+        <name>PlayingCard</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.PlayingCard</qualifiedname>
+        <param>
+          <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631" kindref="member">Rank</ref></type>
+          <declname>rank</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85" kindref="member">Suit</ref></type>
+          <declname>suit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Create the playing card, assigning it a rank, suit, and point value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alphanumeric character that aids in identification</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>suit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape that aids in identification</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value that the card has in relation to a game</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" line="30" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1ad52a09c4cc7a7ed52cfb56a0cd7de2e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Equals</definition>
+        <argsstring>(object? obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Equals</qualifiedname>
+        <param>
+          <type>object?</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Checks to see if both cards have the same rank and suit combination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other object, likely a playing card, to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Are both the same card?</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" line="42" column="30" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> represents the real-world card from a standard 52-card deck. It holds information about its rank and suit. It can either be face up or face down with the facedown side revealing no rank or suit information. All cards have the same face down representation but each face up representation is unique from the others. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Card</label>
+        <link refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card"/>
+      </node>
+      <node id="1">
+        <label>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</label>
+        <link refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Card</label>
+        <link refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card"/>
+      </node>
+      <node id="1">
+        <label>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</label>
+        <link refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" line="18" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs" bodystart="19" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a5f77494f4b08ac82e5fe2490b4a13fdf" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Card</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1ad52a09c4cc7a7ed52cfb56a0cd7de2e8" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Equals</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ae521dab713e231c32981915ef62ee211" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>FaceDownImagePath</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1aedd6f769a02508097ab2460b290812fd" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>FaceUpImagePath</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a47b2845decbe9bacef84259237a1373d" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>GetImageFilePath</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ab0579f24b953530f77fb35e3c38ebcb5" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Hide</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ac958ea16c9e7013a0d4b0e99b480fff6" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>IsVisible</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a2fd9bcf0ccacbe755dd7933a8618acf1" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>PlayingCard</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a86b5ce631c6cd445086deac91b432fa5" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Rank</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a44b26c3ff5ee572ad60127e2894b9157" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Show</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a29850c0a593512b08101556ce26f7f5e" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Suit</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1abe91023e83846d105df0a008ecebb00f" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

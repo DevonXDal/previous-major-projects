@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Models.ApplicationUser Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Models.ApplicationUser</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Models.ApplicationUser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Models.ApplicationUser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Models/ApplicationUser.cs</section>

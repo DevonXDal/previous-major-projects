@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_application_user_8cs" kind="file" language="C#">
+    <compoundname>ApplicationUser.cs</compoundname>
+    <innerclass refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" prot="public">EarnShardsForCards::Server::Models::ApplicationUser</innerclass>
+    <innernamespace refid="namespace_earn_shards_for_cards">EarnShardsForCards</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server">EarnShardsForCards::Server</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server_1_1_models">EarnShardsForCards::Server::Models</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_identity">Microsoft::AspNetCore::Identity</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.Identity;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespace_earn_shards_for_cards_1_1_server_1_1_models" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_earn_shards_for_cards_1_1_server_1_1_models" kindref="compound">EarnShardsForCards.Server.Models</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" kindref="compound">ApplicationUser</ref><sp/>:<sp/>IdentityUser</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Models/ApplicationUser.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;" name="EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;">
+<area shape="rect" id="node1" title="A Player is representative of a real&#45;world player that is playing a card game. They have their own ha..." alt="" coords="5,5,256,47"/>
+<area shape="rect" id="node2" href="$class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player.html" title="A GinRummyComputerPlayer is a virtual game support object related to a real&#45;world player...." alt="" coords="9,95,252,151"/>
+</map>

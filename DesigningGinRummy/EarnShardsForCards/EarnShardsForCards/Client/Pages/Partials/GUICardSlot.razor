@@ -1,0 +1,30 @@
+﻿@using EarnShardsForCards.Shared.Data.GinRummy
+
+@* https://stackoverflow.com/questions/40062241/set-height-as-a-ratio-of-width-with-only-css - Aspect Ratio *@
+
+<img src="@CardImageFilePath" class="img-fluid" style="align-self: center" />
+
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+    
+    [Parameter]
+    public GinRummyController Controller { get; set; }
+
+    [Parameter]
+    public bool IsHumanPlayerCard { get; set; }
+
+    // Index of the card in that player's hand
+    [Parameter] 
+    public int HandPostion { get; set; }
+    
+    [Parameter] 
+    public string CardImageFilePath { get; set; }
+
+    private TurnState? _turnState;
+    
+    private PhaseState? _phaseState;
+    
+
+}

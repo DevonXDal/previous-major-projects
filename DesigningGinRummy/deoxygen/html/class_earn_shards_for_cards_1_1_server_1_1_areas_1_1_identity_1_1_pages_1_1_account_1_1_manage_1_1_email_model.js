@@ -1,0 +1,8 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model =
+[
+    [ "InputModel", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model_1_1_input_model.html", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model_1_1_input_model" ],
+    [ "Email", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#a05a40f9ad6d13f085f6eb67d57eedf81", null ],
+    [ "Input", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#a7f2f74a3d63b6e7a7458f8429bfa264e", null ],
+    [ "IsEmailConfirmed", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#a454de0cba39ae7b6c95be4342da2d874", null ],
+    [ "StatusMessage", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#ab944b746400833530dbb17a523ddc296", null ]
+];

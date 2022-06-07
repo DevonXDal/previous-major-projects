@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Areas.Identity.Pages.Account.RegisterModel Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Areas.Identity.Pages.Account.RegisterModel</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.RegisterModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.RegisterModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model">InputModel</link></para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1a72258b7a17d62126bba13fed7663c61d"/><emphasis role="strong">RegisterModel</emphasis> (UserManager&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; userManager, IUserStore&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; userStore, SignInManager&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; signInManager, ILogger&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model">RegisterModel</link> &gt; logger, IEmailSender emailSender)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1a3e90b6bbe6f33740fe3e18f72a0ee6ff"/>async Task <emphasis role="strong">OnGetAsync</emphasis> (string returnUrl=null)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1a7a8b34606d50e6110e66be748adab303"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnPostAsync</emphasis> (string returnUrl=null)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1a710af0d97402c8e5170b7e20c6a8bf46"/><link linkend="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model">InputModel</link> <emphasis role="strong">Input</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1aa700005cb03017fdd8096d7f3606ea6b"/>string <emphasis role="strong">ReturnUrl</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1a019cc7cc6dac0d2951292b6749e02d22"/>IList&lt; AuthenticationScheme &gt; <emphasis role="strong">ExternalLogins</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Classwork/ObjectOrientedDesign/CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Areas/Identity/Pages/Account/Register.cshtml.cs</section>

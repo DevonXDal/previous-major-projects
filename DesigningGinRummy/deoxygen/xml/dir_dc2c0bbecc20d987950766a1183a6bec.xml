@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_dc2c0bbecc20d987950766a1183a6bec" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server</compoundname>
+    <innerdir refid="dir_4050565deea4bbaf0e299167171b7887">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers</innerdir>
+    <innerdir refid="dir_d12d2771529513b921bea1b79081b07d">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data</innerdir>
+    <innerdir refid="dir_46d0f5926da5668b0e24497fcc1e1628">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Models</innerdir>
+    <innerdir refid="dir_391ec9fe7c1cc6628c9c30a906f88efe">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/obj</innerdir>
+    <innerdir refid="dir_78fa1238181ed0e909cee7956f0dd805">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Pages</innerdir>
+    <innerfile refid="_server_2_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/"/>
+  </compounddef>
+</doxygen>

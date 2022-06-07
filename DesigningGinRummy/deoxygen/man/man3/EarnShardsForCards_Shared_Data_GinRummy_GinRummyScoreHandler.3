@@ -1,0 +1,122 @@
+.TH "EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler \- A \fBGinRummyScoreHandler\fP is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGinRummyScoreHandler\fP (\fBIGinRummyController\fP controller, \fBPlayer\fP< \fBPlayingCard\fP > player, \fBGinRummyComputerPlayer\fP< \fBPlayingCard\fP > computerPlayer)"
+.br
+.RI "Create a \fBGinRummyScoreHandler\fP with a reference to the controller, human player, and computer player\&. "
+.ti -1c
+.RI "void \fBRewardPoints\fP (bool isBigGin)"
+.br
+.RI "Calculates the number of points at the end of around\&. Once points are calculated it handles notifying of the score and other information to the user\&. "
+.ti -1c
+.RI "EliminateDeadwoodData \fBEliminateDeadwood\fP (\fBPlayer\fP< \fBPlayingCard\fP > player, IList< \fBMeldSet\fP >? setsFromOpponent, IList< \fBMeldRun\fP >? runsFromOpponents)"
+.br
+.RI "Determine the largest amount of deadwood that can be eliminated for a player\&. Also returns the melds created in order allow laying off deadwood if needed\&. "
+.ti -1c
+.RI "bool \fBCanPlayerKnock\fP (\fBPlayer\fP< \fBPlayingCard\fP > player)"
+.br
+.RI "Determine if the provided player can knock given the cards in their hand\&. "
+.ti -1c
+.RI "bool \fBDoesPlayerHaveBigGin\fP (\fBPlayer\fP< \fBPlayingCard\fP > player)"
+.br
+.RI "Determine if the provided player has gone Big Gin this turn\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBGinRummyScoreHandler\fP is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyScoreHandler\&.GinRummyScoreHandler (\fBIGinRummyController\fP controller, \fBPlayer\fP< \fBPlayingCard\fP > player, \fBGinRummyComputerPlayer\fP< \fBPlayingCard\fP > computerPlayer)"
+
+.PP
+Create a \fBGinRummyScoreHandler\fP with a reference to the controller, human player, and computer player\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontroller\fP The game controller
+.br
+\fIplayer\fP The user's player
+.br
+\fIcomputerPlayer\fP The computer player
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyScoreHandler\&.CanPlayerKnock (\fBPlayer\fP< \fBPlayingCard\fP > player)"
+
+.PP
+Determine if the provided player can knock given the cards in their hand\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayer\fP The player to see if knocking is allowed
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the player can knock (10 or less deadwood)
+.RE
+.PP
+
+.SS "bool EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyScoreHandler\&.DoesPlayerHaveBigGin (\fBPlayer\fP< \fBPlayingCard\fP > player)"
+
+.PP
+Determine if the provided player has gone Big Gin this turn\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayer\fP The player to see if they have Big Gin
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the player has Big Gin
+.RE
+.PP
+
+.SS "EliminateDeadwoodData EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyScoreHandler\&.EliminateDeadwood (\fBPlayer\fP< \fBPlayingCard\fP > player, IList< \fBMeldSet\fP >? setsFromOpponent, IList< \fBMeldRun\fP >? runsFromOpponents)"
+
+.PP
+Determine the largest amount of deadwood that can be eliminated for a player\&. Also returns the melds created in order allow laying off deadwood if needed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayer\fP The player to view the hand of
+.br
+\fIsetsFromOpponent\fP The sets the opponent eliminated deadwood using
+.br
+\fIrunsFromOpponents\fP The runs the opponent eliminated deadwood using
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBData\fP related to removed deadwood
+.RE
+.PP
+
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyScoreHandler\&.RewardPoints (bool isBigGin)"
+
+.PP
+Calculates the number of points at the end of around\&. Once points are calculated it handles notifying of the score and other information to the user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIisBigGin\fP Whether the round ended by Big Gin
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

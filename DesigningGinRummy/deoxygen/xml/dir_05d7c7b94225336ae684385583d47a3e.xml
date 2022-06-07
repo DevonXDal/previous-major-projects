@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_05d7c7b94225336ae684385583d47a3e" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data</compoundname>
+    <innerdir refid="dir_6f3002e924084bd75b8d190faca9d126">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations</innerdir>
+    <innerdir refid="dir_d0bd0cbbac9fd12fdd3648a480214cf3">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects</innerdir>
+    <innerdir refid="dir_6a9241ca10fd6e14a8270c294936ee5b">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy</innerdir>
+    <innerdir refid="dir_ee5c59d9cedb892e9a5c6df0e1805da4">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces</innerdir>
+    <innerdir refid="dir_24d4aec03c219ac4f0ced628b4e62d35">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Records</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/"/>
+  </compounddef>
+</doxygen>

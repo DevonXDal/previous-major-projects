@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Areas.Identity.Pages.Account.RegisterModel.InputModel Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Areas.Identity.Pages.Account.RegisterModel.InputModel</primary></indexterm>
+<para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+ 
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model_1af28cece139bbd483284ca6efb7016549"/>string <emphasis role="strong">Email</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model_1a9bf199d471eb1bb4c199195743619be2"/>string <emphasis role="strong">Password</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model_1a73c210804cb0168b2daabe5fecfb5643"/>string <emphasis role="strong">ConfirmPassword</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Classwork/ObjectOrientedDesign/CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Areas/Identity/Pages/Account/Register.cshtml.cs</section>
+</section>

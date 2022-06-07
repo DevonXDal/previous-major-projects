@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GenericGameObjects.Card Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Card</primary></indexterm>
+<para>
+
+<para>A general structuring class used to handle cards for various games. It includes the base information of the images for each face and which side of the card is shown. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.GenericGameObjects.Card:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a5f77494f4b08ac82e5fe2490b4a13fdf"/><emphasis role="strong">Card</emphasis> ()</para>
+
+<para>Sets up the visibility for any type of game card but does not set the image paths. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a44b26c3ff5ee572ad60127e2894b9157"/>void <emphasis role="strong">Show</emphasis> ()</para>
+
+<para>Put the card face up. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ab0579f24b953530f77fb35e3c38ebcb5"/>void <emphasis role="strong">Hide</emphasis> ()</para>
+
+<para>Put the card face down. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a47b2845decbe9bacef84259237a1373d">GetImageFilePath</link> ()</para>
+
+<para>Returns the image path for the card based on its face up status. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ac958ea16c9e7013a0d4b0e99b480fff6"/>bool <emphasis role="strong">IsVisible</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1aedd6f769a02508097ab2460b290812fd"/>string <emphasis role="strong">FaceUpImagePath</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ae521dab713e231c32981915ef62ee211"/>string <emphasis role="strong">FaceDownImagePath</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A general structuring class used to handle cards for various games. It includes the base information of the images for each face and which side of the card is shown. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a47b2845decbe9bacef84259237a1373d"/><section>
+    <title>GetImageFilePath()</title>
+<indexterm><primary>GetImageFilePath</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.Card</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Card</primary><secondary>GetImageFilePath</secondary></indexterm>
+<para><computeroutput>string EarnShardsForCards.Shared.Data.GenericGameObjects.Card.GetImageFilePath ( )</computeroutput></para><para>
+
+<para>Returns the image path for the card based on its face up status. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The path to the image to display for the card</para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Card.cs</section>
+</section>

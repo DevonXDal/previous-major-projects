@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects" kind="namespace" language="C#">
+    <compoundname>EarnShardsForCards::Shared::Data::GenericGameObjects</compoundname>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card" prot="public">EarnShardsForCards::Shared::Data::GenericGameObjects::Card</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile" prot="public">EarnShardsForCards::Shared::Data::GenericGameObjects::DiscardPile</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier" prot="public">EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" prot="public">EarnShardsForCards::Shared::Data::GenericGameObjects::Player</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" prot="public">EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck" prot="public">EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCardDeck</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Card.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

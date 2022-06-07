@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations" kind="namespace" language="C#">
+    <compoundname>EarnShardsForCards::Shared::Data::Enumerations</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a53cdfddcbc89aea7fc9b14c34a0d0597" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>CardType</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.CardType</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a53cdfddcbc89aea7fc9b14c34a0d0597aaf49b2c93c1e56ec2a701932f920e1a4" prot="public">
+          <name>PlayingCard</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The CardType is used to indicate the type of deck to build using the abstract factory pattern. Specifying PlayingCard, for example, will indicate to use a PlayingCardDeck object and build what is needed from there </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/CardType.cs" line="13" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/CardType.cs" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>GameButtonType</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.GameButtonType</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7aa6122a65eaa676f700ae68d393054a37" prot="public">
+          <name>Start</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7a51cfbcff36da74a9fc47f3a5140f99f2" prot="public">
+          <name>Restart</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7ab9b57aae83585e17ede4570dcede353c" prot="public">
+          <name>Pass</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Signals a button displayed to the user which message to show and which action to notify about. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/GameButtonType.cs" line="12" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/GameButtonType.cs" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a68b0c6117dd2c40250bdd6adff11fb62" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>GameType</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.GameType</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a68b0c6117dd2c40250bdd6adff11fb62a53d651592f1c1bdb44eef8c1cf94b4ce" prot="public">
+          <name>GinRummy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>GameType is used for building objects based on the game being played. In the case of a PlayingCardDeck, even though many games use it, some games use only some of the cards, some use more than the typical 52. GameType allows improved control of the deck provided for each game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/GameType.cs" line="14" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/GameType.cs" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>GinRummyRoundEndingCase</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.GinRummyRoundEndingCase</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019da2de86fa016c5a004fb0b0e8b707ea99b" prot="public">
+          <name>Tie</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019da3b5b8ec2903478fc081f603bd704f9be" prot="public">
+          <name>Knock</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019daa3b82e43bbaf42b9a14755eeb3e98f99" prot="public">
+          <name>Undercut</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019dad7ad223a94b1cdb31734ad5fb25df4bd" prot="public">
+          <name>Gin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019dae6c31790c7fa228cf10f03a4afdf11fe" prot="public">
+          <name>BigGin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>GinRummyRoundEndingCase is used to provide the reason that the round ended. This is useful for scoring and for displaying the end of round details to the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/GinRummyRoundEndingCase.cs" line="13" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/GinRummyRoundEndingCase.cs" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PhaseState</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.PhaseState</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785a2d03c2d5a7ec65ef4619e0582c272ec2" prot="public">
+          <name>Draw</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785ad94b42030b9785fd754d5c1754961269" prot="public">
+          <name>Discard</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A PhaseState represents one of the two possible phases of games like Gin Rummy. It is used to tell which step the current player needs to take next. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/PhaseState.cs" line="13" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/PhaseState.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Rank</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.Rank</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a37b1202ffbec121b5250a3f8265262e6" prot="public">
+          <name>Ace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631aaada29daee1d64ed0fe907043855cb7e" prot="public">
+          <name>Two</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631aca8a2087e5557e317599344687a57391" prot="public">
+          <name>Three</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a981b8fcee42e1e726a67a2b9a98ea6e9" prot="public">
+          <name>Four</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631ae5d9de39f7ca1ba2637e5640af3ae8aa" prot="public">
+          <name>Five</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631ae6fbc0b9673f8c86726688d7607fc8f5" prot="public">
+          <name>Six</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a12e67aac3e7f9227cc35f8f047d7dc74" prot="public">
+          <name>Seven</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631abaca0ca6729684fd54206793ae4b5bd5" prot="public">
+          <name>Eight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a24db11216549ee55172c33cf3def2f3f" prot="public">
+          <name>Nine</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631aa185c3c138dca5ef46afc33288a67d1f" prot="public">
+          <name>Ten</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a40687c8206d15373954d8b27c6724f62" prot="public">
+          <name>Jack</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a2c2d2c0291163b077a372c2a9c5a6eda" prot="public">
+          <name>Queen</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a719ef271d38a388fd7b2bc967f4bd885" prot="public">
+          <name>King</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents one of the thirteen possible alphanumeric characters on a playing card. It presents an order to the cards and can be associated with a point value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/Rank.cs" line="13" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/Rank.cs" bodystart="14" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbed" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SkillLevel</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.SkillLevel</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbeda2ddabc33a6100ceb5311697534035d8d" prot="public">
+          <name>Beginner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbedab57ed7a0b4f939d0c048882570336e3a" prot="public">
+          <name>Intermediate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbeda9b6545e4cea9b4ad4979d41bb9170e2b" prot="public">
+          <name>Advanced</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The SkillLevel represents the difficulty rating of the computer player. Changing this value will allow the computer player to make smarter decisions about how to play. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/SkillLevel.cs" line="13" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/SkillLevel.cs" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Suit</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.Suit</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85abc56e1ae1e30e7123ffc5030f108f2a0" prot="public">
+          <name>Clubs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85a74d868fafa8c57d04565f672807e7ef7" prot="public">
+          <name>Diamonds</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85a6af4bf214d6cf054f9528da5b6054817" prot="public">
+          <name>Hearts</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85a8dac9a2d5a20ebbf46559d684bae0f46" prot="public">
+          <name>Spades</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents one of the four possible shapes that appear on a playing card. It is in combination with suits and ranks that 52 playing cards are created. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/Suit.cs" line="13" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/Suit.cs" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TurnState</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Enumerations.TurnState</qualifiedname>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04ac1bb19b27818343c1926119b958741b5" prot="public">
+          <name>Human</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04a181900dad960beccb34f53c4e0ff4647" prot="public">
+          <name>Computer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A TurnState represents whose turn it is to perform an action that will alter the state of the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/TurnState.cs" line="12" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/TurnState.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/CardType.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_earn_shards_for_cards_1_1_shared_1_1_models_1_1_records" kind="namespace" language="C#">
+    <compoundname>EarnShardsForCards::Shared::Models::Records</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Records/EliminateDeadwoodData.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

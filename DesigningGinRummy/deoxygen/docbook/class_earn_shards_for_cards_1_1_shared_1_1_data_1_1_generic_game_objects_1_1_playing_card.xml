@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</primary></indexterm>
+<para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> represents the real-world card from a standard 52-card deck. It holds information about its rank and suit. It can either be face up or face down with the facedown side revealing no rank or suit information. All cards have the same face down representation but each face up representation is unique from the others. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a2fd9bcf0ccacbe755dd7933a8618acf1">PlayingCard</link> (<link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631">Rank</link> rank, <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85">Suit</link> suit, int value)</para>
+
+<para>Create the playing card, assigning it a rank, suit, and point value. </para>
+</listitem>
+            <listitem><para>override bool <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1ad52a09c4cc7a7ed52cfb56a0cd7de2e8">Equals</link> (object? obj)</para>
+
+<para>Checks to see if both cards have the same rank and suit combination. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a86b5ce631c6cd445086deac91b432fa5"/><link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631">Rank</link> <emphasis role="strong">Rank</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a29850c0a593512b08101556ce26f7f5e"/><link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85">Suit</link> <emphasis role="strong">Suit</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1abe91023e83846d105df0a008ecebb00f"/>int <emphasis role="strong">Value</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> represents the real-world card from a standard 52-card deck. It holds information about its rank and suit. It can either be face up or face down with the facedown side revealing no rank or suit information. All cards have the same face down representation but each face up representation is unique from the others. </para>
+
+
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a2fd9bcf0ccacbe755dd7933a8618acf1"/><section>
+    <title>PlayingCard()</title>
+<indexterm><primary>PlayingCard</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</primary><secondary>PlayingCard</secondary></indexterm>
+<para><computeroutput>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.PlayingCard (<link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631">Rank</link> rank, <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85">Suit</link> suit, int value)</computeroutput></para><para>
+
+<para>Create the playing card, assigning it a rank, suit, and point value. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rank</entry><entry>
+<para>The alphanumeric character that aids in identification</para>
+</entry>
+                            </row>
+                            <row>
+<entry>suit</entry><entry>
+<para>The shape that aids in identification</para>
+</entry>
+                            </row>
+                            <row>
+<entry>value</entry><entry>
+<para>The value that the card has in relation to a game</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1ad52a09c4cc7a7ed52cfb56a0cd7de2e8"/><section>
+    <title>Equals()</title>
+<indexterm><primary>Equals</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput>override bool EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard.Equals (object? obj)</computeroutput></para><para>
+
+<para>Checks to see if both cards have the same rank and suit combination. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>obj</entry><entry>
+<para>The other object, likely a playing card, to check</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Are both the same card?</para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/PlayingCard.cs</section>
+</section>

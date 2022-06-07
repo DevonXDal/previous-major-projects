@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_test_1_1_models_1_1_card_test" xml:lang="en-US">
+<title>EarnShardsForCards.Test.Models.CardTest&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>EarnShardsForCards.Test.Models.CardTest&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>Tests the implementations of the Card class </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Tests the implementations of the Card class </para>
+
+
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:Card</emphasis></para>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/CardTest.cs</section>
+</section>

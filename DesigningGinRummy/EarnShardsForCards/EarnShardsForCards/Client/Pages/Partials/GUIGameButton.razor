@@ -1,0 +1,61 @@
+﻿@using EarnShardsForCards.Shared.Data.GinRummy
+@using EarnShardsForCards.Client.Pages.Partials
+
+<button type="button" class="btn my-2" style="background-color: #6F58C9; color: #FCFCFC" title="Perform the '@_buttonText' action" @onclick="OnClick">@_buttonText</button>
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    [Parameter]
+    public GameButtonType Type { get; set; }
+
+    [Parameter]
+    public GinRummyController Controller { get; set; }
+
+    private string _buttonText = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Type == GameButtonType.Start)
+        {
+            _buttonText = "Start Game";
+        } else if (Type == GameButtonType.Restart)
+        {
+            _buttonText = "Restart Game";
+        } else
+        {
+            _buttonText = "Pass";
+        }
+
+        await base.OnInitializedAsync();
+    }
+
+    public async Task OnClick()
+    {
+        try
+        {
+            if (Type == GameButtonType.Start)
+            {
+                Controller.InitializeGame();
+                //ModalParameters parameters = new ModalParameters();
+                //parameters.Add(nameof(InformativeModalData.TextBody), "Testing? 1..2..3? Anyone there!?");
+
+                //Modal.Show<InformativeModalData>("Passing Data", parameters);
+            } else if (Type == GameButtonType.Restart)
+            {
+                Controller.ReinitializeGame();
+            } else
+            {
+                await Controller.RequestPassTurnAsync();
+            }
+        } catch (InvalidOperationException e)
+        {
+            ModalParameters parameters = new ModalParameters();
+            parameters.Add(nameof(InformativeModalData.TextBody), e.Message);
+
+            Modal.Show<InformativeModalData>("Could Not Carry Out Action", parameters);
+        }
+        
+
+    }
+}

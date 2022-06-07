@@ -1,0 +1,86 @@
+.TH "EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState \- A \fBGinRummyGameState\fP is a virtual game support object that maintains overall state information for the game\&. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes\&. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc\&. Using this state helps the game flow and aids in determining if a player has won the game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGinRummyGameState\fP (bool isAroundTheWorld, int winCondition, \fBTurnState\fP firstToPlay)"
+.br
+.RI "I\&. Create a \fBGinRummyGameState\fP object using whether around the world is in play, the number of points required to win, and a path to the first player to play\&. "
+.ti -1c
+.RI "int \fBCheckIfGameIsWon\fP ()"
+.br
+.RI "Determines if the game has been won i\&. Returns -1 if the computer won ii\&. Returns 0 if no one has won iii\&.Returns 1 if the human player won "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBPointsRequiredForWin\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "IList< int > \fBPointsForHumanPlayerPerRound\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "IList< int > \fBPointsForComputerPlayerPerRound\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBRoundNumber\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsAroundTheWorld\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBTurnState\fP \fBCurrentPlayersTurn\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBPhaseState\fP \fBCurrentTurnPhase\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "bool \fBIsSpecialDraw\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBGinRummyGameState\fP is a virtual game support object that maintains overall state information for the game\&. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes\&. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc\&. Using this state helps the game flow and aids in determining if a player has won the game\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyGameState\&.GinRummyGameState (bool isAroundTheWorld, int winCondition, \fBTurnState\fP firstToPlay)"
+
+.PP
+I\&. Create a \fBGinRummyGameState\fP object using whether around the world is in play, the number of points required to win, and a path to the first player to play\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIisAroundTheWorld\fP Whether runs can loop around from King to Ace
+.br
+\fIwinCondition\fP How many points is necessary for a player to win the entire game
+.br
+\fIfirstToPlay\fP Who is the first player to play the game
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyGameState\&.CheckIfGameIsWon ()"
+
+.PP
+Determines if the game has been won i\&. Returns -1 if the computer won ii\&. Returns 0 if no one has won iii\&.Returns 1 if the human player won 
+.PP
+\fBReturns\fP
+.RS 4
+The integer value that matches the current state of the game information
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

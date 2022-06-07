@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.Enumerations Namespace Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Enumerations</primary></indexterm>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a53cdfddcbc89aea7fc9b14c34a0d0597"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a53cdfddcbc89aea7fc9b14c34a0d0597">CardType</link> { <emphasis role="strong">PlayingCard</emphasis>
+ }</para>
+
+<para>The CardType is used to indicate the type of deck to build using the abstract factory pattern. Specifying PlayingCard, for example, will indicate to use a PlayingCardDeck object and build what is needed from there </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7">GameButtonType</link> { <emphasis role="strong">Start</emphasis>
+, <emphasis role="strong">Restart</emphasis>
+, <emphasis role="strong">Pass</emphasis>
+ }</para>
+
+<para>Signals a button displayed to the user which message to show and which action to notify about. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a68b0c6117dd2c40250bdd6adff11fb62"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a68b0c6117dd2c40250bdd6adff11fb62">GameType</link> { <emphasis role="strong">GinRummy</emphasis>
+ }</para>
+
+<para>GameType is used for building objects based on the game being played. In the case of a PlayingCardDeck, even though many games use it, some games use only some of the cards, some use more than the typical 52. GameType allows improved control of the deck provided for each game. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d">GinRummyRoundEndingCase</link> { 
+<emphasis role="strong">Tie</emphasis>
+, <emphasis role="strong">Knock</emphasis>
+, <emphasis role="strong">Undercut</emphasis>
+, <emphasis role="strong">Gin</emphasis>
+, 
+<emphasis role="strong">BigGin</emphasis>
+ }</para>
+
+<para>GinRummyRoundEndingCase is used to provide the reason that the round ended. This is useful for scoring and for displaying the end of round details to the user. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785">PhaseState</link> { <emphasis role="strong">Draw</emphasis>
+, <emphasis role="strong">Discard</emphasis>
+ }</para>
+
+<para>A PhaseState represents one of the two possible phases of games like Gin Rummy. It is used to tell which step the current player needs to take next. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631">Rank</link> { 
+<emphasis role="strong">Ace</emphasis>
+, <emphasis role="strong">Two</emphasis>
+, <emphasis role="strong">Three</emphasis>
+, <emphasis role="strong">Four</emphasis>
+, 
+<emphasis role="strong">Five</emphasis>
+, <emphasis role="strong">Six</emphasis>
+, <emphasis role="strong">Seven</emphasis>
+, <emphasis role="strong">Eight</emphasis>
+, 
+<emphasis role="strong">Nine</emphasis>
+, <emphasis role="strong">Ten</emphasis>
+, <emphasis role="strong">Jack</emphasis>
+, <emphasis role="strong">Queen</emphasis>
+, 
+<emphasis role="strong">King</emphasis>
+ }</para>
+
+<para>Represents one of the thirteen possible alphanumeric characters on a playing card. It presents an order to the cards and can be associated with a point value. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbed"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbed">SkillLevel</link> { <emphasis role="strong">Beginner</emphasis>
+, <emphasis role="strong">Intermediate</emphasis>
+, <emphasis role="strong">Advanced</emphasis>
+ }</para>
+
+<para>The SkillLevel represents the difficulty rating of the computer player. Changing this value will allow the computer player to make smarter decisions about how to play. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85">Suit</link> { <emphasis role="strong">Clubs</emphasis>
+, <emphasis role="strong">Diamonds</emphasis>
+, <emphasis role="strong">Hearts</emphasis>
+, <emphasis role="strong">Spades</emphasis>
+ }</para>
+
+<para>Represents one of the four possible shapes that appear on a playing card. It is in combination with suits and ranks that 52 playing cards are created. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04"/>enum <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04">TurnState</link> { <emphasis role="strong">Human</emphasis>
+, <emphasis role="strong">Computer</emphasis>
+ }</para>
+
+<para>A TurnState represents whose turn it is to perform an action that will alter the state of the game. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

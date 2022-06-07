@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a15a7ceec183cc9bba16cc96bd13a7a0b" prot="private" static="no" mutable="no">
+        <type>ICollection&lt; <ref refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe" kindref="compound">ISubscribe</ref> &gt;</type>
+        <definition>ICollection&lt;ISubscribe&gt; EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier._subscribers</definition>
+        <argsstring></argsstring>
+        <name>_subscribers</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier._subscribers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" line="18" column="29" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a123bce7ab6d1226ab95085e00e63e211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Notifier</definition>
+        <argsstring>()</argsstring>
+        <name>Notifier</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Notifier</qualifiedname>
+        <briefdescription>
+<para>Create a notifier that has no subscribers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" line="23" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8a9fce25a2f5f970dd5ae90bc6516012" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Subscribe</definition>
+        <argsstring>(ISubscribe subscriber)</argsstring>
+        <name>Subscribe</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Subscribe</qualifiedname>
+        <param>
+          <type><ref refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe" kindref="compound">ISubscribe</ref></type>
+          <declname>subscriber</declname>
+        </param>
+        <briefdescription>
+<para>Adds a subscribe to the list of subscribers to notify. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subscriber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subscriber to add</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" line="32" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8df4d4c9e31259039b40858a635116f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Unsubscribe</definition>
+        <argsstring>(ISubscribe subscriber)</argsstring>
+        <name>Unsubscribe</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Unsubscribe</qualifiedname>
+        <param>
+          <type><ref refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe" kindref="compound">ISubscribe</ref></type>
+          <declname>subscriber</declname>
+        </param>
+        <briefdescription>
+<para>Removes a subscriber from the list of subscribers to notify. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subscriber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subscriber to remove</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" line="41" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1acd239fd2cb632075e12c45aca4d8d4e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.SendNotice</definition>
+        <argsstring>()</argsstring>
+        <name>SendNotice</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.SendNotice</qualifiedname>
+        <briefdescription>
+<para>Notifies all subscribers that an update or event has occured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" line="49" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" bodystart="49" bodyend="55"/>
+        <references refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe_1a14c43fca3d3e4adf712f37c566cd1c6e">EarnShardsForCards.Shared.Data.Interfaces.ISubscribe.Notify</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state. It is mostly used to notify view components to state changes but can be used for other uses. It does not specify any action that must be taken. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" line="16" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs" bodystart="17" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a15a7ceec183cc9bba16cc96bd13a7a0b" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</scope><name>_subscribers</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a123bce7ab6d1226ab95085e00e63e211" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</scope><name>Notifier</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1acd239fd2cb632075e12c45aca4d8d4e8" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</scope><name>SendNotice</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8a9fce25a2f5f970dd5ae90bc6516012" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</scope><name>Subscribe</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8df4d4c9e31259039b40858a635116f0" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</scope><name>Unsubscribe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

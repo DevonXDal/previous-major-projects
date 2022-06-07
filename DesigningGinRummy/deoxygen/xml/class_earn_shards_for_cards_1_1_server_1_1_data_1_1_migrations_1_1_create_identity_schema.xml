@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Server::Data::Migrations::CreateIdentitySchema</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a059fead1f7cf232a625337d0ea7c8851" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" line="8" column="33" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" bodystart="8" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a54055fe925eb1ae8d3f0ab7e1115e6d8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" line="288" column="33" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" bodystart="288" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a2b9dcf7580cca31a7e93874cc39c1fc7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" line="16" column="33" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" bodystart="16" bodyend="419"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" line="6" column="19" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" bodystart="7" bodyend="320"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a2b9dcf7580cca31a7e93874cc39c1fc7" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Server::Data::Migrations::CreateIdentitySchema</scope><name>BuildTargetModel</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a54055fe925eb1ae8d3f0ab7e1115e6d8" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Server::Data::Migrations::CreateIdentitySchema</scope><name>Down</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a059fead1f7cf232a625337d0ea7c8851" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Server::Data::Migrations::CreateIdentitySchema</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

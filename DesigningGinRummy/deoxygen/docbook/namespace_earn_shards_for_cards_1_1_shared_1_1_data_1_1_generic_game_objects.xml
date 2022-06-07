@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GenericGameObjects Namespace Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link></para>
+
+<para>A general structuring class used to handle cards for various games. It includes the base information of the images for each face and which side of the card is shown. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">DiscardPile</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">DiscardPile</link> represents the real-world pile of cards that grows throughout the play of the game. It is accessible from the top and is able to be cleared out. It can be used as a source of cards for various games. It may be at points empty and at other points full of cards. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier">Notifier</link></para>
+
+<para>A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state. It is mostly used to notify view components to state changes but can be used for other uses. It does not specify any action that must be taken. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link> is representative of a real-world player that is playing a card game. They have their own hand of cards. Players also pick up and rearrange the cards that they have. When each round is over, they then discard their hand. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> represents the real-world card from a standard 52-card deck. It holds information about its rank and suit. It can either be face up or face down with the facedown side revealing no rank or suit information. All cards have the same face down representation but each face up representation is unique from the others. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck">PlayingCardDeck</link></para>
+
+<para>A Playing <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link> Deck represents a real-world deck of cards. It is also used for the draw pile for real-world games. It is created usually with 52 playing cards. Cards can be drawn from it and return as requested. It also randomizes the position of the cards it holds when requested. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

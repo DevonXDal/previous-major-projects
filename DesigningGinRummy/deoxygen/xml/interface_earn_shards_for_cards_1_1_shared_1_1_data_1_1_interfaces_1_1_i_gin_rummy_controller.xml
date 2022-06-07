@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller" kind="interface" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</compoundname>
+    <derivedcompoundref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller" prot="public" virt="non-virtual">EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4ea16a5de470406c16b84f1169daea49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.InitializeGame</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeGame</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.InitializeGame</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a128c7aa68553cfeba5ff2f9a38e4602e">InitializeGame</reimplementedby>
+        <briefdescription>
+<para>Set up the models and controller objects necessary to run a game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="23" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ab7213d7d60e22c621e5d2bbd8655a0c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.ReinitializeGame</definition>
+        <argsstring>()</argsstring>
+        <name>ReinitializeGame</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.ReinitializeGame</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a4b7d6b9e7e743e0cb4836338ce33b0ab">ReinitializeGame</reimplementedby>
+        <briefdescription>
+<para>Restart the game, performs similar to initialize the game but ensures that the notifier is recreated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="28" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a19569beea69eb5b78afd0f10e22b784e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestPassTurn</definition>
+        <argsstring>()</argsstring>
+        <name>RequestPassTurn</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestPassTurn</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a70db82dd2420d3ed7b6c8e974509dc15">RequestPassTurn</reimplementedby>
+        <briefdescription>
+<para>Try to pass the human player&apos;s turn if validation succeeds. Must be the player&apos;s special draw phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="35" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1afa30f0d22ffbd80d733f8ac926500596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestDrawFromDeck</definition>
+        <argsstring>()</argsstring>
+        <name>RequestDrawFromDeck</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestDrawFromDeck</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac81e06c026625206913610e231c17c18">RequestDrawFromDeck</reimplementedby>
+        <briefdescription>
+<para>Try to perform a draw from deck action after validation for the human player. Must be the player&apos;s normal draw phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="42" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a702c7c31f0e38bd71473423e47bba037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestDrawFromDiscard</definition>
+        <argsstring>()</argsstring>
+        <name>RequestDrawFromDiscard</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestDrawFromDiscard</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a124c50c0d101afc1f2ead8106741dcd2">RequestDrawFromDiscard</reimplementedby>
+        <briefdescription>
+<para>Try to perform a draw from discard action after validation for the human player. Must be the player&apos;s draw phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="49" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a1fe0abf566a9865f3e8a5b899933458a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestDiscardWithCardAt</definition>
+        <argsstring>(int index)</argsstring>
+        <name>RequestDiscardWithCardAt</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestDiscardWithCardAt</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a67f6ce1fba52989a76eae898601a42a7">RequestDiscardWithCardAt</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Try to perform a discard action after validation for the human player. Must be the player&apos;s discard phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="56" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a858e9170f05a2d60ce1f5253b04f4480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestKnockWithCardAt</definition>
+        <argsstring>(int index)</argsstring>
+        <name>RequestKnockWithCardAt</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestKnockWithCardAt</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a5a549e9c56d647ad626e5d1f449c2c56">RequestKnockWithCardAt</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Try to perform a knock action after validation for the human player. Must be the player&apos;s discard phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="63" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aebca17a253be6a800ae78d27e3de31c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestCardReposition</definition>
+        <argsstring>(int initialIndex, int newIndex)</argsstring>
+        <name>RequestCardReposition</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.RequestCardReposition</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a7fe22f1a2c5645a547149b337461092e">RequestCardReposition</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>initialIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newIndex</declname>
+        </param>
+        <briefdescription>
+<para>Try to reposition the cards within the human player&apos;s hand. Must be the player&apos;s turn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="70" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1abeb7eeb23585f1d2381e9d916ef020d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.CheckComputerPlayerDeadwood</definition>
+        <argsstring>()</argsstring>
+        <name>CheckComputerPlayerDeadwood</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.CheckComputerPlayerDeadwood</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a700997efaf3fc22271a60ebc10e2df20">CheckComputerPlayerDeadwood</reimplementedby>
+        <briefdescription>
+<para>Get the deadwood remaining for the computer player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The deadwood remaining for the computer player</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="76" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a6a9f38d737d0e88587feaeb79157ef30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.NotifyThatEndOfRoundIsDisplayed</definition>
+        <argsstring>()</argsstring>
+        <name>NotifyThatEndOfRoundIsDisplayed</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.NotifyThatEndOfRoundIsDisplayed</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac39abe0f677341479e0004a9cc40bd2c">NotifyThatEndOfRoundIsDisplayed</reimplementedby>
+        <briefdescription>
+<para>Receive Indication that display of end of round information has begun displaying </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="81" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4816d74a729913f29897c008d331a918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.EndOfRoundDisplayIsFinished</definition>
+        <argsstring>()</argsstring>
+        <name>EndOfRoundDisplayIsFinished</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.EndOfRoundDisplayIsFinished</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1af6e429e06f0a984b649d8bb20d9d7af7">EndOfRoundDisplayIsFinished</reimplementedby>
+        <briefdescription>
+<para>Recieve notice that the end of round display is done displaying and the next round/game should begin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="86" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a7bc7555356b81f5ea8e83ffc70207b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.DocumentRoundResults</definition>
+        <argsstring>(Player&lt; PlayingCard &gt; winner, int points, GinRummyRoundEndingCase reason)</argsstring>
+        <name>DocumentRoundResults</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.DocumentRoundResults</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1aa8a766fda28047b177e6cae11b198f20">DocumentRoundResults</reimplementedby>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>winner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d" kindref="member">GinRummyRoundEndingCase</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Recieve results to document about the end of the round. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>winner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference to the player that won</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of points won by the player</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The round ending reason</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="94" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ade360ff0e8a2cb2eaec8a4c2735ad4b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GinRummyViewData</type>
+        <definition>GinRummyViewData EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.FetchViewData</definition>
+        <argsstring>()</argsstring>
+        <name>FetchViewData</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.FetchViewData</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9ad85b2f68f1564898175c4b982866e2">FetchViewData</reimplementedby>
+        <briefdescription>
+<para>Returns data used to render graphical elements to the screen after each state update. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The data the view needs to redisplay itself</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="100" column="33" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" bodystart="100" bodyend="103"/>
+        <references refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_records_1aaa331265ed07c400cee86c5ab9471405" compoundref="_gin_rummy_view_data_8cs" startline="15" endline="59">EarnShardsForCards.Shared.Data.Records.GinRummyViewData</references>
+      </memberdef>
+      <memberdef kind="function" id="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aa49acd270eb35152eb97a53f33a60f66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EndOfRoundData</type>
+        <definition>EndOfRoundData EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.FetchEndOfRoundData</definition>
+        <argsstring>()</argsstring>
+        <name>FetchEndOfRoundData</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController.FetchEndOfRoundData</qualifiedname>
+        <reimplementedby refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9d5048e4bcc6342c7a85dc80113f8995">FetchEndOfRoundData</reimplementedby>
+        <briefdescription>
+<para>Returns the data for the end of display to work. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>End of round related information</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="109" column="31"/>
+        <references refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_records_1a82538dd7b5234464c895bf0b75e1b4d5" compoundref="_end_of_round_data_8cs" startline="16" endline="37">EarnShardsForCards.Shared.Data.Records.EndOfRoundData</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the open functionality that can be taken a GinRummyController class by other classes. The main purpose of this interface is to allow a mock controller to be used for testing purposes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</label>
+        <link refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller"/>
+      </node>
+      <node id="2">
+        <label>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</label>
+        <link refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" line="17" column="22" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IGinRummyController.cs" bodystart="18" bodyend="110"/>
+    <listofallmembers>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1abeb7eeb23585f1d2381e9d916ef020d2" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>CheckComputerPlayerDeadwood</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a7bc7555356b81f5ea8e83ffc70207b6a" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>DocumentRoundResults</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4816d74a729913f29897c008d331a918" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>EndOfRoundDisplayIsFinished</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aa49acd270eb35152eb97a53f33a60f66" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>FetchEndOfRoundData</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ade360ff0e8a2cb2eaec8a4c2735ad4b3" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>FetchViewData</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4ea16a5de470406c16b84f1169daea49" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>InitializeGame</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a6a9f38d737d0e88587feaeb79157ef30" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>NotifyThatEndOfRoundIsDisplayed</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ab7213d7d60e22c621e5d2bbd8655a0c4" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>ReinitializeGame</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aebca17a253be6a800ae78d27e3de31c0" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>RequestCardReposition</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a1fe0abf566a9865f3e8a5b899933458a" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>RequestDiscardWithCardAt</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1afa30f0d22ffbd80d733f8ac926500596" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>RequestDrawFromDeck</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a702c7c31f0e38bd71473423e47bba037" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>RequestDrawFromDiscard</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a858e9170f05a2d60ce1f5253b04f4480" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>RequestKnockWithCardAt</name></member>
+      <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a19569beea69eb5b78afd0f10e22b784e" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</scope><name>RequestPassTurn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

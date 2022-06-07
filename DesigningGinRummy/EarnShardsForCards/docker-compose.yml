@@ -1,0 +1,47 @@
+version: '3.4'
+
+services:
+  earnshardsforcards.server:
+    image: ${DOCKER_REGISTRY-}earnshardsforcardsserver
+    build:
+      context: .
+      dockerfile: EarnShardsForCards/Server/Dockerfile
+    depends_on:
+      - db
+    env_file: 
+      - deployment.env
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - "5000:80"
+  db:
+    image: mariadb
+    restart: always
+    healthcheck:
+      test:
+      - CMD
+      - mysqladmin
+      - ping
+      - -h
+      - 127.0.0.1
+      - --silent
+      interval: 3s
+      retries: 5
+      start_period: 30s
+    ports:
+      - "3306:3336"
+    env_file: 
+      - deployment.env
+    volumes: 
+      - ./dbinit:/docker-entrypoint-initdb.d
+      - type: volume
+        source: db-data
+        target: /var/lib/mysql
+        volume: {}
+networks:
+  default:
+    name: devondalrymple-network
+volumes:
+  db-data:
+    name: devondalrymple-db-data

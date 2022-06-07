@@ -1,0 +1,126 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Score\+Handler Class Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler}\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler}{Gin\+Rummy\+Score\+Handler}} is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a99fb7bc1d744c3b62d18c93849e9ee48}{Gin\+Rummy\+Score\+Handler}} (\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller}{IGin\+Rummy\+Controller}} controller, \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ player, \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Gin\+Rummy\+Computer\+Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ computer\+Player)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler}{Gin\+Rummy\+Score\+Handler}} with a reference to the controller, human player, and computer player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a0b440a2f9c95809767c406c97a8010ab}{Reward\+Points}} (bool is\+Big\+Gin)
+\begin{DoxyCompactList}\small\item\em Calculates the number of points at the end of around. Once points are calculated it handles notifying of the score and other information to the user. \end{DoxyCompactList}\item 
+Eliminate\+Deadwood\+Data \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a3caafaad80f51a61e1987827d68a53d4}{Eliminate\+Deadwood}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ player, IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set}{Meld\+Set}} $>$? sets\+From\+Opponent, IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{Meld\+Run}} $>$? runs\+From\+Opponents)
+\begin{DoxyCompactList}\small\item\em Determine the largest amount of deadwood that can be eliminated for a player. Also returns the melds created in order allow laying off deadwood if needed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a540e0274696ce9af106f6b39f8c7f069}{Can\+Player\+Knock}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ player)
+\begin{DoxyCompactList}\small\item\em Determine if the provided player can knock given the cards in their hand. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a96fdac9f2e0967737f413972bec17ab2}{Does\+Player\+Have\+Big\+Gin}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ player)
+\begin{DoxyCompactList}\small\item\em Determine if the provided player has gone Big Gin this turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler}{Gin\+Rummy\+Score\+Handler}} is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a99fb7bc1d744c3b62d18c93849e9ee48}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a99fb7bc1d744c3b62d18c93849e9ee48}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}!GinRummyScoreHandler@{GinRummyScoreHandler}}
+\index{GinRummyScoreHandler@{GinRummyScoreHandler}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}}
+\doxysubsubsection{\texorpdfstring{GinRummyScoreHandler()}{GinRummyScoreHandler()}}
+{\footnotesize\ttfamily Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Score\+Handler.\+Gin\+Rummy\+Score\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller}{IGin\+Rummy\+Controller}}}]{controller,  }\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{player,  }\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player}{Gin\+Rummy\+Computer\+Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{computer\+Player }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler}{Gin\+Rummy\+Score\+Handler}} with a reference to the controller, human player, and computer player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The game controller\\
+\hline
+{\em player} & The user\textquotesingle{}s player\\
+\hline
+{\em computer\+Player} & The computer player\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a540e0274696ce9af106f6b39f8c7f069}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a540e0274696ce9af106f6b39f8c7f069}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}!CanPlayerKnock@{CanPlayerKnock}}
+\index{CanPlayerKnock@{CanPlayerKnock}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}}
+\doxysubsubsection{\texorpdfstring{CanPlayerKnock()}{CanPlayerKnock()}}
+{\footnotesize\ttfamily bool Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Score\+Handler.\+Can\+Player\+Knock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{player }\end{DoxyParamCaption})}
+
+
+
+Determine if the provided player can knock given the cards in their hand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player to see if knocking is allowed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can knock (10 or less deadwood)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a96fdac9f2e0967737f413972bec17ab2}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a96fdac9f2e0967737f413972bec17ab2}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}!DoesPlayerHaveBigGin@{DoesPlayerHaveBigGin}}
+\index{DoesPlayerHaveBigGin@{DoesPlayerHaveBigGin}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}}
+\doxysubsubsection{\texorpdfstring{DoesPlayerHaveBigGin()}{DoesPlayerHaveBigGin()}}
+{\footnotesize\ttfamily bool Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Score\+Handler.\+Does\+Player\+Have\+Big\+Gin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{player }\end{DoxyParamCaption})}
+
+
+
+Determine if the provided player has gone Big Gin this turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player to see if they have Big Gin\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player has Big Gin
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a3caafaad80f51a61e1987827d68a53d4}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a3caafaad80f51a61e1987827d68a53d4}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}!EliminateDeadwood@{EliminateDeadwood}}
+\index{EliminateDeadwood@{EliminateDeadwood}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}}
+\doxysubsubsection{\texorpdfstring{EliminateDeadwood()}{EliminateDeadwood()}}
+{\footnotesize\ttfamily Eliminate\+Deadwood\+Data Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Score\+Handler.\+Eliminate\+Deadwood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{player,  }\item[{IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set}{Meld\+Set}} $>$?}]{sets\+From\+Opponent,  }\item[{IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run}{Meld\+Run}} $>$?}]{runs\+From\+Opponents }\end{DoxyParamCaption})}
+
+
+
+Determine the largest amount of deadwood that can be eliminated for a player. Also returns the melds created in order allow laying off deadwood if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player to view the hand of\\
+\hline
+{\em sets\+From\+Opponent} & The sets the opponent eliminated deadwood using\\
+\hline
+{\em runs\+From\+Opponents} & The runs the opponent eliminated deadwood using\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data}{Data}} related to removed deadwood
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a0b440a2f9c95809767c406c97a8010ab}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_a0b440a2f9c95809767c406c97a8010ab}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}!RewardPoints@{RewardPoints}}
+\index{RewardPoints@{RewardPoints}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler}}
+\doxysubsubsection{\texorpdfstring{RewardPoints()}{RewardPoints()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Score\+Handler.\+Reward\+Points (\begin{DoxyParamCaption}\item[{bool}]{is\+Big\+Gin }\end{DoxyParamCaption})}
+
+
+
+Calculates the number of points at the end of around. Once points are calculated it handles notifying of the score and other information to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Big\+Gin} & Whether the round ended by Big Gin\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Gin\+Rummy/Gin\+Rummy\+Score\+Handler.\+cs\end{DoxyCompactItemize}

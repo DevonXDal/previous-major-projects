@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Earn Cards for Shards</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespace_earn_shards_for_cards.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_server_1_1_controllers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_server_1_1_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_server_1_1_models.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_server_1_1_pages.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_records.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_models.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_shared_1_1_models_1_1_records.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_test.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespace_earn_shards_for_cards_1_1_test_1_1_models.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_card_test.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

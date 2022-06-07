@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.Interfaces.IMeld Interface Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</primary></indexterm>
+<para>
+
+<para>This <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld">IMeld</link> represents melds (sets/runs) from the game, Gin Rummy. It provides the common functionality for the melds and allows them to be stored together in a collection. Implementing classes should make use of a private constructor. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.Interfaces.IMeld:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld">IMeld</link>? <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1a170659e4d07e30e4915bde695d409ae1">GenerateMeldFromCards</link> (IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; cards)</para>
+
+<para>Create a meld set from three or four cards that have the same rank </para>
+</listitem>
+            <listitem><para>bool <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1ae7ebf694fe6f35520df8aebbeb66fea3">CanAddNewCard</link> (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> newCard)</para>
+
+<para>Verifies that a new card is able to become part of the meld. </para>
+</listitem>
+            <listitem><para><link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld">IMeld</link> <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1aae2b858b42ad3c944ea5bc08cb993b55">Insert</link> (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> card)</para>
+
+<para>Adds a card to the meld without verification that the card can be added. </para>
+</listitem>
+            <listitem><para>int <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1af30147828a676f8393401ff110427ac0">DeadwoodRemovedByMeld</link> ()</para>
+
+<para>Determines the deadwood that is removed from this meld being formed. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld">IMeld</link> represents melds (sets/runs) from the game, Gin Rummy. It provides the common functionality for the melds and allows them to be stored together in a collection. Implementing classes should make use of a private constructor. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1ae7ebf694fe6f35520df8aebbeb66fea3"/><section>
+    <title>CanAddNewCard()</title>
+<indexterm><primary>CanAddNewCard</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</primary><secondary>CanAddNewCard</secondary></indexterm>
+<para><computeroutput>bool EarnShardsForCards.Shared.Data.Interfaces.IMeld.CanAddNewCard (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> newCard)</computeroutput></para><para>
+
+<para>Verifies that a new card is able to become part of the meld. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>newCard</entry><entry>
+<para>The new card to add to the meld</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1a2f48ff4f11396edcda90f63acd89bddb">EarnShardsForCards.Shared.Data.GinRummy.MeldRun</link>, and <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1ab56cee12c949199cb576cb200748ff30">EarnShardsForCards.Shared.Data.GinRummy.MeldSet</link>.</para>
+</section>
+<anchor xml:id="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1af30147828a676f8393401ff110427ac0"/><section>
+    <title>DeadwoodRemovedByMeld()</title>
+<indexterm><primary>DeadwoodRemovedByMeld</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</primary><secondary>DeadwoodRemovedByMeld</secondary></indexterm>
+<para><computeroutput>int EarnShardsForCards.Shared.Data.Interfaces.IMeld.DeadwoodRemovedByMeld ( )</computeroutput></para><para>
+
+<para>Determines the deadwood that is removed from this meld being formed. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The deadwood removed by the meld</para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1a1d4ea378e65b7dfbd118c6d24053e23c">EarnShardsForCards.Shared.Data.GinRummy.MeldRun</link>, and <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1acfd2556ab07511a86abc42f65e0ba3f6">EarnShardsForCards.Shared.Data.GinRummy.MeldSet</link>.</para>
+</section>
+<anchor xml:id="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1a170659e4d07e30e4915bde695d409ae1"/><section>
+    <title>GenerateMeldFromCards()</title>
+<indexterm><primary>GenerateMeldFromCards</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</primary><secondary>GenerateMeldFromCards</secondary></indexterm>
+<para><computeroutput><link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld">IMeld</link>? EarnShardsForCards.Shared.Data.Interfaces.IMeld.GenerateMeldFromCards (IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; cards)</computeroutput></para><para>
+
+<para>Create a meld set from three or four cards that have the same rank </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cards</entry><entry>
+<para>The cards used to create the meld</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Either the meld that was created, or if the meld cannot be formed by the cards, null</para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1abeaa1e41060f3bc0b922ac41a157f07e">EarnShardsForCards.Shared.Data.GinRummy.MeldRun</link>, and <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1a0c276dfc0735edc2abb83147679fee4c">EarnShardsForCards.Shared.Data.GinRummy.MeldSet</link>.</para>
+</section>
+<anchor xml:id="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1aae2b858b42ad3c944ea5bc08cb993b55"/><section>
+    <title>Insert()</title>
+<indexterm><primary>Insert</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.IMeld</primary><secondary>Insert</secondary></indexterm>
+<para><computeroutput><link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld">IMeld</link> EarnShardsForCards.Shared.Data.Interfaces.IMeld.Insert (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> card)</computeroutput></para><para>
+
+<para>Adds a card to the meld without verification that the card can be added. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>card</entry><entry>
+<para>The card to be added</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1acbf9f45976655c3c063395a666ae2072">EarnShardsForCards.Shared.Data.GinRummy.MeldRun</link>, and <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1ac98530fd7d6b59ad398d705d1370e9c4">EarnShardsForCards.Shared.Data.GinRummy.MeldSet</link>.</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IMeld.cs</section>
+</section>

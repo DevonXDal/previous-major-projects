@@ -1,0 +1,4 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_e5afab8fdfd0fcbc9fac67fdf52700701 =
+[
+    [ "Email", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_e5afab8fdfd0fcbc9fac67fdf52700701.html#aa1c049fa08e558f79ba13117bee48e3f", null ]
+];

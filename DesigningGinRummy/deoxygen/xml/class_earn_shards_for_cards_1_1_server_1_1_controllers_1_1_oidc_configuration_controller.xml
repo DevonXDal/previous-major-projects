@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Server::Controllers::OidcConfigurationController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Controller</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a0a8cbf4f001b4c32857eab9d6f64f7c5" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller" kindref="compound">OidcConfigurationController</ref> &gt;</type>
+        <definition>readonly ILogger&lt;OidcConfigurationController&gt; EarnShardsForCards.Server.Controllers.OidcConfigurationController._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.OidcConfigurationController._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" line="8" column="34" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a98c8059c642d42d631724f8974e643e5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IClientRequestParametersProvider</type>
+        <definition>IClientRequestParametersProvider EarnShardsForCards.Server.Controllers.OidcConfigurationController.ClientRequestParametersProvider</definition>
+        <argsstring></argsstring>
+        <name>ClientRequestParametersProvider</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.OidcConfigurationController.ClientRequestParametersProvider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" line="16" column="49" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a88fa26c3da54bedc237e829b6906779e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Server.Controllers.OidcConfigurationController.OidcConfigurationController</definition>
+        <argsstring>(IClientRequestParametersProvider clientRequestParametersProvider, ILogger&lt; OidcConfigurationController &gt; logger)</argsstring>
+        <name>OidcConfigurationController</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.OidcConfigurationController.OidcConfigurationController</qualifiedname>
+        <param>
+          <type>IClientRequestParametersProvider</type>
+          <declname>clientRequestParametersProvider</declname>
+        </param>
+        <param>
+          <type>ILogger&lt; <ref refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller" kindref="compound">OidcConfigurationController</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" line="10" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1aa90733d40b68198d15ca1c6e9f753884" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult EarnShardsForCards.Server.Controllers.OidcConfigurationController.GetClientRequestParameters</definition>
+        <argsstring>([FromRoute] string clientId)</argsstring>
+        <name>GetClientRequestParameters</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.OidcConfigurationController.GetClientRequestParameters</qualifiedname>
+        <param>
+          <attributes>[FromRoute]</attributes>
+          <type>string</type>
+          <declname>clientId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" line="19" column="30" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Controller</label>
+      </node>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Controllers.OidcConfigurationController</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Controller</label>
+      </node>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Controllers.OidcConfigurationController</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" line="6" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a0a8cbf4f001b4c32857eab9d6f64f7c5" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::OidcConfigurationController</scope><name>_logger</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a98c8059c642d42d631724f8974e643e5" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::OidcConfigurationController</scope><name>ClientRequestParametersProvider</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1aa90733d40b68198d15ca1c6e9f753884" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::OidcConfigurationController</scope><name>GetClientRequestParameters</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a88fa26c3da54bedc237e829b6906779e" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::OidcConfigurationController</scope><name>OidcConfigurationController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+\hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Enumerations Namespace Reference}
+\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations}\index{EarnShardsForCards.Shared.Data.Enumerations@{EarnShardsForCards.Shared.Data.Enumerations}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a53cdfddcbc89aea7fc9b14c34a0d0597}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a53cdfddcbc89aea7fc9b14c34a0d0597}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a53cdfddcbc89aea7fc9b14c34a0d0597}{Card\+Type}} \{ {\bfseries Playing\+Card}
+ \}
+\begin{DoxyCompactList}\small\item\em The Card\+Type is used to indicate the type of deck to build using the abstract factory pattern. Specifying Playing\+Card, for example, will indicate to use a Playing\+Card\+Deck object and build what is needed from there \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_aa2438d4df10a8ee06af66c5d9ee7eeb7}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_aa2438d4df10a8ee06af66c5d9ee7eeb7}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_aa2438d4df10a8ee06af66c5d9ee7eeb7}{Game\+Button\+Type}} \{ {\bfseries Start}
+, {\bfseries Restart}
+, {\bfseries Pass}
+ \}
+\begin{DoxyCompactList}\small\item\em Signals a button displayed to the user which message to show and which action to notify about. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a68b0c6117dd2c40250bdd6adff11fb62}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a68b0c6117dd2c40250bdd6adff11fb62}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a68b0c6117dd2c40250bdd6adff11fb62}{Game\+Type}} \{ {\bfseries Gin\+Rummy}
+ \}
+\begin{DoxyCompactList}\small\item\em Game\+Type is used for building objects based on the game being played. In the case of a Playing\+Card\+Deck, even though many games use it, some games use only some of the cards, some use more than the typical 52. Game\+Type allows improved control of the deck provided for each game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a6671f737524d08e9dfb66d58d6f5019d}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a6671f737524d08e9dfb66d58d6f5019d}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a6671f737524d08e9dfb66d58d6f5019d}{Gin\+Rummy\+Round\+Ending\+Case}} \{ \newline
+{\bfseries Tie}
+, {\bfseries Knock}
+, {\bfseries Undercut}
+, {\bfseries Gin}
+, \newline
+{\bfseries Big\+Gin}
+ \}
+\begin{DoxyCompactList}\small\item\em Gin\+Rummy\+Round\+Ending\+Case is used to provide the reason that the round ended. This is useful for scoring and for displaying the end of round details to the user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a4eb573d2fc22fe65f0a36a855679c785}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a4eb573d2fc22fe65f0a36a855679c785}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a4eb573d2fc22fe65f0a36a855679c785}{Phase\+State}} \{ {\bfseries Draw}
+, {\bfseries Discard}
+ \}
+\begin{DoxyCompactList}\small\item\em A Phase\+State represents one of the two possible phases of games like Gin Rummy. It is used to tell which step the current player needs to take next. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac90f88b4404e5cd40205a80002118631}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac90f88b4404e5cd40205a80002118631}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac90f88b4404e5cd40205a80002118631}{Rank}} \{ \newline
+{\bfseries Ace}
+, {\bfseries Two}
+, {\bfseries Three}
+, {\bfseries Four}
+, \newline
+{\bfseries Five}
+, {\bfseries Six}
+, {\bfseries Seven}
+, {\bfseries Eight}
+, \newline
+{\bfseries Nine}
+, {\bfseries Ten}
+, {\bfseries Jack}
+, {\bfseries Queen}
+, \newline
+{\bfseries King}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents one of the thirteen possible alphanumeric characters on a playing card. It presents an order to the cards and can be associated with a point value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a29d9c7022be5beaaf7d28bfc536bcbed}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a29d9c7022be5beaaf7d28bfc536bcbed}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a29d9c7022be5beaaf7d28bfc536bcbed}{Skill\+Level}} \{ {\bfseries Beginner}
+, {\bfseries Intermediate}
+, {\bfseries Advanced}
+ \}
+\begin{DoxyCompactList}\small\item\em The Skill\+Level represents the difficulty rating of the computer player. Changing this value will allow the computer player to make smarter decisions about how to play. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a3fdb50d9b1d16cf71839125a3e5a4b85}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a3fdb50d9b1d16cf71839125a3e5a4b85}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a3fdb50d9b1d16cf71839125a3e5a4b85}{Suit}} \{ {\bfseries Clubs}
+, {\bfseries Diamonds}
+, {\bfseries Hearts}
+, {\bfseries Spades}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents one of the four possible shapes that appear on a playing card. It is in combination with suits and ranks that 52 playing cards are created. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac745e0e385c57176bf0a38fba72c7a04}\label{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac745e0e385c57176bf0a38fba72c7a04}} 
+enum \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac745e0e385c57176bf0a38fba72c7a04}{Turn\+State}} \{ {\bfseries Human}
+, {\bfseries Computer}
+ \}
+\begin{DoxyCompactList}\small\item\em A Turn\+State represents whose turn it is to perform an action that will alter the state of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}

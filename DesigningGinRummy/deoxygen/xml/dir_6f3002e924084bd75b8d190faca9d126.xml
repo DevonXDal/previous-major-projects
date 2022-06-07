@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_6f3002e924084bd75b8d190faca9d126" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations</compoundname>
+    <innerfile refid="_card_type_8cs">CardType.cs</innerfile>
+    <innerfile refid="_game_button_type_8cs">GameButtonType.cs</innerfile>
+    <innerfile refid="_game_type_8cs">GameType.cs</innerfile>
+    <innerfile refid="_gin_rummy_round_ending_case_8cs">GinRummyRoundEndingCase.cs</innerfile>
+    <innerfile refid="_phase_state_8cs">PhaseState.cs</innerfile>
+    <innerfile refid="_rank_8cs">Rank.cs</innerfile>
+    <innerfile refid="_skill_level_8cs">SkillLevel.cs</innerfile>
+    <innerfile refid="_suit_8cs">Suit.cs</innerfile>
+    <innerfile refid="_turn_state_8cs">TurnState.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations/"/>
+  </compounddef>
+</doxygen>

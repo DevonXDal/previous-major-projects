@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link> is representative of a real-world player that is playing a card game. They have their own hand of cards. Players also pick up and rearrange the cards that they have. When each round is over, they then discard their hand. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a58bb072e63a691c5c0b0ed76af6b6b5a"/><emphasis role="strong">Player</emphasis> ()</para>
+
+<para>Create a new player with an empty hand </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a72494dca816c1d0e34f6657c61537330">Count</link> ()</para>
+
+<para>Get the number of cards in the player&apos;s hand </para>
+</listitem>
+            <listitem><para>T <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a66c7db2863cb621bba12b24fba9d71f2">RemoveAt</link> (int index)</para>
+
+<para>Remove and return a card from a specific index in the hand. Shifts the index of each card after the removed card to the left by one. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a97a3ad8c167688397390c6a28f8e520b">Insert</link> (int index, T card)</para>
+
+<para>Add a card to a specific index in the hand or the end of the hand </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a9882b91fa15f361259bc11e545ee9721"/>void <emphasis role="strong">Clear</emphasis> ()</para>
+
+<para>Empty the hand of all of its cards without returning them. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1aa1cc6122108d76106a0ba17fa47fca29"/>IList&lt; T &gt; <emphasis role="strong">Cards</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link> is representative of a real-world player that is playing a card game. They have their own hand of cards. Players also pick up and rearrange the cards that they have. When each round is over, they then discard their hand. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Represents some type of card for a card/board game</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link></emphasis></para>
+</simplesect>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a72494dca816c1d0e34f6657c61537330"/><section>
+    <title>Count()</title>
+<indexterm><primary>Count</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</primary><secondary>Count</secondary></indexterm>
+<para><computeroutput>int <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">EarnShardsForCards.Shared.Data.GenericGameObjects.Player</link>&lt; T &gt;.Count ( )</computeroutput></para><para>
+
+<para>Get the number of cards in the player&apos;s hand </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>How many cards are in the player&apos;s hand</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a97a3ad8c167688397390c6a28f8e520b"/><section>
+    <title>Insert()</title>
+<indexterm><primary>Insert</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</primary><secondary>Insert</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">EarnShardsForCards.Shared.Data.GenericGameObjects.Player</link>&lt; T &gt;.Insert (int index, T card)</computeroutput></para><para>
+
+<para>Add a card to a specific index in the hand or the end of the hand </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>The position of which to add the card to the hand</para>
+</entry>
+                            </row>
+                            <row>
+<entry>card</entry><entry>
+<para>The game card to add to the hand</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a66c7db2863cb621bba12b24fba9d71f2"/><section>
+    <title>RemoveAt()</title>
+<indexterm><primary>RemoveAt</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Player&lt; T &gt;</primary><secondary>RemoveAt</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">EarnShardsForCards.Shared.Data.GenericGameObjects.Player</link>&lt; T &gt;.RemoveAt (int index)</computeroutput></para><para>
+
+<para>Remove and return a card from a specific index in the hand. Shifts the index of each card after the removed card to the left by one. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>The index that the card can be found.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The removed card</para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Player.cs</section>
+</section>

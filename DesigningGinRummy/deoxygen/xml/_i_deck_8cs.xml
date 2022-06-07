@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_i_deck_8cs" kind="file" language="C#">
+    <compoundname>IDeck.cs</compoundname>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck" prot="public">EarnShardsForCards::Shared::Data::Interfaces::Deck</innerclass>
+    <innernamespace refid="namespace_earn_shards_for_cards">EarnShardsForCards</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_shared">EarnShardsForCards::Shared</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data">EarnShardsForCards::Shared::Data</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces">EarnShardsForCards::Shared::Data::Interfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_earn_shards_for_cards" kindref="compound">EarnShardsForCards</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_shared" kindref="compound">Shared</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data" kindref="compound">Data</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects" kindref="compound">GenericGameObjects</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces" kindref="compound">EarnShardsForCards.Shared.Data.Interfaces</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck" kindref="compound">Deck</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a20ad6d9e1457eb13307cc90efea1fadb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a20ad6d9e1457eb13307cc90efea1fadb" kindref="member">Count</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a231a209fda4b7addbdc173d626a581ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card" kindref="compound">Card</ref><sp/><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a231a209fda4b7addbdc173d626a581ad" kindref="member">Draw</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1acc917f25f48cf920098a0a746edbbfcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1acc917f25f48cf920098a0a746edbbfcb" kindref="member">Shuffle</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IDeck.cs"/>
+  </compounddef>
+</doxygen>

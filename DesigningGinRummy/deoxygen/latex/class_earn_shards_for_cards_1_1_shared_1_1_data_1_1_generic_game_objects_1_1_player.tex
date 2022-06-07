@@ -1,0 +1,107 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Player\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}} is representative of a real-\/world player that is playing a card game. They have their own hand of cards. Players also pick up and rearrange the cards that they have. When each round is over, they then discard their hand.  
+
+
+
+
+Inheritance diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Player\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a58bb072e63a691c5c0b0ed76af6b6b5a}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a58bb072e63a691c5c0b0ed76af6b6b5a}} 
+{\bfseries Player} ()
+\begin{DoxyCompactList}\small\item\em Create a new player with an empty hand \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a72494dca816c1d0e34f6657c61537330}{Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of cards in the player\textquotesingle{}s hand \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a66c7db2863cb621bba12b24fba9d71f2}{Remove\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Remove and return a card from a specific index in the hand. Shifts the index of each card after the removed card to the left by one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a97a3ad8c167688397390c6a28f8e520b}{Insert}} (int index, T card)
+\begin{DoxyCompactList}\small\item\em Add a card to a specific index in the hand or the end of the hand \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a9882b91fa15f361259bc11e545ee9721}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a9882b91fa15f361259bc11e545ee9721}} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em Empty the hand of all of its cards without returning them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_aa1cc6122108d76106a0ba17fa47fca29}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_aa1cc6122108d76106a0ba17fa47fca29}} 
+IList$<$ T $>$ {\bfseries Cards}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}} is representative of a real-\/world player that is playing a card game. They have their own hand of cards. Players also pick up and rearrange the cards that they have. When each round is over, they then discard their hand. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Represents some type of card for a card/board game\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card}{Card}}}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a72494dca816c1d0e34f6657c61537330}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a72494dca816c1d0e34f6657c61537330}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}!Count@{Count}}
+\index{Count@{Count}!EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Player}}$<$ T $>$.Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of cards in the player\textquotesingle{}s hand 
+
+\begin{DoxyReturn}{Returns}
+How many cards are in the player\textquotesingle{}s hand
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a97a3ad8c167688397390c6a28f8e520b}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a97a3ad8c167688397390c6a28f8e520b}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Player}}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{T}]{card }\end{DoxyParamCaption})}
+
+
+
+Add a card to a specific index in the hand or the end of the hand 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The position of which to add the card to the hand\\
+\hline
+{\em card} & The game card to add to the hand\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a66c7db2863cb621bba12b24fba9d71f2}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_a66c7db2863cb621bba12b24fba9d71f2}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}!RemoveAt@{RemoveAt}}
+\index{RemoveAt@{RemoveAt}!EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.Player$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveAt()}{RemoveAt()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Player}}$<$ T $>$.Remove\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Remove and return a card from a specific index in the hand. Shifts the index of each card after the removed card to the left by one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index that the card can be found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The removed card
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Generic\+Game\+Objects/Player.\+cs\end{DoxyCompactItemize}

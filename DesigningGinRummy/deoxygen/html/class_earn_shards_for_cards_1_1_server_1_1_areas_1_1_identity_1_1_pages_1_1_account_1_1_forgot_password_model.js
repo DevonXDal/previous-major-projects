@@ -1,0 +1,5 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model =
+[
+    [ "InputModel", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model_1_1_input_model.html", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model_1_1_input_model" ],
+    [ "Input", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model.html#a1d0ff4897914ef6b266634b2772c50c3", null ]
+];

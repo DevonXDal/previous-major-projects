@@ -1,0 +1,51 @@
+.TH "EarnShardsForCards.Shared.Data.Enumerations" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.Enumerations
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBCardType\fP { \fBPlayingCard\fP }"
+.br
+.RI "The CardType is used to indicate the type of deck to build using the abstract factory pattern\&. Specifying PlayingCard, for example, will indicate to use a PlayingCardDeck object and build what is needed from there "
+.ti -1c
+.RI "enum \fBGameButtonType\fP { \fBStart\fP, \fBRestart\fP, \fBPass\fP }"
+.br
+.RI "Signals a button displayed to the user which message to show and which action to notify about\&. "
+.ti -1c
+.RI "enum \fBGameType\fP { \fBGinRummy\fP }"
+.br
+.RI "GameType is used for building objects based on the game being played\&. In the case of a PlayingCardDeck, even though many games use it, some games use only some of the cards, some use more than the typical 52\&. GameType allows improved control of the deck provided for each game\&. "
+.ti -1c
+.RI "enum \fBGinRummyRoundEndingCase\fP { \fBTie\fP, \fBKnock\fP, \fBUndercut\fP, \fBGin\fP, \fBBigGin\fP }"
+.br
+.RI "GinRummyRoundEndingCase is used to provide the reason that the round ended\&. This is useful for scoring and for displaying the end of round details to the user\&. "
+.ti -1c
+.RI "enum \fBPhaseState\fP { \fBDraw\fP, \fBDiscard\fP }"
+.br
+.RI "A PhaseState represents one of the two possible phases of games like Gin Rummy\&. It is used to tell which step the current player needs to take next\&. "
+.ti -1c
+.RI "enum \fBRank\fP { \fBAce\fP, \fBTwo\fP, \fBThree\fP, \fBFour\fP, \fBFive\fP, \fBSix\fP, \fBSeven\fP, \fBEight\fP, \fBNine\fP, \fBTen\fP, \fBJack\fP, \fBQueen\fP, \fBKing\fP }"
+.br
+.RI "Represents one of the thirteen possible alphanumeric characters on a playing card\&. It presents an order to the cards and can be associated with a point value\&. "
+.ti -1c
+.RI "enum \fBSkillLevel\fP { \fBBeginner\fP, \fBIntermediate\fP, \fBAdvanced\fP }"
+.br
+.RI "The SkillLevel represents the difficulty rating of the computer player\&. Changing this value will allow the computer player to make smarter decisions about how to play\&. "
+.ti -1c
+.RI "enum \fBSuit\fP { \fBClubs\fP, \fBDiamonds\fP, \fBHearts\fP, \fBSpades\fP }"
+.br
+.RI "Represents one of the four possible shapes that appear on a playing card\&. It is in combination with suits and ranks that 52 playing cards are created\&. "
+.ti -1c
+.RI "enum \fBTurnState\fP { \fBHuman\fP, \fBComputer\fP }"
+.br
+.RI "A TurnState represents whose turn it is to perform an action that will alter the state of the game\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

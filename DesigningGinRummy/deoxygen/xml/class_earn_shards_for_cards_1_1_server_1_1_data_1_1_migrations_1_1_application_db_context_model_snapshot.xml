@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Server::Data::Migrations::ApplicationDbContextModelSnapshot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModelSnapshot</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot_1aced3eb27d8ff74c7cba22e67fe7a7ca3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildModel</name>
+        <qualifiedname>EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/ApplicationDbContextModelSnapshot.cs" line="14" column="33" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/ApplicationDbContextModelSnapshot.cs" bodystart="14" bodyend="417"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ModelSnapshot</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ModelSnapshot</label>
+      </node>
+    </collaborationgraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/ApplicationDbContextModelSnapshot.cs" line="12" column="12" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/ApplicationDbContextModelSnapshot.cs" bodystart="13" bodyend="418"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot_1aced3eb27d8ff74c7cba22e67fe7a7ca3" prot="protected" virt="non-virtual"><scope>EarnShardsForCards::Server::Data::Migrations::ApplicationDbContextModelSnapshot</scope><name>BuildModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set Class Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set}\index{EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set}{Meld\+Set}} is more of a virtual game support object than a real-\/world object. It represents the three or four cards that a player lays down at the end of a round that form a three-\/of-\/a-\/kind or four-\/of-\/a-\/kind such that there are three or four cards with the same rank but differing suits. Its primary purpose is to assist the scoring at the end of a round.  
+
+
+
+
+Inheritance diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ab56cee12c949199cb576cb200748ff30}{Can\+Add\+New\+Card}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} new\+Card)
+\begin{DoxyCompactList}\small\item\em Verifies that a new card can be added to the meld set \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_acfd2556ab07511a86abc42f65e0ba3f6}{Deadwood\+Removed\+By\+Meld}} ()
+\begin{DoxyCompactList}\small\item\em Determines the deadwood that is removed from this set being formed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}}? \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_a0c276dfc0735edc2abb83147679fee4c}{Generate\+Meld\+From\+Cards}} (IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ cards)
+\begin{DoxyCompactList}\small\item\em Create a meld set from three or four cards that have the same rank \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ac98530fd7d6b59ad398d705d1370e9c4}{Insert}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} card)
+\begin{DoxyCompactList}\small\item\em Adds a card to the meld without verification that the card can be added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_a9d629af1e80235fe95a04ff6053fe8c8}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_a9d629af1e80235fe95a04ff6053fe8c8}} 
+IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ {\bfseries Cards}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set}{Meld\+Set}} is more of a virtual game support object than a real-\/world object. It represents the three or four cards that a player lays down at the end of a round that form a three-\/of-\/a-\/kind or four-\/of-\/a-\/kind such that there are three or four cards with the same rank but differing suits. Its primary purpose is to assist the scoring at the end of a round. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ab56cee12c949199cb576cb200748ff30}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ab56cee12c949199cb576cb200748ff30}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}!CanAddNewCard@{CanAddNewCard}}
+\index{CanAddNewCard@{CanAddNewCard}!EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}}
+\doxysubsubsection{\texorpdfstring{CanAddNewCard()}{CanAddNewCard()}}
+{\footnotesize\ttfamily bool Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set.\+Can\+Add\+New\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}}}]{new\+Card }\end{DoxyParamCaption})}
+
+
+
+Verifies that a new card can be added to the meld set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Card} & The new card to be added to the set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the new card can be added
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_ae7ebf694fe6f35520df8aebbeb66fea3}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_acfd2556ab07511a86abc42f65e0ba3f6}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_acfd2556ab07511a86abc42f65e0ba3f6}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}!DeadwoodRemovedByMeld@{DeadwoodRemovedByMeld}}
+\index{DeadwoodRemovedByMeld@{DeadwoodRemovedByMeld}!EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}}
+\doxysubsubsection{\texorpdfstring{DeadwoodRemovedByMeld()}{DeadwoodRemovedByMeld()}}
+{\footnotesize\ttfamily int Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set.\+Deadwood\+Removed\+By\+Meld (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines the deadwood that is removed from this set being formed. 
+
+\begin{DoxyReturn}{Returns}
+The deadwood removed by the set
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_af30147828a676f8393401ff110427ac0}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_a0c276dfc0735edc2abb83147679fee4c}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_a0c276dfc0735edc2abb83147679fee4c}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}!GenerateMeldFromCards@{GenerateMeldFromCards}}
+\index{GenerateMeldFromCards@{GenerateMeldFromCards}!EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}}
+\doxysubsubsection{\texorpdfstring{GenerateMeldFromCards()}{GenerateMeldFromCards()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}}? Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set.\+Generate\+Meld\+From\+Cards (\begin{DoxyParamCaption}\item[{IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{cards }\end{DoxyParamCaption})}
+
+
+
+Create a meld set from three or four cards that have the same rank 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cards} & The cards used to create the meld\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Either the meld that was created, or if the meld cannot be formed by the cards, null
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_a170659e4d07e30e4915bde695d409ae1}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ac98530fd7d6b59ad398d705d1370e9c4}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_ac98530fd7d6b59ad398d705d1370e9c4}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}!Insert@{Insert}}
+\index{Insert@{Insert}!EarnShardsForCards.Shared.Data.GinRummy.MeldSet@{EarnShardsForCards.Shared.Data.GinRummy.MeldSet}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld}{IMeld}} Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Meld\+Set.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+Adds a card to the meld without verification that the card can be added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be added\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_aae2b858b42ad3c944ea5bc08cb993b55}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IMeld}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Gin\+Rummy/Meld\+Set.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_server_2_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_authentication">Microsoft::AspNetCore::Authentication</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_response_compression">Microsoft::AspNetCore::ResponseCompression</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_server_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <initializer>= WebApplication.CreateBuilder(args)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="8" column="5" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_server_2_program_8cs_1a067cdd5f0fed6b2598fae7de8607e7da" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var connectionString</definition>
+        <argsstring></argsstring>
+        <name>connectionString</name>
+        <initializer>= builder.Configuration.GetConnectionString(&quot;DefaultConnection&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="11" column="5" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_server_2_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <initializer>= builder.Build()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="28" column="5" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_server_2_program_8cs_1a0544c3fe466e421738dae463968b70ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+    app.UseExceptionHandler(&quot;/Error&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="36" column="1" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_server_2_program_8cs_1ae8fa3e8f86604ab20a32c2ff9249957f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddDbContext&lt; ApplicationDbContext &gt;</definition>
+        <argsstring>(options=&gt; options.UseSqlServer(connectionString))</argsstring>
+        <name>AddDbContext&lt; ApplicationDbContext &gt;</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>options.</type>
+          <declname>UseSqlServer</declname>
+          <array>connectionString</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="12" column="8" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="12" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1ae9ee4e6d7ca0f73335732ae4a52064d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddDatabaseDeveloperPageExceptionFilter</definition>
+        <argsstring>()</argsstring>
+        <name>AddDatabaseDeveloperPageExceptionFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="14" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="14" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1aac9e789c9d9c914c25fbc5e61340d71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddDefaultIdentity&lt; ApplicationUser &gt;</definition>
+        <argsstring>(options=&gt; options.SignIn.RequireConfirmedAccount=true) .AddEntityFrameworkStores&lt; ApplicationDbContext &gt;()</argsstring>
+        <name>AddDefaultIdentity&lt; ApplicationUser &gt;</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>options.SignIn.</type>
+          <declname>RequireConfirmedAccount</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="16" column="8" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="16" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1aceae9cd3648fe11c712080a28693192f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddIdentityServer</definition>
+        <argsstring>() .AddApiAuthorization&lt; ApplicationUser</argsstring>
+        <name>AddIdentityServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="19" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a19398c84d4579f9c9e31894e55175d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. ApplicationDbContext</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationDbContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="20" column="6" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1adfec7a9f0f389574f6be2d3b84041093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddAuthentication</definition>
+        <argsstring>() .AddIdentityServerJwt()</argsstring>
+        <name>AddAuthentication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="22" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="22" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1af8107f2f8ff8e8de22a684c8c8ad3e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddControllersWithViews</definition>
+        <argsstring>()</argsstring>
+        <name>AddControllersWithViews</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="25" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="25" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a50ac3cc59e3f8d9e5c1a2734bd14b7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddRazorPages</definition>
+        <argsstring>()</argsstring>
+        <name>AddRazorPages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="26" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="26" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(app.Environment.IsDevelopment())</argsstring>
+        <name>if</name>
+        <param>
+          <type>app.Environment.</type>
+          <declname>IsDevelopment</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="31" column="1" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a8c2c34f600427906d008e9ce976831ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseHsts</definition>
+        <argsstring>()</argsstring>
+        <name>UseHsts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="40" column="8" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="40" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseHttpsRedirection</definition>
+        <argsstring>()</argsstring>
+        <name>UseHttpsRedirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="43" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="43" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1aed1efa704e60214c06e980909b57ee78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseBlazorFrameworkFiles</definition>
+        <argsstring>()</argsstring>
+        <name>UseBlazorFrameworkFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="45" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="45" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a906a3ce545279a7a73941f1d7b64d7cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseStaticFiles</definition>
+        <argsstring>()</argsstring>
+        <name>UseStaticFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="46" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="46" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a94c810d266751293a2d511a720a5625f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseRouting</definition>
+        <argsstring>()</argsstring>
+        <name>UseRouting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="48" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="48" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a2c6c7259911b58def4f051e880bb4244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseIdentityServer</definition>
+        <argsstring>()</argsstring>
+        <name>UseIdentityServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="50" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="50" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a6435d8beeff4999dc0b0c6d60a86a4e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseAuthentication</definition>
+        <argsstring>()</argsstring>
+        <name>UseAuthentication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="51" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="51" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseAuthorization</definition>
+        <argsstring>()</argsstring>
+        <name>UseAuthorization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="52" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="52" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1aea1890390376604d4d91e0bdb76602a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapRazorPages</definition>
+        <argsstring>()</argsstring>
+        <name>MapRazorPages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="55" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="55" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1a9e2ee3170aa6279b68eefd1651f7d96c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapControllers</definition>
+        <argsstring>()</argsstring>
+        <name>MapControllers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="56" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="56" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1ab162ca4c83853bf01175352d441bd220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapFallbackToFile</definition>
+        <argsstring>(&quot;index.html&quot;)</argsstring>
+        <name>MapFallbackToFile</name>
+        <param>
+          <type>&quot;index.html&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="57" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="57" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_server_2_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" line="59" column="4" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs" declline="59" declcolumn="4"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_earn_shards_for_cards" kindref="compound">EarnShardsForCards</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_server" kindref="compound">Server</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_server_1_1_data" kindref="compound">Data</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_earn_shards_for_cards" kindref="compound">EarnShardsForCards</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_server" kindref="compound">Server</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_server_1_1_models" kindref="compound">Models</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.Authentication;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.ResponseCompression;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.Identity;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">var<sp/>builder<sp/>=<sp/>WebApplication.CreateBuilder(args);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Add<sp/>services<sp/>to<sp/>the<sp/>container.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">var<sp/>connectionString<sp/>=<sp/>builder.Configuration.GetConnectionString(</highlight><highlight class="stringliteral">&quot;DefaultConnection&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">builder.Services.AddDbContext&lt;<ref refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" kindref="compound">ApplicationDbContext</ref>&gt;(options<sp/>=&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>options.UseSqlServer(connectionString));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">builder.Services.AddDatabaseDeveloperPageExceptionFilter();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">builder.Services.AddDefaultIdentity&lt;<ref refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" kindref="compound">ApplicationUser</ref>&gt;(options<sp/>=&gt;<sp/>options.SignIn.RequireConfirmedAccount<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>.AddEntityFrameworkStores&lt;ApplicationDbContext&gt;();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">builder.Services.AddIdentityServer()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>.AddApiAuthorization&lt;<ref refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" kindref="compound">ApplicationUser</ref>,<sp/><ref refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" kindref="compound">ApplicationDbContext</ref>&gt;();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">builder.Services.AddAuthentication()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>.AddIdentityServerJwt();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">builder.Services.AddControllersWithViews();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">builder.Services.AddRazorPages();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">var<sp/>app<sp/>=<sp/>builder.Build();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>HTTP<sp/>request<sp/>pipeline.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(app.Environment.IsDevelopment())</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>app.UseMigrationsEndPoint();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>app.UseWebAssemblyDebugging();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>app.UseExceptionHandler(</highlight><highlight class="stringliteral">&quot;/Error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>default<sp/>HSTS<sp/>value<sp/>is<sp/>30<sp/>days.<sp/>You<sp/>may<sp/>want<sp/>to<sp/>change<sp/>this<sp/>for<sp/>production<sp/>scenarios,<sp/>see<sp/>https://aka.ms/aspnetcore-hsts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>app.UseHsts();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">app.UseHttpsRedirection();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">app.UseBlazorFrameworkFiles();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">app.UseStaticFiles();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">app.UseRouting();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">app.UseIdentityServer();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">app.UseAuthentication();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">app.UseAuthorization();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">app.MapRazorPages();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">app.MapControllers();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">app.MapFallbackToFile(</highlight><highlight class="stringliteral">&quot;index.html&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">app.Run();</highlight></codeline>
+    </programlisting>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Program.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_show_recovery_codes_model" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel</primary></indexterm>
+<para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1ab88dfc3bd0e1c96dc075b17b0cf570f.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1a461f4c2790bc47deb136b2efefdb9bd.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_show_recovery_codes_model_1a477c9ff21e588dad5b1a5e6f8219751e"/>IActionResult <emphasis role="strong">OnGet</emphasis> ()</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_show_recovery_codes_model_1acae3ff9a8057540229ec64f877c523f5"/>string[] <emphasis role="strong">RecoveryCodes</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_show_recovery_codes_model_1a3d599644c7243dd3fe435ca01c5a07fc"/>string <emphasis role="strong">StatusMessage</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Classwork/ObjectOrientedDesign/CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml.cs</section>
+</section>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1868181720d20aae38f9fd438dbfcb337.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_19fe829960acda503074678b91ebcb05f.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1abccf410ee6dc15595ece0a3bd80a04bd"/><emphasis role="strong">ExternalLoginsModel</emphasis> (UserManager&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; userManager, SignInManager&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; signInManager, IUserStore&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user">ApplicationUser</link> &gt; userStore)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1a635f8f62916d122a39332e8d52cc8e19"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnGetAsync</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1a63e8bef9cfcc36840a11e34eb4d21eef"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnPostRemoveLoginAsync</emphasis> (string loginProvider, string providerKey)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1ad371ef57751969cb7e4534c136470735"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnPostLinkLoginAsync</emphasis> (string provider)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1a76c4560e9ee4a984223e5ca8a81f4e57"/>async Task&lt; IActionResult &gt; <emphasis role="strong">OnGetLinkLoginCallbackAsync</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1a09debd732f5f453fb767ee6ac144a99f"/>IList&lt; UserLoginInfo &gt; <emphasis role="strong">CurrentLogins</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1acfe836f0aac691e672428c929c7e4f3f"/>IList&lt; AuthenticationScheme &gt; <emphasis role="strong">OtherLogins</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1aa0a9ef4d6f9cba4271e7d182ecd1d967"/>bool <emphasis role="strong">ShowRemoveButton</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_external_logins_model_1ad99e82616dedcb4bd2495d2c34e348b6"/>string <emphasis role="strong">StatusMessage</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>This API supports the ASP.NET Core <link linkend="_namespace_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity">Identity</link> default UI infrastructure and is not intended to be used directly from your code. This API may change or be removed in future releases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Classwork/ObjectOrientedDesign/CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml.cs</section>

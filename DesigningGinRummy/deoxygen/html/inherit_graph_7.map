@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player.html" title="A Player is representative of a real&#45;world player that is playing a card game. They have their own ha..." alt="" coords="5,13,256,54"/>
+<area shape="rect" id="node2" href="$class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player.html" title="A GinRummyComputerPlayer is a virtual game support object related to a real&#45;world player...." alt="" coords="304,5,547,61"/>
+</map>

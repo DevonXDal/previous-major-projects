@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.Interfaces.Deck Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.Deck</primary></indexterm>
+<para>
+
+<para>Interface for a game deck that identifies the common functions of each type of deck. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.Interfaces.Deck:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>abstract int <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a20ad6d9e1457eb13307cc90efea1fadb">Count</link> ()</para>
+
+<para>Returns the number of cards that are currently in the deck. </para>
+</listitem>
+            <listitem><para>abstract <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link> <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a231a209fda4b7addbdc173d626a581ad">Draw</link> ()</para>
+
+<para>Remove and return a card from the top of the deck. </para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1acc917f25f48cf920098a0a746edbbfcb">Shuffle</link> ()</para>
+
+<para>Randomizes the positions of cards in the deck. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Interface for a game deck that identifies the common functions of each type of deck. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a20ad6d9e1457eb13307cc90efea1fadb"/><section>
+    <title>Count()</title>
+<indexterm><primary>Count</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.Deck</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.Deck</primary><secondary>Count</secondary></indexterm>
+<para><computeroutput>abstract int EarnShardsForCards.Shared.Data.Interfaces.Deck.Count ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Returns the number of cards that are currently in the deck. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The number of cards in the deck</para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1a5bc4e11bf173bf2d7200beae26b37563">EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a231a209fda4b7addbdc173d626a581ad"/><section>
+    <title>Draw()</title>
+<indexterm><primary>Draw</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.Deck</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.Deck</primary><secondary>Draw</secondary></indexterm>
+<para><computeroutput>abstract <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link> EarnShardsForCards.Shared.Data.Interfaces.Deck.Draw ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Remove and return a card from the top of the deck. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The card from the top of the deck</para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1ac9b1f52480be53178fa97b47570197c4">EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1acc917f25f48cf920098a0a746edbbfcb"/><section>
+    <title>Shuffle()</title>
+<indexterm><primary>Shuffle</primary><secondary>EarnShardsForCards.Shared.Data.Interfaces.Deck</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.Interfaces.Deck</primary><secondary>Shuffle</secondary></indexterm>
+<para><computeroutput>abstract void EarnShardsForCards.Shared.Data.Interfaces.Deck.Shuffle ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Randomizes the positions of cards in the deck. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1a3e5e9e1b3bcfc464a853a4d5752a7ac4">EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces/IDeck.cs</section>
+</section>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_application_db_context_8cs" kind="file" language="C#">
+    <compoundname>ApplicationDbContext.cs</compoundname>
+    <innerclass refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" prot="public">EarnShardsForCards::Server::Data::ApplicationDbContext</innerclass>
+    <innernamespace refid="namespace_earn_shards_for_cards">EarnShardsForCards</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server">EarnShardsForCards::Server</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server_1_1_data">EarnShardsForCards::Server::Data</innernamespace>
+    <innernamespace refid="namespace_duende_1_1_identity_server_1_1_entity_framework_1_1_options">Duende::IdentityServer::EntityFramework::Options</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_entity_framework_core">Microsoft::EntityFrameworkCore</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_extensions_1_1_options">Microsoft::Extensions::Options</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Duende.IdentityServer.EntityFramework.Options;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_earn_shards_for_cards" kindref="compound">EarnShardsForCards</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_server" kindref="compound">Server</ref>.<ref refid="namespace_earn_shards_for_cards_1_1_server_1_1_models" kindref="compound">Models</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.ApiAuthorization.IdentityServer;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.Extensions.Options;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespace_earn_shards_for_cards_1_1_server_1_1_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_earn_shards_for_cards_1_1_server_1_1_data" kindref="compound">EarnShardsForCards.Server.Data</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" kindref="compound">ApplicationDbContext</ref><sp/>:<sp/>ApiAuthorizationDbContext&lt;ApplicationUser&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" kindref="compound">ApplicationDbContext</ref>(</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DbContextOptions<sp/>options,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOptions&lt;OperationalStoreOptions&gt;<sp/>operationalStoreOptions)<sp/>:<sp/>base(options,<sp/>operationalStoreOptions)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/ApplicationDbContext.cs"/>
+  </compounddef>
+</doxygen>

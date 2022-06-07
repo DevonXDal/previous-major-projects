@@ -1,0 +1,75 @@
+.TH "EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck \- A Playing \fBCard\fP Deck represents a real-world deck of cards\&. It is also used for the draw pile for real-world games\&. It is created usually with 52 playing cards\&. Cards can be drawn from it and return as requested\&. It also randomizes the position of the cards it holds when requested\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override int \fBCount\fP ()"
+.br
+.RI "Reveal the number of cards that are currently in the deck\&. "
+.ti -1c
+.RI "override \fBPlayingCard\fP \fBDraw\fP ()"
+.br
+.RI "Draw a card from the top of the deck\&. "
+.ti -1c
+.RI "override void \fBShuffle\fP ()"
+.br
+.RI "Randomize the position of the cards "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "IList< \fBPlayingCard\fP > \fBcards\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A Playing \fBCard\fP Deck represents a real-world deck of cards\&. It is also used for the draw pile for real-world games\&. It is created usually with 52 playing cards\&. Cards can be drawn from it and return as requested\&. It also randomizes the position of the cards it holds when requested\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "override int EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\&.Count ()\fC [virtual]\fP"
+
+.PP
+Reveal the number of cards that are currently in the deck\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The number of cards left in the deck
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\fP\&.
+.SS "override \fBPlayingCard\fP EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\&.Draw ()\fC [virtual]\fP"
+
+.PP
+Draw a card from the top of the deck\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The top card of the deck
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\fP\&.
+.SS "override void EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\&.Shuffle ()\fC [virtual]\fP"
+
+.PP
+Randomize the position of the cards 
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

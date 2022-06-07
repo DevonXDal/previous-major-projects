@@ -1,0 +1,186 @@
+﻿@using EarnShardsForCards.Shared.Data.GinRummy
+@using EarnShardsForCards.Shared.Data.GenericGameObjects
+@using EarnShardsForCards.Shared.Data.Records
+@using EarnShardsForCards.Client.Data
+@using System.Timers
+
+<div class="row-cols-5">
+    @* End of Round Time *@
+    <div class="col-1">
+
+    </div>
+    <div class="col-3">
+        Gameplay will Continue in @_secondsToNextGamePlay Seconds
+    </div>
+    <div class="col-1">
+
+    </div>
+
+
+    @* Round End Reason *@
+    <div class="col-1">
+
+    </div>
+    <div class="col-3">
+        @_formattedRoundEndingReason
+    </div>
+    <div class="col-1">
+
+    </div>
+
+    @* Laid Off Deadwood*@
+    @if (_data.RoundEndingReason == GinRummyRoundEndingCase.Knock || _data.RoundEndingReason == GinRummyRoundEndingCase.Undercut)
+    {
+        <div class="col-1">
+
+        </div>
+        <div class="col-3">
+            Since a Knock Occured: @_data.LaidOffDeadwood Deadwood was Laid Off
+        </div>
+        <div class="col-1">
+
+        </div>
+    }
+    
+
+    @* Table *@
+    <div class="col-1">
+
+    </div>
+    <div class="table-responsive-md col-3">
+    <table class="table-info table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Round #</th>
+                <th scope="col">You</th>
+                <th scope="col">Computer</th>
+            </tr>
+        </thead>
+        <tbody>
+        @for (int i = 0; i < _data.RoundScores.Count; i++)
+        {
+            <tr>
+                <th scope="row">@i</th>
+                <td>@_data.RoundScores[0][i]</td>
+                <td>@_data.RoundScores[1][i]</td>
+            </tr>        
+        }
+            <tr>
+                <th scope="row">Total (To Win: @(_data.AmountToWin))</th>
+                <td>@_pointsTotalHuman</td>
+                <td>@_pointsTotalComputer</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-1">
+
+    </div>
+
+
+    <div class="col-1">
+
+    </div>
+    <div class="col-3">
+    
+    </div>
+    <div class="col-1">
+
+    </div>
+</div>
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    [Parameter]
+    public GinRummyController Controller { get; set; }
+
+    private EndOfRoundData? _data;
+
+    private int? _secondsToNextGamePlay;
+
+    private int? _pointsTotalHuman;
+
+    private int? _pointsTotalComputer;
+
+    private string? _formattedRoundEndingReason;
+
+    private bool? _shutoutStatement;
+
+    private Timer? _scoreboardTimer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _data = Controller.FetchEndOfRoundData();
+
+        _pointsTotalHuman = _data.RoundScores.Sum(roundScores => roundScores[0]);
+        _pointsTotalComputer = _data.RoundScores.Sum(roundScores => roundScores[1]);
+
+        _shutoutStatement = false;
+
+        if (_data.WinConditionReached)
+        {
+            if (_pointsTotalHuman >= _data.AmountToWin) // The human player won
+            {
+                _formattedRoundEndingReason = "Game Ended By The Player By: ";
+
+                if (_pointsTotalComputer == 0)
+                {
+                    _shutoutStatement = true;
+                    _pointsTotalHuman *= 2;
+                }
+            } else // The computer player won
+            {
+                _formattedRoundEndingReason = "Game Ended by the Computer By: ";
+
+                if (_pointsTotalHuman == 0)
+                {
+                    _shutoutStatement = true;
+                    _pointsTotalComputer *= 2;
+                }
+            }
+
+            _secondsToNextGamePlay = 10;
+        } else
+        {
+            _formattedRoundEndingReason = "Round Ended By: ";
+            _secondsToNextGamePlay = 5;
+        }
+
+        if (_data.RoundEndingReason == GinRummyRoundEndingCase.BigGin)
+        {
+            _formattedRoundEndingReason = _formattedRoundEndingReason + "Big Gin";
+        } else if (_data.RoundEndingReason == GinRummyRoundEndingCase.Gin)
+        {
+            _formattedRoundEndingReason = _formattedRoundEndingReason + "Gin";
+        } else if (_data.RoundEndingReason == GinRummyRoundEndingCase.Knock)
+        {
+            _formattedRoundEndingReason = _formattedRoundEndingReason + "Knock";
+        } else if (_data.RoundEndingReason == GinRummyRoundEndingCase.Undercut)
+        {
+            _formattedRoundEndingReason = _formattedRoundEndingReason + "Undercut";
+        } else // Tie
+        {
+            _formattedRoundEndingReason = _formattedRoundEndingReason + "Tie (Only Two Cards are Left in the Deck)";
+        }
+
+        // https://stackoverflow.com/questions/61609967/how-to-call-particular-function-after-every-two-mins-in-blazor-razor-component
+        // Create a timer with a five/ten second interval.
+        _scoreboardTimer = new Timer(_secondsToNextGamePlay.Value * 1000);
+        // Hook up the Elapsed event for the timer. 
+        _scoreboardTimer.Elapsed += FinishDisplay;
+        _scoreboardTimer.AutoReset = false;
+        _scoreboardTimer.Enabled = true;
+
+
+        Controller.NotifyThatEndOfRoundIsDisplayed();
+        await base.OnInitializedAsync();
+    }
+
+    private void FinishDisplay(Object? source, ElapsedEventArgs e)
+    {
+        _scoreboardTimer.Dispose();
+        Controller.EndOfRoundDisplayIsFinished();
+    }
+}

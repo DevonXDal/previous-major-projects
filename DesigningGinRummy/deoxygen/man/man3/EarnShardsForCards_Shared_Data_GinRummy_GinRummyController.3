@@ -1,0 +1,269 @@
+.TH "EarnShardsForCards.Shared.Data.GinRummy.GinRummyController" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GinRummy.GinRummyController \- A \fBGinRummyController\fP is a virtual game support object specifically for Gin Rummy ' that handles the general game loop taken by the game\&. Once created, only one copy of it will exist and many objects will have references to that one reference\&. When an action is performed the controller can be notified and the action carried out if able\&. When the game is started or restarted, the controller will handle the setup of the game board\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBInitializeGame\fP ()"
+.br
+.RI "Set up the models and controller objects necessary to run a game\&. "
+.ti -1c
+.RI "void \fBReinitializeGame\fP ()"
+.br
+.RI "Restart the game, performs similar to initialize the game but ensures that the notifier is recreated\&. "
+.ti -1c
+.RI "void \fBRequestPassTurn\fP ()"
+.br
+.RI "Try to pass the human player's turn if validation succeeds\&. Must be the player's special draw phase\&. "
+.ti -1c
+.RI "void \fBRequestDrawFromDeck\fP ()"
+.br
+.RI "Try to perform a draw from deck action after validation for the human player\&. Must be the player's normal draw phase\&. "
+.ti -1c
+.RI "void \fBRequestDrawFromDiscard\fP ()"
+.br
+.RI "Try to perform a draw from discard action after validation for the human player\&. Must be the player's draw phase\&. "
+.ti -1c
+.RI "void \fBRequestDiscardWithCardAt\fP (int index)"
+.br
+.RI "Try to perform a discard action after validation for the human player\&. Must be the player's discard phase\&. "
+.ti -1c
+.RI "void \fBRequestKnockWithCardAt\fP (int index)"
+.br
+.RI "Try to perform a knock action after validation for the human player\&. Must be the player's discard phase\&. "
+.ti -1c
+.RI "void \fBRequestCardReposition\fP (int initialIndex, int newIndex)"
+.br
+.RI "Try to reposition the cards within the human player's hand\&. Must be the player's turn\&. "
+.ti -1c
+.RI "int \fBCheckComputerPlayerDeadwood\fP ()"
+.br
+.RI "Get the deadwood remaining for the computer player\&. "
+.ti -1c
+.RI "void \fBNotifyThatEndOfRoundIsDisplayed\fP ()"
+.br
+.RI "Receive Indication that display of end of round information has begun displaying "
+.ti -1c
+.RI "void \fBEndOfRoundDisplayIsFinished\fP ()"
+.br
+.RI "Recieve notice that the end of round display is done displaying and the next round/game should begin\&. "
+.ti -1c
+.RI "void \fBDocumentRoundResults\fP (\fBPlayer\fP< \fBPlayingCard\fP > winner, int points, \fBGinRummyRoundEndingCase\fP reason)"
+.br
+.RI "Recieve results to document about the end of the round\&. "
+.ti -1c
+.RI "GinRummyViewData \fBFetchViewData\fP ()"
+.br
+.RI "Returns data used to render graphical elements to the screen after each state update\&. "
+.ti -1c
+.RI "EndOfRoundData \fBFetchEndOfRoundData\fP ()"
+.br
+.RI "Returns the data for the end of display to work\&. "
+.ti -1c
+.RI "void \fBCheckForBigGin\fP ()"
+.br
+.RI "Checks to see if Big Gin has just occured\&. "
+.ti -1c
+.RI "void \fBCheckIfWinConditionIsMet\fP ()"
+.br
+.RI "Checks to see if some player has won the game\&. "
+.ti -1c
+.RI "void \fBSetupNextRound\fP ()"
+.br
+.RI "Sets up the next round with the player who did not earn points last round going first\&. A tie will have the game move to the next player's turn and have them start\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGinRummyController\fP \fBGetInstance\fP ()"
+.br
+.RI "Gets the singleton instance of the controller and sets one up if one does not already exist\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBGinRummyController\fP is a virtual game support object specifically for Gin Rummy ' that handles the general game loop taken by the game\&. Once created, only one copy of it will exist and many objects will have references to that one reference\&. When an action is performed the controller can be notified and the action carried out if able\&. When the game is started or restarted, the controller will handle the setup of the game board\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.CheckComputerPlayerDeadwood ()"
+
+.PP
+Get the deadwood remaining for the computer player\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The deadwood remaining for the computer player
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.DocumentRoundResults (\fBPlayer\fP< \fBPlayingCard\fP > winner, int points, \fBGinRummyRoundEndingCase\fP reason)"
+
+.PP
+Recieve results to document about the end of the round\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwinner\fP The reference to the player that won
+.br
+\fIpoints\fP The amount of points won by the player
+.br
+\fIreason\fP The round ending reason
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.EndOfRoundDisplayIsFinished ()"
+
+.PP
+Recieve notice that the end of round display is done displaying and the next round/game should begin\&. 
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "EndOfRoundData EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.FetchEndOfRoundData ()"
+
+.PP
+Returns the data for the end of display to work\&. 
+.PP
+\fBReturns\fP
+.RS 4
+End of round related information
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "GinRummyViewData EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.FetchViewData ()"
+
+.PP
+Returns data used to render graphical elements to the screen after each state update\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The data the view needs to redisplay itself
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "static \fBGinRummyController\fP EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.GetInstance ()\fC [static]\fP"
+
+.PP
+Gets the singleton instance of the controller and sets one up if one does not already exist\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The singleton of the controller
+.RE
+.PP
+
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.InitializeGame ()"
+
+.PP
+Set up the models and controller objects necessary to run a game\&. 
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.NotifyThatEndOfRoundIsDisplayed ()"
+
+.PP
+Receive Indication that display of end of round information has begun displaying 
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.ReinitializeGame ()"
+
+.PP
+Restart the game, performs similar to initialize the game but ensures that the notifier is recreated\&. 
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.RequestCardReposition (int initialIndex, int newIndex)"
+
+.PP
+Try to reposition the cards within the human player's hand\&. Must be the player's turn\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIInvalidOperationException\fP Thrown with a message why the action was not done when an illegal action occured
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.RequestDiscardWithCardAt (int index)"
+
+.PP
+Try to perform a discard action after validation for the human player\&. Must be the player's discard phase\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIInvalidOperationException\fP Thrown with a message why the action was not done when an illegal action occured
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.RequestDrawFromDeck ()"
+
+.PP
+Try to perform a draw from deck action after validation for the human player\&. Must be the player's normal draw phase\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIInvalidOperationException\fP Thrown with a message why the action was not done when an illegal action occured
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.RequestDrawFromDiscard ()"
+
+.PP
+Try to perform a draw from discard action after validation for the human player\&. Must be the player's draw phase\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIInvalidOperationException\fP Thrown with a message why the action was not done when an illegal action occured
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.RequestKnockWithCardAt (int index)"
+
+.PP
+Try to perform a knock action after validation for the human player\&. Must be the player's discard phase\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIInvalidOperationException\fP Thrown with a message why the action was not done when an illegal action occured
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyController\&.RequestPassTurn ()"
+
+.PP
+Try to pass the human player's turn if validation succeeds\&. Must be the player's special draw phase\&. 
+.PP
+\fBExceptions\fP
+.RS 4
+\fIInvalidOperationException\fP Thrown with a message why the action was not done when an illegal action occured
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IGinRummyController\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

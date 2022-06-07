@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary></indexterm>
+<para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller">GinRummyController</link> is a virtual game support object specifically for Gin Rummy &apos; that handles the general game loop taken by the game. Once created, only one copy of it will exist and many objects will have references to that one reference. When an action is performed the controller can be notified and the action carried out if able. When the game is started or restarted, the controller will handle the setup of the game board. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.GinRummy.GinRummyController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Shared.Data.GinRummy.GinRummyController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a128c7aa68553cfeba5ff2f9a38e4602e">InitializeGame</link> ()</para>
+
+<para>Set up the models and controller objects necessary to run a game. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a4b7d6b9e7e743e0cb4836338ce33b0ab">ReinitializeGame</link> ()</para>
+
+<para>Restart the game, performs similar to initialize the game but ensures that the notifier is recreated. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a70db82dd2420d3ed7b6c8e974509dc15">RequestPassTurn</link> ()</para>
+
+<para>Try to pass the human player&apos;s turn if validation succeeds. Must be the player&apos;s special draw phase. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac81e06c026625206913610e231c17c18">RequestDrawFromDeck</link> ()</para>
+
+<para>Try to perform a draw from deck action after validation for the human player. Must be the player&apos;s normal draw phase. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a124c50c0d101afc1f2ead8106741dcd2">RequestDrawFromDiscard</link> ()</para>
+
+<para>Try to perform a draw from discard action after validation for the human player. Must be the player&apos;s draw phase. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a67f6ce1fba52989a76eae898601a42a7">RequestDiscardWithCardAt</link> (int index)</para>
+
+<para>Try to perform a discard action after validation for the human player. Must be the player&apos;s discard phase. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a5a549e9c56d647ad626e5d1f449c2c56">RequestKnockWithCardAt</link> (int index)</para>
+
+<para>Try to perform a knock action after validation for the human player. Must be the player&apos;s discard phase. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a7fe22f1a2c5645a547149b337461092e">RequestCardReposition</link> (int initialIndex, int newIndex)</para>
+
+<para>Try to reposition the cards within the human player&apos;s hand. Must be the player&apos;s turn. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a700997efaf3fc22271a60ebc10e2df20">CheckComputerPlayerDeadwood</link> ()</para>
+
+<para>Get the deadwood remaining for the computer player. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac39abe0f677341479e0004a9cc40bd2c">NotifyThatEndOfRoundIsDisplayed</link> ()</para>
+
+<para>Receive Indication that display of end of round information has begun displaying </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1af6e429e06f0a984b649d8bb20d9d7af7">EndOfRoundDisplayIsFinished</link> ()</para>
+
+<para>Recieve notice that the end of round display is done displaying and the next round/game should begin. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1aa8a766fda28047b177e6cae11b198f20">DocumentRoundResults</link> (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; winner, int points, <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d">GinRummyRoundEndingCase</link> reason)</para>
+
+<para>Recieve results to document about the end of the round. </para>
+</listitem>
+            <listitem><para>GinRummyViewData <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9ad85b2f68f1564898175c4b982866e2">FetchViewData</link> ()</para>
+
+<para>Returns data used to render graphical elements to the screen after each state update. </para>
+</listitem>
+            <listitem><para>EndOfRoundData <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9d5048e4bcc6342c7a85dc80113f8995">FetchEndOfRoundData</link> ()</para>
+
+<para>Returns the data for the end of display to work. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a93df96df8059a9de4381a0a436ee0210"/>void <emphasis role="strong">CheckForBigGin</emphasis> ()</para>
+
+<para>Checks to see if Big Gin has just occured. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a35f498e4a479596c253791cd755dbd12"/>void <emphasis role="strong">CheckIfWinConditionIsMet</emphasis> ()</para>
+
+<para>Checks to see if some player has won the game. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a73bc794ed0d9d5eb5d2954560f3eef1f"/>void <emphasis role="strong">SetupNextRound</emphasis> ()</para>
+
+<para>Sets up the next round with the player who did not earn points last round going first. A tie will have the game move to the next player&apos;s turn and have them start. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller">GinRummyController</link> <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1acb282af4baaca20aaa79e3423c10852a">GetInstance</link> ()</para>
+
+<para>Gets the singleton instance of the controller and sets one up if one does not already exist. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller">GinRummyController</link> is a virtual game support object specifically for Gin Rummy &apos; that handles the general game loop taken by the game. Once created, only one copy of it will exist and many objects will have references to that one reference. When an action is performed the controller can be notified and the action carried out if able. When the game is started or restarted, the controller will handle the setup of the game board. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a700997efaf3fc22271a60ebc10e2df20"/><section>
+    <title>CheckComputerPlayerDeadwood()</title>
+<indexterm><primary>CheckComputerPlayerDeadwood</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>CheckComputerPlayerDeadwood</secondary></indexterm>
+<para><computeroutput>int EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.CheckComputerPlayerDeadwood ( )</computeroutput></para><para>
+
+<para>Get the deadwood remaining for the computer player. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The deadwood remaining for the computer player</para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1abeb7eeb23585f1d2381e9d916ef020d2">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1aa8a766fda28047b177e6cae11b198f20"/><section>
+    <title>DocumentRoundResults()</title>
+<indexterm><primary>DocumentRoundResults</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>DocumentRoundResults</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.DocumentRoundResults (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; winner, int points, <link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d">GinRummyRoundEndingCase</link> reason)</computeroutput></para><para>
+
+<para>Recieve results to document about the end of the round. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>winner</entry><entry>
+<para>The reference to the player that won</para>
+</entry>
+                            </row>
+                            <row>
+<entry>points</entry><entry>
+<para>The amount of points won by the player</para>
+</entry>
+                            </row>
+                            <row>
+<entry>reason</entry><entry>
+<para>The round ending reason</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a7bc7555356b81f5ea8e83ffc70207b6a">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1af6e429e06f0a984b649d8bb20d9d7af7"/><section>
+    <title>EndOfRoundDisplayIsFinished()</title>
+<indexterm><primary>EndOfRoundDisplayIsFinished</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>EndOfRoundDisplayIsFinished</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.EndOfRoundDisplayIsFinished ( )</computeroutput></para><para>
+
+<para>Recieve notice that the end of round display is done displaying and the next round/game should begin. </para>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4816d74a729913f29897c008d331a918">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9d5048e4bcc6342c7a85dc80113f8995"/><section>
+    <title>FetchEndOfRoundData()</title>
+<indexterm><primary>FetchEndOfRoundData</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>FetchEndOfRoundData</secondary></indexterm>
+<para><computeroutput>EndOfRoundData EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.FetchEndOfRoundData ( )</computeroutput></para><para>
+
+<para>Returns the data for the end of display to work. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>End of round related information</para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aa49acd270eb35152eb97a53f33a60f66">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9ad85b2f68f1564898175c4b982866e2"/><section>
+    <title>FetchViewData()</title>
+<indexterm><primary>FetchViewData</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>FetchViewData</secondary></indexterm>
+<para><computeroutput>GinRummyViewData EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.FetchViewData ( )</computeroutput></para><para>
+
+<para>Returns data used to render graphical elements to the screen after each state update. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The data the view needs to redisplay itself</para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ade360ff0e8a2cb2eaec8a4c2735ad4b3">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1acb282af4baaca20aaa79e3423c10852a"/><section>
+    <title>GetInstance()</title>
+<indexterm><primary>GetInstance</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>GetInstance</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller">GinRummyController</link> EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.GetInstance ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Gets the singleton instance of the controller and sets one up if one does not already exist. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The singleton of the controller</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a128c7aa68553cfeba5ff2f9a38e4602e"/><section>
+    <title>InitializeGame()</title>
+<indexterm><primary>InitializeGame</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>InitializeGame</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.InitializeGame ( )</computeroutput></para><para>
+
+<para>Set up the models and controller objects necessary to run a game. </para>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4ea16a5de470406c16b84f1169daea49">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac39abe0f677341479e0004a9cc40bd2c"/><section>
+    <title>NotifyThatEndOfRoundIsDisplayed()</title>
+<indexterm><primary>NotifyThatEndOfRoundIsDisplayed</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>NotifyThatEndOfRoundIsDisplayed</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.NotifyThatEndOfRoundIsDisplayed ( )</computeroutput></para><para>
+
+<para>Receive Indication that display of end of round information has begun displaying </para>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a6a9f38d737d0e88587feaeb79157ef30">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a4b7d6b9e7e743e0cb4836338ce33b0ab"/><section>
+    <title>ReinitializeGame()</title>
+<indexterm><primary>ReinitializeGame</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>ReinitializeGame</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.ReinitializeGame ( )</computeroutput></para><para>
+
+<para>Restart the game, performs similar to initialize the game but ensures that the notifier is recreated. </para>
+</para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ab7213d7d60e22c621e5d2bbd8655a0c4">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a7fe22f1a2c5645a547149b337461092e"/><section>
+    <title>RequestCardReposition()</title>
+<indexterm><primary>RequestCardReposition</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>RequestCardReposition</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.RequestCardReposition (int initialIndex, int newIndex)</computeroutput></para><para>
+
+<para>Try to reposition the cards within the human player&apos;s hand. Must be the player&apos;s turn. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aebca17a253be6a800ae78d27e3de31c0">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a67f6ce1fba52989a76eae898601a42a7"/><section>
+    <title>RequestDiscardWithCardAt()</title>
+<indexterm><primary>RequestDiscardWithCardAt</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>RequestDiscardWithCardAt</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.RequestDiscardWithCardAt (int index)</computeroutput></para><para>
+
+<para>Try to perform a discard action after validation for the human player. Must be the player&apos;s discard phase. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a1fe0abf566a9865f3e8a5b899933458a">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac81e06c026625206913610e231c17c18"/><section>
+    <title>RequestDrawFromDeck()</title>
+<indexterm><primary>RequestDrawFromDeck</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>RequestDrawFromDeck</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.RequestDrawFromDeck ( )</computeroutput></para><para>
+
+<para>Try to perform a draw from deck action after validation for the human player. Must be the player&apos;s normal draw phase. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1afa30f0d22ffbd80d733f8ac926500596">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a124c50c0d101afc1f2ead8106741dcd2"/><section>
+    <title>RequestDrawFromDiscard()</title>
+<indexterm><primary>RequestDrawFromDiscard</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>RequestDrawFromDiscard</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.RequestDrawFromDiscard ( )</computeroutput></para><para>
+
+<para>Try to perform a draw from discard action after validation for the human player. Must be the player&apos;s draw phase. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a702c7c31f0e38bd71473423e47bba037">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a5a549e9c56d647ad626e5d1f449c2c56"/><section>
+    <title>RequestKnockWithCardAt()</title>
+<indexterm><primary>RequestKnockWithCardAt</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>RequestKnockWithCardAt</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.RequestKnockWithCardAt (int index)</computeroutput></para><para>
+
+<para>Try to perform a knock action after validation for the human player. Must be the player&apos;s discard phase. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a858e9170f05a2d60ce1f5253b04f4480">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a70db82dd2420d3ed7b6c8e974509dc15"/><section>
+    <title>RequestPassTurn()</title>
+<indexterm><primary>RequestPassTurn</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyController</primary><secondary>RequestPassTurn</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyController.RequestPassTurn ( )</computeroutput></para><para>
+
+<para>Try to pass the human player&apos;s turn if validation succeeds. Must be the player&apos;s special draw phase. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown with a message why the action was not done when an illegal action occured</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a19569beea69eb5b78afd0f10e22b784e">EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyController.cs</section>
+</section>

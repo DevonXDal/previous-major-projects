@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GinRummy Namespace Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board">GinRummyBoard</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board">GinRummyBoard</link> represents the real-world table that Gin Rummy is played on. In the aspect of the virtual game, it is used as an object to hold the other objects. The one game support capability it includes not typical of a normal table is knowing whether the pass button is being shown. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">GinRummyComputerPlayer</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">GinRummyComputerPlayer</link> is a virtual game support object related to a real-world player. This player makes decisions in order to beat the human player. It represents the other player playing against the one playing the game. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller">GinRummyController</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller">GinRummyController</link> is a virtual game support object specifically for Gin Rummy &apos; that handles the general game loop taken by the game. Once created, only one copy of it will exist and many objects will have references to that one reference. When an action is performed the controller can be notified and the action carried out if able. When the game is started or restarted, the controller will handle the setup of the game board. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state">GinRummyGameState</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state">GinRummyGameState</link> is a virtual game support object that maintains overall state information for the game. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc. Using this state helps the game flow and aids in determining if a player has won the game. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler">GinRummyScoreHandler</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler">GinRummyScoreHandler</link> is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run">MeldRun</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run">MeldRun</link> is more of a virtual game support object than a real-world object. It represents the three or more cards that a player lays down at the end of each round that form a sequence of cards of the same suit that are one rank higher than each other. An example of a <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run">MeldRun</link> would be the ranks forming (‘Ace of Hearts’, ‘Two of Hearts’, ‘Three of Hearts’, ‘Four of Hearts’). </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set">MeldSet</link></para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set">MeldSet</link> is more of a virtual game support object than a real-world object. It represents the three or four cards that a player lays down at the end of a round that form a three-of-a-kind or four-of-a-kind such that there are three or four cards with the same rank but differing suits. Its primary purpose is to assist the scoring at the end of a round. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,64 @@
+.TH "EarnShardsForCards.Shared.Data.GenericGameObjects.Card" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GenericGameObjects.Card \- A general structuring class used to handle cards for various games\&. It includes the base information of the images for each face and which side of the card is shown\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCard\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCard\fP ()"
+.br
+.RI "Sets up the visibility for any type of game card but does not set the image paths\&. "
+.ti -1c
+.RI "void \fBShow\fP ()"
+.br
+.RI "Put the card face up\&. "
+.ti -1c
+.RI "void \fBHide\fP ()"
+.br
+.RI "Put the card face down\&. "
+.ti -1c
+.RI "string \fBGetImageFilePath\fP ()"
+.br
+.RI "Returns the image path for the card based on its face up status\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBIsVisible\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBFaceUpImagePath\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBFaceDownImagePath\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A general structuring class used to handle cards for various games\&. It includes the base information of the images for each face and which side of the card is shown\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "string EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Card\&.GetImageFilePath ()"
+
+.PP
+Returns the image path for the card based on its face up status\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The path to the image to display for the card
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

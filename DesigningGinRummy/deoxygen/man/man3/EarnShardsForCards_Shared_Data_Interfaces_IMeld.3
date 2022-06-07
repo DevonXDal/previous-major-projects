@@ -1,0 +1,101 @@
+.TH "EarnShardsForCards.Shared.Data.Interfaces.IMeld" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.Interfaces.IMeld \- This \fBIMeld\fP represents melds (sets/runs) from the game, Gin Rummy\&. It provides the common functionality for the melds and allows them to be stored together in a collection\&. Implementing classes should make use of a private constructor\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\fP, and \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldSet\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIMeld\fP? \fBGenerateMeldFromCards\fP (IList< \fBPlayingCard\fP > cards)"
+.br
+.RI "Create a meld set from three or four cards that have the same rank "
+.ti -1c
+.RI "bool \fBCanAddNewCard\fP (\fBPlayingCard\fP newCard)"
+.br
+.RI "Verifies that a new card is able to become part of the meld\&. "
+.ti -1c
+.RI "\fBIMeld\fP \fBInsert\fP (\fBPlayingCard\fP card)"
+.br
+.RI "Adds a card to the meld without verification that the card can be added\&. "
+.ti -1c
+.RI "int \fBDeadwoodRemovedByMeld\fP ()"
+.br
+.RI "Determines the deadwood that is removed from this meld being formed\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This \fBIMeld\fP represents melds (sets/runs) from the game, Gin Rummy\&. It provides the common functionality for the melds and allows them to be stored together in a collection\&. Implementing classes should make use of a private constructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\&.CanAddNewCard (\fBPlayingCard\fP newCard)"
+
+.PP
+Verifies that a new card is able to become part of the meld\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInewCard\fP The new card to add to the meld
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\fP, and \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldSet\fP\&.
+.SS "int EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\&.DeadwoodRemovedByMeld ()"
+
+.PP
+Determines the deadwood that is removed from this meld being formed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The deadwood removed by the meld
+.RE
+.PP
+
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\fP, and \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldSet\fP\&.
+.SS "\fBIMeld\fP? EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\&.GenerateMeldFromCards (IList< \fBPlayingCard\fP > cards)"
+
+.PP
+Create a meld set from three or four cards that have the same rank 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcards\fP The cards used to create the meld
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Either the meld that was created, or if the meld cannot be formed by the cards, null
+.RE
+.PP
+
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\fP, and \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldSet\fP\&.
+.SS "\fBIMeld\fP EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\&.Insert (\fBPlayingCard\fP card)"
+
+.PP
+Adds a card to the meld without verification that the card can be added\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcard\fP The card to be added
+.RE
+.PP
+
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\fP, and \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldSet\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

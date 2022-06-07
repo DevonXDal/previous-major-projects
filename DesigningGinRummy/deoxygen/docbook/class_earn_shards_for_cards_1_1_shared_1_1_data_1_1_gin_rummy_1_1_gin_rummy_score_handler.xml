@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</primary></indexterm>
+<para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler">GinRummyScoreHandler</link> is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a99fb7bc1d744c3b62d18c93849e9ee48">GinRummyScoreHandler</link> (<link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller">IGinRummyController</link> controller, <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player, <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">GinRummyComputerPlayer</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; computerPlayer)</para>
+
+<para>Create a <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler">GinRummyScoreHandler</link> with a reference to the controller, human player, and computer player. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a0b440a2f9c95809767c406c97a8010ab">RewardPoints</link> (bool isBigGin)</para>
+
+<para>Calculates the number of points at the end of around. Once points are calculated it handles notifying of the score and other information to the user. </para>
+</listitem>
+            <listitem><para>EliminateDeadwoodData <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a3caafaad80f51a61e1987827d68a53d4">EliminateDeadwood</link> (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player, IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set">MeldSet</link> &gt;? setsFromOpponent, IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run">MeldRun</link> &gt;? runsFromOpponents)</para>
+
+<para>Determine the largest amount of deadwood that can be eliminated for a player. Also returns the melds created in order allow laying off deadwood if needed. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a540e0274696ce9af106f6b39f8c7f069">CanPlayerKnock</link> (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player)</para>
+
+<para>Determine if the provided player can knock given the cards in their hand. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a96fdac9f2e0967737f413972bec17ab2">DoesPlayerHaveBigGin</link> (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player)</para>
+
+<para>Determine if the provided player has gone Big Gin this turn. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler">GinRummyScoreHandler</link> is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a99fb7bc1d744c3b62d18c93849e9ee48"/><section>
+    <title>GinRummyScoreHandler()</title>
+<indexterm><primary>GinRummyScoreHandler</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</primary><secondary>GinRummyScoreHandler</secondary></indexterm>
+<para><computeroutput>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.GinRummyScoreHandler (<link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller">IGinRummyController</link> controller, <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player, <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">GinRummyComputerPlayer</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; computerPlayer)</computeroutput></para><para>
+
+<para>Create a <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler">GinRummyScoreHandler</link> with a reference to the controller, human player, and computer player. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>controller</entry><entry>
+<para>The game controller</para>
+</entry>
+                            </row>
+                            <row>
+<entry>player</entry><entry>
+<para>The user&apos;s player</para>
+</entry>
+                            </row>
+                            <row>
+<entry>computerPlayer</entry><entry>
+<para>The computer player</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a540e0274696ce9af106f6b39f8c7f069"/><section>
+    <title>CanPlayerKnock()</title>
+<indexterm><primary>CanPlayerKnock</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</primary><secondary>CanPlayerKnock</secondary></indexterm>
+<para><computeroutput>bool EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.CanPlayerKnock (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player)</computeroutput></para><para>
+
+<para>Determine if the provided player can knock given the cards in their hand. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>player</entry><entry>
+<para>The player to see if knocking is allowed</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if the player can knock (10 or less deadwood)</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a96fdac9f2e0967737f413972bec17ab2"/><section>
+    <title>DoesPlayerHaveBigGin()</title>
+<indexterm><primary>DoesPlayerHaveBigGin</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</primary><secondary>DoesPlayerHaveBigGin</secondary></indexterm>
+<para><computeroutput>bool EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.DoesPlayerHaveBigGin (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player)</computeroutput></para><para>
+
+<para>Determine if the provided player has gone Big Gin this turn. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>player</entry><entry>
+<para>The player to see if they have Big Gin</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if the player has Big Gin</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a3caafaad80f51a61e1987827d68a53d4"/><section>
+    <title>EliminateDeadwood()</title>
+<indexterm><primary>EliminateDeadwood</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</primary><secondary>EliminateDeadwood</secondary></indexterm>
+<para><computeroutput>EliminateDeadwoodData EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.EliminateDeadwood (<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player">Player</link>&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card">PlayingCard</link> &gt; player, IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set">MeldSet</link> &gt;? setsFromOpponent, IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run">MeldRun</link> &gt;? runsFromOpponents)</computeroutput></para><para>
+
+<para>Determine the largest amount of deadwood that can be eliminated for a player. Also returns the melds created in order allow laying off deadwood if needed. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>player</entry><entry>
+<para>The player to view the hand of</para>
+</entry>
+                            </row>
+                            <row>
+<entry>setsFromOpponent</entry><entry>
+<para>The sets the opponent eliminated deadwood using</para>
+</entry>
+                            </row>
+                            <row>
+<entry>runsFromOpponents</entry><entry>
+<para>The runs the opponent eliminated deadwood using</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data">Data</link> related to removed deadwood</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a0b440a2f9c95809767c406c97a8010ab"/><section>
+    <title>RewardPoints()</title>
+<indexterm><primary>RewardPoints</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler</primary><secondary>RewardPoints</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.RewardPoints (bool isBigGin)</computeroutput></para><para>
+
+<para>Calculates the number of points at the end of around. Once points are calculated it handles notifying of the score and other information to the user. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>isBigGin</entry><entry>
+<para>Whether the round ended by Big Gin</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs</section>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Test::Models::PlayingCardTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test_1a16ee5817b3a4fad6127c35681c5d0c78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Test.Models.PlayingCardTest.PlayingCardTest</definition>
+        <argsstring>()</argsstring>
+        <name>PlayingCardTest</name>
+        <qualifiedname>EarnShardsForCards.Test.Models.PlayingCardTest.PlayingCardTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/PlayingCardTest.cs" line="32" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/PlayingCardTest.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tests the PlayingCard class to ensure that it conforms to that specified in the design document. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Axioms: I. (card.new(rank, suit, value)).Rank == rank II. (card.new (rank, suit, value)).Suit == suit III. card.new (rank, suit, value) card.Show() card.GetImageFilePath() == “~/img/PlayingCard/{rank } -{ suit}.webp” IV. card.new (rank, suit, value) card.GetImageFilePath() == “~/ img / PlayingCard / Back.webp” V. card.new (rank, suit, value) card.Value == value VI. card.new(rank, suit, value) card.Equals({another card with the same rank and suit}) == true card.Equals({ another card with a different rank}) == false card.Equals({ another card with a different suit}) == false card.Equals({ another card with both a different rank and a different suit}) == false </para>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/PlayingCardTest.cs" line="30" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/PlayingCardTest.cs" bodystart="31" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test_1a16ee5817b3a4fad6127c35681c5d0c78" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Test::Models::PlayingCardTest</scope><name>PlayingCardTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

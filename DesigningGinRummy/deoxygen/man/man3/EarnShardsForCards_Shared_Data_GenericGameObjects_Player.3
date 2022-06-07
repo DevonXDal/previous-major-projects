@@ -1,0 +1,104 @@
+.TH "EarnShardsForCards.Shared.Data.GenericGameObjects.Player< T >" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GenericGameObjects.Player< T > \- A \fBPlayer\fP is representative of a real-world player that is playing a card game\&. They have their own hand of cards\&. Players also pick up and rearrange the cards that they have\&. When each round is over, they then discard their hand\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.GinRummyComputerPlayer< T >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP ()"
+.br
+.RI "Create a new player with an empty hand "
+.ti -1c
+.RI "int \fBCount\fP ()"
+.br
+.RI "Get the number of cards in the player's hand "
+.ti -1c
+.RI "T \fBRemoveAt\fP (int index)"
+.br
+.RI "Remove and return a card from a specific index in the hand\&. Shifts the index of each card after the removed card to the left by one\&. "
+.ti -1c
+.RI "void \fBInsert\fP (int index, T card)"
+.br
+.RI "Add a card to a specific index in the hand or the end of the hand "
+.ti -1c
+.RI "void \fBClear\fP ()"
+.br
+.RI "Empty the hand of all of its cards without returning them\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "IList< T > \fBCards\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBPlayer\fP is representative of a real-world player that is playing a card game\&. They have their own hand of cards\&. Players also pick up and rearrange the cards that they have\&. When each round is over, they then discard their hand\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIT\fP Represents some type of card for a card/board game
+.RE
+.PP
+
+.PP
+\fBType Constraints\fP
+.TP
+\fIT\fP : \fI\fBCard\fP\fP
+.SH "Member Function Documentation"
+.PP 
+.SS "int \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Player\fP< T >\&.Count ()"
+
+.PP
+Get the number of cards in the player's hand 
+.PP
+\fBReturns\fP
+.RS 4
+How many cards are in the player's hand
+.RE
+.PP
+
+.SS "void \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Player\fP< T >\&.Insert (int index, T card)"
+
+.PP
+Add a card to a specific index in the hand or the end of the hand 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP The position of which to add the card to the hand
+.br
+\fIcard\fP The game card to add to the hand
+.RE
+.PP
+
+.SS "T \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Player\fP< T >\&.RemoveAt (int index)"
+
+.PP
+Remove and return a card from a specific index in the hand\&. Shifts the index of each card after the removed card to the left by one\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP The index that the card can be found\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The removed card
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

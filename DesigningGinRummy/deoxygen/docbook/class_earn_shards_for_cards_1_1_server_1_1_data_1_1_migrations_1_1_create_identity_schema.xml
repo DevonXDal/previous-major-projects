@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Data.Migrations.CreateIdentitySchema:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a059fead1f7cf232a625337d0ea7c8851"/>override void <emphasis role="strong">Up</emphasis> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a54055fe925eb1ae8d3f0ab7e1115e6d8"/>override void <emphasis role="strong">Down</emphasis> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a2b9dcf7580cca31a7e93874cc39c1fc7"/>override void <emphasis role="strong">BuildTargetModel</emphasis> (ModelBuilder modelBuilder)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.csCS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs</section>

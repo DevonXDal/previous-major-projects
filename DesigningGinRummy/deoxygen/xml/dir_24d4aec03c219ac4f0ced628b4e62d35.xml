@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_24d4aec03c219ac4f0ced628b4e62d35" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Records</compoundname>
+    <innerfile refid="_eliminate_deadwood_data_8cs">EliminateDeadwoodData.cs</innerfile>
+    <innerfile refid="_end_of_round_data_8cs">EndOfRoundData.cs</innerfile>
+    <innerfile refid="_gin_rummy_view_data_8cs">GinRummyViewData.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Records/"/>
+  </compounddef>
+</doxygen>

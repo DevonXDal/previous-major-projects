@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Pages.ErrorModel Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Pages.ErrorModel</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Pages.ErrorModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Pages.ErrorModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1aa2a7c216b36501a2d50331bf74674140"/><emphasis role="strong">ErrorModel</emphasis> (ILogger&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model">ErrorModel</link> &gt; logger)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1ab2fb55c0ed65b2e8b05b0d63961e2f5f"/>void <emphasis role="strong">OnGet</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1adbe0157e85841d0ce901ec69d86c4188"/>string? <emphasis role="strong">RequestId</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1a702f2673a942e3f82ddb6a28ca84997e"/>bool <emphasis role="strong">ShowRequestId</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Pages/Error.cshtml.cs</section>

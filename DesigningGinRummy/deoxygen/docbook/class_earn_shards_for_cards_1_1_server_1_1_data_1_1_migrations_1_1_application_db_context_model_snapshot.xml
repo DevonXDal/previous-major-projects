@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Data.Migrations.ApplicationDbContextModelSnapshot:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot_1aced3eb27d8ff74c7cba22e67fe7a7ca3"/>override void <emphasis role="strong">BuildModel</emphasis> (ModelBuilder modelBuilder)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/ApplicationDbContextModelSnapshot.cs</section>

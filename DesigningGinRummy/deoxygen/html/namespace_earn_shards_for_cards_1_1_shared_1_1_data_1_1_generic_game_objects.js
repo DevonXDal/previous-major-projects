@@ -1,0 +1,7 @@
+var namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects =
+[
+    [ "Card", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card.html", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card" ],
+    [ "Player", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player.html", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" ],
+    [ "PlayingCard", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card.html", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" ],
+    [ "PlayingCardDeck", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck.html", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck" ]
+];

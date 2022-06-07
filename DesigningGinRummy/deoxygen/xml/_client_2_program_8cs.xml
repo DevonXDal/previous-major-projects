@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_client_2_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_client">EarnShardsForCards::Client</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web">Microsoft::AspNetCore::Components::Web</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_authentication">Microsoft::AspNetCore::Components::WebAssembly::Authentication</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_hosting">Microsoft::AspNetCore::Components::WebAssembly::Hosting</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_client_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <initializer>= WebAssemblyHostBuilder.CreateDefault(args)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="6" column="5" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_client_2_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.RootComponents.</type>
+        <definition>builder.RootComponents. Add&lt; App &gt;</definition>
+        <argsstring>(&quot;#app&quot;)</argsstring>
+        <name>Add&lt; App &gt;</name>
+        <param>
+          <type>&quot;#app&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="7" column="8" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" declline="7" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_client_2_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.RootComponents.</type>
+        <definition>builder.RootComponents. Add&lt; HeadOutlet &gt;</definition>
+        <argsstring>(&quot;head::after&quot;)</argsstring>
+        <name>Add&lt; HeadOutlet &gt;</name>
+        <param>
+          <type>&quot;head::after&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="8" column="8" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" declline="8" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_client_2_program_8cs_1ab35203c436e97c0222f0c228bdd88f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddHttpClient</definition>
+        <argsstring>(&quot;EarnShardsForCards.ServerAPI&quot;, client=&gt; client.BaseAddress=new Uri(builder.HostEnvironment.BaseAddress)) .AddHttpMessageHandler&lt; BaseAddressAuthorizationMessageHandler &gt;()</argsstring>
+        <name>AddHttpClient</name>
+        <param>
+          <type>&quot;EarnShardsForCards.ServerAPI&quot;</type>
+        </param>
+        <param>
+          <type>client</type>
+        </param>
+        <param>
+          <type>client.</type>
+          <declname>BaseAddress</declname>
+          <defval>new Uri(builder.HostEnvironment.BaseAddress)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="10" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" declline="10" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_client_2_program_8cs_1ab820cc2e6ca9416ec616ae3d06ad47df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped</definition>
+        <argsstring>(sp=&gt; sp.GetRequiredService&lt; IHttpClientFactory &gt;().CreateClient(&quot;EarnShardsForCards.ServerAPI&quot;))</argsstring>
+        <name>AddScoped</name>
+        <param>
+          <type>sp</type>
+        </param>
+        <param>
+          <type>sp.GetRequiredService&lt; IHttpClientFactory &gt;</type>
+          <array>).CreateClient(&quot;EarnShardsForCards.ServerAPI&quot;</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="14" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" declline="14" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_client_2_program_8cs_1a8744b40672e7536115a570cc58b8120f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddApiAuthorization</definition>
+        <argsstring>()</argsstring>
+        <name>AddApiAuthorization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="16" column="16" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" declline="16" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_client_2_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>await builder.</type>
+        <definition>await builder. Build</definition>
+        <argsstring>().RunAsync()</argsstring>
+        <name>Build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" line="18" column="14" declfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs" declline="18" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_earn_shards_for_cards" kindref="compound">EarnShardsForCards</ref>.Client;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.Components.Web;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.Components.WebAssembly.Authentication;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Microsoft.AspNetCore.Components.WebAssembly.Hosting;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">var<sp/>builder<sp/>=<sp/>WebAssemblyHostBuilder.CreateDefault(args);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">builder.RootComponents.Add&lt;App&gt;(</highlight><highlight class="stringliteral">&quot;#app&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">builder.RootComponents.Add&lt;HeadOutlet&gt;(</highlight><highlight class="stringliteral">&quot;head::after&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">builder.Services.AddHttpClient(</highlight><highlight class="stringliteral">&quot;EarnShardsForCards.ServerAPI&quot;</highlight><highlight class="normal">,<sp/>client<sp/>=&gt;<sp/>client.BaseAddress<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Uri(builder.HostEnvironment.BaseAddress))</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>.AddHttpMessageHandler&lt;BaseAddressAuthorizationMessageHandler&gt;();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Supply<sp/>HttpClient<sp/>instances<sp/>that<sp/>include<sp/>access<sp/>tokens<sp/>when<sp/>making<sp/>requests<sp/>to<sp/>the<sp/>server<sp/>project</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">builder.Services.AddScoped(sp<sp/>=&gt;<sp/>sp.GetRequiredService&lt;IHttpClientFactory&gt;().CreateClient(</highlight><highlight class="stringliteral">&quot;EarnShardsForCards.ServerAPI&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">builder.Services.AddApiAuthorization();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">await<sp/>builder.Build().RunAsync();</highlight></codeline>
+    </programlisting>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/Program.cs"/>
+  </compounddef>
+</doxygen>

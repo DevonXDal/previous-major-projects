@@ -1,0 +1,8 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1680eaff5f2b2ba20c346f95306930c2f =
+[
+    [ "HasAuthenticator", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1680eaff5f2b2ba20c346f95306930c2f.html#a6af75726dcbea40c4a591e8d332a2b8b", null ],
+    [ "Is2faEnabled", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1680eaff5f2b2ba20c346f95306930c2f.html#a517ea53e2fcff5bf8e1855631e9739f3", null ],
+    [ "IsMachineRemembered", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1680eaff5f2b2ba20c346f95306930c2f.html#a7edc8e6ecac558cb8661104d5c927f75", null ],
+    [ "RecoveryCodesLeft", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1680eaff5f2b2ba20c346f95306930c2f.html#aedf01e8c4bc5d4cab0a997c155060db4", null ],
+    [ "StatusMessage", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1680eaff5f2b2ba20c346f95306930c2f.html#ab08ba4c597715dc531b787dbf8e11d4a", null ]
+];

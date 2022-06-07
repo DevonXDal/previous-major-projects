@@ -1,0 +1,4 @@
+<map id="EarnShardsForCards.Shared.Data.GenericGameObjects.Card" name="EarnShardsForCards.Shared.Data.GenericGameObjects.Card">
+<area shape="rect" id="node1" title="A general structuring class used to handle cards for various games. It includes the base information ..." alt="" coords="27,5,236,47"/>
+<area shape="rect" id="node2" href="$class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card.html" title="A PlayingCard represents the real&#45;world card from a standard 52&#45;card deck. It holds information about..." alt="" coords="5,95,257,136"/>
+</map>

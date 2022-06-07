@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy" kind="namespace" language="C#">
+    <compoundname>EarnShardsForCards::Shared::Data::GinRummy</compoundname>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board" prot="public">EarnShardsForCards::Shared::Data::GinRummy::GinRummyBoard</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player" prot="public">EarnShardsForCards::Shared::Data::GinRummy::GinRummyComputerPlayer</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller" prot="public">EarnShardsForCards::Shared::Data::GinRummy::GinRummyController</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state" prot="public">EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler" prot="public">EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run" prot="public">EarnShardsForCards::Shared::Data::GinRummy::MeldRun</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set" prot="public">EarnShardsForCards::Shared::Data::GinRummy::MeldSet</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyBoard.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

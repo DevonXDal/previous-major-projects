@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="en-US">
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" kind="class"><name>EarnShardsForCards::Server::Data::ApplicationDbContext</name>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context_1aa4c20d22aa7fd22f697d52686ab071a4" kind="function"><name>ApplicationDbContext</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot" kind="class"><name>EarnShardsForCards::Server::Data::Migrations::ApplicationDbContextModelSnapshot</name>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot_1aced3eb27d8ff74c7cba22e67fe7a7ca3" kind="function"><name>BuildModel</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_models_1_1_application_user" kind="class"><name>EarnShardsForCards::Server::Models::ApplicationUser</name>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card" kind="class"><name>EarnShardsForCards::Shared::Data::GenericGameObjects::Card</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ac958ea16c9e7013a0d4b0e99b480fff6" kind="property"><name>IsVisible</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1aedd6f769a02508097ab2460b290812fd" kind="property"><name>FaceUpImagePath</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ae521dab713e231c32981915ef62ee211" kind="property"><name>FaceDownImagePath</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a5f77494f4b08ac82e5fe2490b4a13fdf" kind="function"><name>Card</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a44b26c3ff5ee572ad60127e2894b9157" kind="function"><name>Show</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1ab0579f24b953530f77fb35e3c38ebcb5" kind="function"><name>Hide</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card_1a47b2845decbe9bacef84259237a1373d" kind="function"><name>GetImageFilePath</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_card_test" kind="class"><name>EarnShardsForCards::Test::Models::CardTest</name>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema" kind="class"><name>EarnShardsForCards::Server::Data::Migrations::CreateIdentitySchema</name>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a059fead1f7cf232a625337d0ea7c8851" kind="function"><name>Up</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a54055fe925eb1ae8d3f0ab7e1115e6d8" kind="function"><name>Down</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema_1a2b9dcf7580cca31a7e93874cc39c1fc7" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck" kind="class"><name>EarnShardsForCards::Shared::Data::Interfaces::Deck</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a20ad6d9e1457eb13307cc90efea1fadb" kind="function"><name>Count</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1a231a209fda4b7addbdc173d626a581ad" kind="function"><name>Draw</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck_1acc917f25f48cf920098a0a746edbbfcb" kind="function"><name>Shuffle</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile" kind="class"><name>EarnShardsForCards::Shared::Data::GenericGameObjects::DiscardPile</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a4dc17e42928d6249319eedf9e9887208" kind="property"><name>Cards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1afde30b8140c6a8edab74c2d2a7c12a85" kind="property"><name>EmptyImageRepresentation</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1aff837fb155c0ad69ee503ed47ebd0f2b" kind="function"><name>DiscardPile</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a788ebb243e2310518097a0c226adedcd" kind="function"><name>Add</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a5eec16cc93c287259f0814277a3b14aa" kind="function"><name>Draw</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a9572bf08cb7fd42dd859a8622841aec5" kind="function"><name>GetImageFilePath</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1aa97e968577dd609dc965cac0f159980b" kind="function"><name>Clear</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model" kind="class"><name>EarnShardsForCards::Server::Pages::ErrorModel</name>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1adbe0157e85841d0ce901ec69d86c4188" kind="property"><name>RequestId</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1a702f2673a942e3f82ddb6a28ca84997e" kind="property"><name>ShowRequestId</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1a8fc5075d8fd0c0b82f05967b710641f3" kind="variable"><name>_logger</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1aa2a7c216b36501a2d50331bf74674140" kind="function"><name>ErrorModel</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_pages_1_1_error_model_1ab2fb55c0ed65b2e8b05b0d63961e2f5f" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::GinRummyBoard</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board_1a53161601713572e7969b4f79e947cf55" kind="property"><name>ComputerPlayer</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board_1ac60d0ed77fd883c8435798ceff0c5674" kind="property"><name>Player</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board_1a5862baf242829a7db8c30892b66ba264" kind="property"><name>Deck</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board_1ad98123c2f182bb5994a26294a0200794" kind="property"><name>DiscardPile</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_board_1a1842317848c32e197c5c3d47661f11be" kind="function"><name>GinRummyBoard</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::GinRummyComputerPlayer</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1a358895aef81a0b1cc22c5753df809286" kind="property"><name>SkillLevel</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1adb3a47ed6efa7909a2be43f3fc82671e" kind="function"><name>GinRummyComputerPlayer</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1a699689b074c74f0436cd67f868e80cfc" kind="function"><name>ShouldDrawFromDiscardPile</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1aa3cd569f9020926478cde1b779db6ece" kind="function"><name>SelectAndRemoveDiscardedCard</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1abf5862e7896a3f77dea6ff5890d389cd" kind="function"><name>DetermineKnockOrDiscardAction</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::GinRummyController</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ab1cc97beba0e04e54a303b5cff818c5e" kind="variable"><name>_board</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ad12d8c76988522562a1d0aaaee7c7073" kind="variable"><name>_scoreHandler</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a99df7f5df28c288ec57b19bf9d5ec5d7" kind="variable"><name>_gameState</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a3ac518cffde866942cabcde251975cb2" kind="variable"><name>_notifier</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a41f8c19eee5bd12e66f7f4a2451ff6ff" kind="variable"><name>_awaitingDisplayFOrEndOfRound</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ada5e4e5e9ad53f70db7392f85ddaf944" kind="variable"><name>_controller</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a52fcbfffcb118a6e91b3890daede0363" kind="function"><name>GinRummyController</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1acb282af4baaca20aaa79e3423c10852a" kind="function"><name>GetInstance</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a128c7aa68553cfeba5ff2f9a38e4602e" kind="function"><name>InitializeGame</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a4b7d6b9e7e743e0cb4836338ce33b0ab" kind="function"><name>ReinitializeGame</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a70db82dd2420d3ed7b6c8e974509dc15" kind="function"><name>RequestPassTurn</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac81e06c026625206913610e231c17c18" kind="function"><name>RequestDrawFromDeck</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a124c50c0d101afc1f2ead8106741dcd2" kind="function"><name>RequestDrawFromDiscard</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a67f6ce1fba52989a76eae898601a42a7" kind="function"><name>RequestDiscardWithCardAt</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a5a549e9c56d647ad626e5d1f449c2c56" kind="function"><name>RequestKnockWithCardAt</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a7fe22f1a2c5645a547149b337461092e" kind="function"><name>RequestCardReposition</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a700997efaf3fc22271a60ebc10e2df20" kind="function"><name>CheckComputerPlayerDeadwood</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1ac39abe0f677341479e0004a9cc40bd2c" kind="function"><name>NotifyThatEndOfRoundIsDisplayed</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1af6e429e06f0a984b649d8bb20d9d7af7" kind="function"><name>EndOfRoundDisplayIsFinished</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1aa8a766fda28047b177e6cae11b198f20" kind="function"><name>DocumentRoundResults</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9ad85b2f68f1564898175c4b982866e2" kind="function"><name>FetchViewData</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a9d5048e4bcc6342c7a85dc80113f8995" kind="function"><name>FetchEndOfRoundData</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a93df96df8059a9de4381a0a436ee0210" kind="function"><name>CheckForBigGin</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a35f498e4a479596c253791cd755dbd12" kind="function"><name>CheckIfWinConditionIsMet</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_1a73bc794ed0d9d5eb5d2954560f3eef1f" kind="function"><name>SetupNextRound</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a24680e20f8da99d4d68b49d945fb6b85" kind="property"><name>PointsRequiredForWin</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a0b48257b55f51f6a00c1fbb316088a31" kind="property"><name>PointsForHumanPlayerPerRound</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a6dcfd2d9ab233f4bbf13a8ff3aa1e92f" kind="property"><name>PointsForComputerPlayerPerRound</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1af73d71d459179a022d396e3fe14a1a15" kind="property"><name>RoundNumber</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a0d5bda538aa8b6d4e83e5e4f57db52b1" kind="property"><name>IsAroundTheWorld</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a131730cc1631e4b815423001ea0382d0" kind="property"><name>CurrentPlayersTurn</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a1ecfa43c65ef05503b82dcbf6c79aae7" kind="property"><name>CurrentTurnPhase</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a75e9b98c11441a5476dbd9bca4fff333" kind="property"><name>IsSpecialDraw</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1ae438465acb17197cea70e79fa1a7ca39" kind="function"><name>GinRummyGameState</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a141ca930393c4c47a530690468c7516a" kind="function"><name>CheckIfGameIsWon</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1aa418830e04da77ad0bf8a815af26f0f4" kind="variable"><name>_humanPlayer</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a97f35d71dd4bbf22b4880b5e363f3b57" kind="variable"><name>_computerPlayer</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a32b5bbefdc15a4cbd5b1be610d89f428" kind="variable"><name>_controller</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a99fb7bc1d744c3b62d18c93849e9ee48" kind="function"><name>GinRummyScoreHandler</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a0b440a2f9c95809767c406c97a8010ab" kind="function"><name>RewardPoints</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a3caafaad80f51a61e1987827d68a53d4" kind="function"><name>EliminateDeadwood</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a540e0274696ce9af106f6b39f8c7f069" kind="function"><name>CanPlayerKnock</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a96fdac9f2e0967737f413972bec17ab2" kind="function"><name>DoesPlayerHaveBigGin</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1ad32f55b1146f98c1ab4837dd3c04be78" kind="function"><name>DocumentResults</name></member>
+  </compound>
+  <compound refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller" kind="interface"><name>EarnShardsForCards::Shared::Data::Interfaces::IGinRummyController</name>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4ea16a5de470406c16b84f1169daea49" kind="function"><name>InitializeGame</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ab7213d7d60e22c621e5d2bbd8655a0c4" kind="function"><name>ReinitializeGame</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a19569beea69eb5b78afd0f10e22b784e" kind="function"><name>RequestPassTurn</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1afa30f0d22ffbd80d733f8ac926500596" kind="function"><name>RequestDrawFromDeck</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a702c7c31f0e38bd71473423e47bba037" kind="function"><name>RequestDrawFromDiscard</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a1fe0abf566a9865f3e8a5b899933458a" kind="function"><name>RequestDiscardWithCardAt</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a858e9170f05a2d60ce1f5253b04f4480" kind="function"><name>RequestKnockWithCardAt</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aebca17a253be6a800ae78d27e3de31c0" kind="function"><name>RequestCardReposition</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1abeb7eeb23585f1d2381e9d916ef020d2" kind="function"><name>CheckComputerPlayerDeadwood</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a6a9f38d737d0e88587feaeb79157ef30" kind="function"><name>NotifyThatEndOfRoundIsDisplayed</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a4816d74a729913f29897c008d331a918" kind="function"><name>EndOfRoundDisplayIsFinished</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1a7bc7555356b81f5ea8e83ffc70207b6a" kind="function"><name>DocumentRoundResults</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1ade360ff0e8a2cb2eaec8a4c2735ad4b3" kind="function"><name>FetchViewData</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_1aa49acd270eb35152eb97a53f33a60f66" kind="function"><name>FetchEndOfRoundData</name></member>
+  </compound>
+  <compound refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld" kind="interface"><name>EarnShardsForCards::Shared::Data::Interfaces::IMeld</name>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1a170659e4d07e30e4915bde695d409ae1" kind="function"><name>GenerateMeldFromCards</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1ae7ebf694fe6f35520df8aebbeb66fea3" kind="function"><name>CanAddNewCard</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1aae2b858b42ad3c944ea5bc08cb993b55" kind="function"><name>Insert</name></member>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld_1af30147828a676f8393401ff110427ac0" kind="function"><name>DeadwoodRemovedByMeld</name></member>
+  </compound>
+  <compound refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe" kind="interface"><name>EarnShardsForCards::Shared::Data::Interfaces::ISubscribe</name>
+    <member refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe_1a14c43fca3d3e4adf712f37c566cd1c6e" kind="function"><name>Notify</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::MeldRun</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1af8303d789a74eff30cc7dc1c17fd8491" kind="property"><name>Cards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1a391b4b776b561dfa006e1af0b5e00bf3" kind="function"><name>MeldRun</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1a2f48ff4f11396edcda90f63acd89bddb" kind="function"><name>CanAddNewCard</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1a1d4ea378e65b7dfbd118c6d24053e23c" kind="function"><name>DeadwoodRemovedByMeld</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1abeaa1e41060f3bc0b922ac41a157f07e" kind="function"><name>GenerateMeldFromCards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run_1acbf9f45976655c3c063395a666ae2072" kind="function"><name>Insert</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set" kind="class"><name>EarnShardsForCards::Shared::Data::GinRummy::MeldSet</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1a9d629af1e80235fe95a04ff6053fe8c8" kind="property"><name>Cards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1a1e678bd371fc57dfe53898984d4476ac" kind="function"><name>MeldSet</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1ab56cee12c949199cb576cb200748ff30" kind="function"><name>CanAddNewCard</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1acfd2556ab07511a86abc42f65e0ba3f6" kind="function"><name>DeadwoodRemovedByMeld</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1a0c276dfc0735edc2abb83147679fee4c" kind="function"><name>GenerateMeldFromCards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set_1ac98530fd7d6b59ad398d705d1370e9c4" kind="function"><name>Insert</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier" kind="class"><name>EarnShardsForCards::Shared::Data::GenericGameObjects::Notifier</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a15a7ceec183cc9bba16cc96bd13a7a0b" kind="variable"><name>_subscribers</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a123bce7ab6d1226ab95085e00e63e211" kind="function"><name>Notifier</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8a9fce25a2f5f970dd5ae90bc6516012" kind="function"><name>Subscribe</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8df4d4c9e31259039b40858a635116f0" kind="function"><name>Unsubscribe</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1acd239fd2cb632075e12c45aca4d8d4e8" kind="function"><name>SendNotice</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller" kind="class"><name>EarnShardsForCards::Server::Controllers::OidcConfigurationController</name>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a0a8cbf4f001b4c32857eab9d6f64f7c5" kind="variable"><name>_logger</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a98c8059c642d42d631724f8974e643e5" kind="property"><name>ClientRequestParametersProvider</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1a88fa26c3da54bedc237e829b6906779e" kind="function"><name>OidcConfigurationController</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_oidc_configuration_controller_1aa90733d40b68198d15ca1c6e9f753884" kind="function"><name>GetClientRequestParameters</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kind="class"><name>EarnShardsForCards::Shared::Data::GenericGameObjects::Player</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1aa1cc6122108d76106a0ba17fa47fca29" kind="property"><name>Cards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a58bb072e63a691c5c0b0ed76af6b6b5a" kind="function"><name>Player</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a72494dca816c1d0e34f6657c61537330" kind="function"><name>Count</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a66c7db2863cb621bba12b24fba9d71f2" kind="function"><name>RemoveAt</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a97a3ad8c167688397390c6a28f8e520b" kind="function"><name>Insert</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player_1a9882b91fa15f361259bc11e545ee9721" kind="function"><name>Clear</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kind="class"><name>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCard</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a86b5ce631c6cd445086deac91b432fa5" kind="property"><name>Rank</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a29850c0a593512b08101556ce26f7f5e" kind="property"><name>Suit</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1abe91023e83846d105df0a008ecebb00f" kind="property"><name>Value</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1a2fd9bcf0ccacbe755dd7933a8618acf1" kind="function"><name>PlayingCard</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_1ad52a09c4cc7a7ed52cfb56a0cd7de2e8" kind="function"><name>Equals</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck" kind="class"><name>EarnShardsForCards::Shared::Data::GenericGameObjects::PlayingCardDeck</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1a3ed5bf1674e9460125053138f83ddced" kind="variable"><name>cards</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1a5bc4e11bf173bf2d7200beae26b37563" kind="function"><name>Count</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1ac9b1f52480be53178fa97b47570197c4" kind="function"><name>Draw</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card_deck_1a3e5e9e1b3bcfc464a853a4d5752a7ac4" kind="function"><name>Shuffle</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test" kind="class"><name>EarnShardsForCards::Test::Models::PlayingCardTest</name>
+    <member refid="class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test_1a16ee5817b3a4fad6127c35681c5d0c78" kind="function"><name>PlayingCardTest</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast" kind="class"><name>EarnShardsForCards::Shared::WeatherForecast</name>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1af1e59aaf0c1f071f38a92ebc3d306192" kind="property"><name>Date</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1af62d90e7834f8357a5340b38598d0555" kind="property"><name>TemperatureC</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1ab4efceb5d60ae44590500693ab9727b6" kind="property"><name>Summary</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1a47f64debb5ffd926141de2fe0215db91" kind="property"><name>TemperatureF</name></member>
+  </compound>
+  <compound refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller" kind="class"><name>EarnShardsForCards::Server::Controllers::WeatherForecastController</name>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a29c7cfc086748036765c65e0bb5c7bae" kind="variable"><name>Summaries</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a9b538f041acbd15384c9922cfaebb2bf" kind="variable"><name>_logger</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a86d75a26f218e0b4fe325ccd7ff467b5" kind="function"><name>WeatherForecastController</name></member>
+    <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1aab5a5ea7ad104eb15c6d8823cd1a60a1" kind="function"><name>Get</name></member>
+  </compound>
+  <compound refid="namespace_duende_1_1_identity_server_1_1_entity_framework_1_1_options" kind="namespace"><name>Duende::IdentityServer::EntityFramework::Options</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards" kind="namespace"><name>EarnShardsForCards</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_client" kind="namespace"><name>EarnShardsForCards::Client</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_server" kind="namespace"><name>EarnShardsForCards::Server</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_server_1_1_controllers" kind="namespace"><name>EarnShardsForCards::Server::Controllers</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_server_1_1_data" kind="namespace"><name>EarnShardsForCards::Server::Data</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations" kind="namespace"><name>EarnShardsForCards::Server::Data::Migrations</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_server_1_1_models" kind="namespace"><name>EarnShardsForCards::Server::Models</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_server_1_1_pages" kind="namespace"><name>EarnShardsForCards::Server::Pages</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared" kind="namespace"><name>EarnShardsForCards::Shared</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data" kind="namespace"><name>EarnShardsForCards::Shared::Data</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations" kind="namespace"><name>EarnShardsForCards::Shared::Data::Enumerations</name>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a53cdfddcbc89aea7fc9b14c34a0d0597" kind="enum"><name>CardType</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a53cdfddcbc89aea7fc9b14c34a0d0597aaf49b2c93c1e56ec2a701932f920e1a4" kind="enumvalue"><name>PlayingCard</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7" kind="enum"><name>GameButtonType</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7aa6122a65eaa676f700ae68d393054a37" kind="enumvalue"><name>Start</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7a51cfbcff36da74a9fc47f3a5140f99f2" kind="enumvalue"><name>Restart</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1aa2438d4df10a8ee06af66c5d9ee7eeb7ab9b57aae83585e17ede4570dcede353c" kind="enumvalue"><name>Pass</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a68b0c6117dd2c40250bdd6adff11fb62" kind="enum"><name>GameType</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a68b0c6117dd2c40250bdd6adff11fb62a53d651592f1c1bdb44eef8c1cf94b4ce" kind="enumvalue"><name>GinRummy</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d" kind="enum"><name>GinRummyRoundEndingCase</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019da2de86fa016c5a004fb0b0e8b707ea99b" kind="enumvalue"><name>Tie</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019da3b5b8ec2903478fc081f603bd704f9be" kind="enumvalue"><name>Knock</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019daa3b82e43bbaf42b9a14755eeb3e98f99" kind="enumvalue"><name>Undercut</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019dad7ad223a94b1cdb31734ad5fb25df4bd" kind="enumvalue"><name>Gin</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019dae6c31790c7fa228cf10f03a4afdf11fe" kind="enumvalue"><name>BigGin</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785" kind="enum"><name>PhaseState</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785a2d03c2d5a7ec65ef4619e0582c272ec2" kind="enumvalue"><name>Draw</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785ad94b42030b9785fd754d5c1754961269" kind="enumvalue"><name>Discard</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631" kind="enum"><name>Rank</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a37b1202ffbec121b5250a3f8265262e6" kind="enumvalue"><name>Ace</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631aaada29daee1d64ed0fe907043855cb7e" kind="enumvalue"><name>Two</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631aca8a2087e5557e317599344687a57391" kind="enumvalue"><name>Three</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a981b8fcee42e1e726a67a2b9a98ea6e9" kind="enumvalue"><name>Four</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631ae5d9de39f7ca1ba2637e5640af3ae8aa" kind="enumvalue"><name>Five</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631ae6fbc0b9673f8c86726688d7607fc8f5" kind="enumvalue"><name>Six</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a12e67aac3e7f9227cc35f8f047d7dc74" kind="enumvalue"><name>Seven</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631abaca0ca6729684fd54206793ae4b5bd5" kind="enumvalue"><name>Eight</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a24db11216549ee55172c33cf3def2f3f" kind="enumvalue"><name>Nine</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631aa185c3c138dca5ef46afc33288a67d1f" kind="enumvalue"><name>Ten</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a40687c8206d15373954d8b27c6724f62" kind="enumvalue"><name>Jack</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a2c2d2c0291163b077a372c2a9c5a6eda" kind="enumvalue"><name>Queen</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac90f88b4404e5cd40205a80002118631a719ef271d38a388fd7b2bc967f4bd885" kind="enumvalue"><name>King</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbed" kind="enum"><name>SkillLevel</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbeda2ddabc33a6100ceb5311697534035d8d" kind="enumvalue"><name>Beginner</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbedab57ed7a0b4f939d0c048882570336e3a" kind="enumvalue"><name>Intermediate</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbeda9b6545e4cea9b4ad4979d41bb9170e2b" kind="enumvalue"><name>Advanced</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85" kind="enum"><name>Suit</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85abc56e1ae1e30e7123ffc5030f108f2a0" kind="enumvalue"><name>Clubs</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85a74d868fafa8c57d04565f672807e7ef7" kind="enumvalue"><name>Diamonds</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85a6af4bf214d6cf054f9528da5b6054817" kind="enumvalue"><name>Hearts</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a3fdb50d9b1d16cf71839125a3e5a4b85a8dac9a2d5a20ebbf46559d684bae0f46" kind="enumvalue"><name>Spades</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04" kind="enum"><name>TurnState</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04ac1bb19b27818343c1926119b958741b5" kind="enumvalue"><name>Human</name></member>
+    <member refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04a181900dad960beccb34f53c4e0ff4647" kind="enumvalue"><name>Computer</name></member>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects" kind="namespace"><name>EarnShardsForCards::Shared::Data::GenericGameObjects</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy" kind="namespace"><name>EarnShardsForCards::Shared::Data::GinRummy</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces" kind="namespace"><name>EarnShardsForCards::Shared::Data::Interfaces</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_records" kind="namespace"><name>EarnShardsForCards::Shared::Data::Records</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_models" kind="namespace"><name>EarnShardsForCards::Shared::Models</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_shared_1_1_models_1_1_records" kind="namespace"><name>EarnShardsForCards::Shared::Models::Records</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_test" kind="namespace"><name>EarnShardsForCards::Test</name>
+  </compound>
+  <compound refid="namespace_earn_shards_for_cards_1_1_test_1_1_models" kind="namespace"><name>EarnShardsForCards::Test::Models</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_api_authorization_1_1_identity_server" kind="namespace"><name>Microsoft::AspNetCore::ApiAuthorization::IdentityServer</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authentication" kind="namespace"><name>Microsoft::AspNetCore::Authentication</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authorization" kind="namespace"><name>Microsoft::AspNetCore::Authorization</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web" kind="namespace"><name>Microsoft::AspNetCore::Components::Web</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_authentication" kind="namespace"><name>Microsoft::AspNetCore::Components::WebAssembly::Authentication</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_hosting" kind="namespace"><name>Microsoft::AspNetCore::Components::WebAssembly::Hosting</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_identity" kind="namespace"><name>Microsoft::AspNetCore::Identity</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc" kind="namespace"><name>Microsoft::AspNetCore::Mvc</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc_1_1_razor_pages" kind="namespace"><name>Microsoft::AspNetCore::Mvc::RazorPages</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_response_compression" kind="namespace"><name>Microsoft::AspNetCore::ResponseCompression</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core" kind="namespace"><name>Microsoft::EntityFrameworkCore</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_infrastructure" kind="namespace"><name>Microsoft::EntityFrameworkCore::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_metadata" kind="namespace"><name>Microsoft::EntityFrameworkCore::Metadata</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_migrations" kind="namespace"><name>Microsoft::EntityFrameworkCore::Migrations</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_storage_1_1_value_conversion" kind="namespace"><name>Microsoft::EntityFrameworkCore::Storage::ValueConversion</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_extensions_1_1_options" kind="namespace"><name>Microsoft::Extensions::Options</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics_1_1_code_analysis" kind="namespace"><name>System::Diagnostics::CodeAnalysis</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="_card_test_8cs" kind="file"><name>CardTest.cs</name>
+  </compound>
+  <compound refid="_playing_card_test_8cs" kind="file"><name>PlayingCardTest.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_test_8_assembly_info_8cs" kind="file"><name>EarnShardsForCards.Test.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_test_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_2_client_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_2_server_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_2_shared_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_client_8_assembly_info_8cs" kind="file"><name>EarnShardsForCards.Client.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_client_8_global_usings_8g_8cs" kind="file"><name>EarnShardsForCards.Client.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_client_2_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_client_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_client_2_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" kind="function"><name>Add&lt; App &gt;</name></member>
+    <member refid="_client_2_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" kind="function"><name>Add&lt; HeadOutlet &gt;</name></member>
+    <member refid="_client_2_program_8cs_1ab35203c436e97c0222f0c228bdd88f98" kind="function"><name>AddHttpClient</name></member>
+    <member refid="_client_2_program_8cs_1ab820cc2e6ca9416ec616ae3d06ad47df" kind="function"><name>AddScoped</name></member>
+    <member refid="_client_2_program_8cs_1a8744b40672e7536115a570cc58b8120f" kind="function"><name>AddApiAuthorization</name></member>
+    <member refid="_client_2_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" kind="function"><name>Build</name></member>
+  </compound>
+  <compound refid="_server_2_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_server_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_server_2_program_8cs_1a067cdd5f0fed6b2598fae7de8607e7da" kind="variable"><name>connectionString</name></member>
+    <member refid="_server_2_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_server_2_program_8cs_1a0544c3fe466e421738dae463968b70ba" kind="variable"><name>else</name></member>
+    <member refid="_server_2_program_8cs_1ae8fa3e8f86604ab20a32c2ff9249957f" kind="function"><name>AddDbContext&lt; ApplicationDbContext &gt;</name></member>
+    <member refid="_server_2_program_8cs_1ae9ee4e6d7ca0f73335732ae4a52064d2" kind="function"><name>AddDatabaseDeveloperPageExceptionFilter</name></member>
+    <member refid="_server_2_program_8cs_1aac9e789c9d9c914c25fbc5e61340d71d" kind="function"><name>AddDefaultIdentity&lt; ApplicationUser &gt;</name></member>
+    <member refid="_server_2_program_8cs_1aceae9cd3648fe11c712080a28693192f" kind="function"><name>AddIdentityServer</name></member>
+    <member refid="_server_2_program_8cs_1a19398c84d4579f9c9e31894e55175d43" kind="function"><name>ApplicationDbContext</name></member>
+    <member refid="_server_2_program_8cs_1adfec7a9f0f389574f6be2d3b84041093" kind="function"><name>AddAuthentication</name></member>
+    <member refid="_server_2_program_8cs_1af8107f2f8ff8e8de22a684c8c8ad3e99" kind="function"><name>AddControllersWithViews</name></member>
+    <member refid="_server_2_program_8cs_1a50ac3cc59e3f8d9e5c1a2734bd14b7f5" kind="function"><name>AddRazorPages</name></member>
+    <member refid="_server_2_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kind="function"><name>if</name></member>
+    <member refid="_server_2_program_8cs_1a8c2c34f600427906d008e9ce976831ec" kind="function"><name>UseHsts</name></member>
+    <member refid="_server_2_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" kind="function"><name>UseHttpsRedirection</name></member>
+    <member refid="_server_2_program_8cs_1aed1efa704e60214c06e980909b57ee78" kind="function"><name>UseBlazorFrameworkFiles</name></member>
+    <member refid="_server_2_program_8cs_1a906a3ce545279a7a73941f1d7b64d7cf" kind="function"><name>UseStaticFiles</name></member>
+    <member refid="_server_2_program_8cs_1a94c810d266751293a2d511a720a5625f" kind="function"><name>UseRouting</name></member>
+    <member refid="_server_2_program_8cs_1a2c6c7259911b58def4f051e880bb4244" kind="function"><name>UseIdentityServer</name></member>
+    <member refid="_server_2_program_8cs_1a6435d8beeff4999dc0b0c6d60a86a4e2" kind="function"><name>UseAuthentication</name></member>
+    <member refid="_server_2_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" kind="function"><name>UseAuthorization</name></member>
+    <member refid="_server_2_program_8cs_1aea1890390376604d4d91e0bdb76602a3" kind="function"><name>MapRazorPages</name></member>
+    <member refid="_server_2_program_8cs_1a9e2ee3170aa6279b68eefd1651f7d96c" kind="function"><name>MapControllers</name></member>
+    <member refid="_server_2_program_8cs_1ab162ca4c83853bf01175352d441bd220" kind="function"><name>MapFallbackToFile</name></member>
+    <member refid="_server_2_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_oidc_configuration_controller_8cs" kind="file"><name>OidcConfigurationController.cs</name>
+  </compound>
+  <compound refid="_weather_forecast_controller_8cs" kind="file"><name>WeatherForecastController.cs</name>
+  </compound>
+  <compound refid="_application_db_context_8cs" kind="file"><name>ApplicationDbContext.cs</name>
+  </compound>
+  <compound refid="00000000000000___create_identity_schema_8cs" kind="file"><name>00000000000000_CreateIdentitySchema.cs</name>
+  </compound>
+  <compound refid="00000000000000___create_identity_schema_8_designer_8cs" kind="file"><name>00000000000000_CreateIdentitySchema.Designer.cs</name>
+  </compound>
+  <compound refid="_application_db_context_model_snapshot_8cs" kind="file"><name>ApplicationDbContextModelSnapshot.cs</name>
+  </compound>
+  <compound refid="_application_user_8cs" kind="file"><name>ApplicationUser.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_server_8_assembly_info_8cs" kind="file"><name>EarnShardsForCards.Server.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_server_8_global_usings_8g_8cs" kind="file"><name>EarnShardsForCards.Server.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_server_8_mvc_application_parts_assembly_info_8cs" kind="file"><name>EarnShardsForCards.Server.MvcApplicationPartsAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_server_8_razor_assembly_info_8cs" kind="file"><name>EarnShardsForCards.Server.RazorAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_error_8cshtml_8cs" kind="file"><name>Error.cshtml.cs</name>
+  </compound>
+  <compound refid="_card_type_8cs" kind="file"><name>CardType.cs</name>
+  </compound>
+  <compound refid="_game_button_type_8cs" kind="file"><name>GameButtonType.cs</name>
+  </compound>
+  <compound refid="_game_type_8cs" kind="file"><name>GameType.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_round_ending_case_8cs" kind="file"><name>GinRummyRoundEndingCase.cs</name>
+  </compound>
+  <compound refid="_phase_state_8cs" kind="file"><name>PhaseState.cs</name>
+  </compound>
+  <compound refid="_rank_8cs" kind="file"><name>Rank.cs</name>
+  </compound>
+  <compound refid="_skill_level_8cs" kind="file"><name>SkillLevel.cs</name>
+  </compound>
+  <compound refid="_suit_8cs" kind="file"><name>Suit.cs</name>
+  </compound>
+  <compound refid="_turn_state_8cs" kind="file"><name>TurnState.cs</name>
+  </compound>
+  <compound refid="_card_8cs" kind="file"><name>Card.cs</name>
+  </compound>
+  <compound refid="_discard_pile_8cs" kind="file"><name>DiscardPile.cs</name>
+  </compound>
+  <compound refid="_notifier_8cs" kind="file"><name>Notifier.cs</name>
+  </compound>
+  <compound refid="_player_8cs" kind="file"><name>Player.cs</name>
+  </compound>
+  <compound refid="_playing_card_8cs" kind="file"><name>PlayingCard.cs</name>
+  </compound>
+  <compound refid="_playing_card_deck_8cs" kind="file"><name>PlayingCardDeck.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_board_8cs" kind="file"><name>GinRummyBoard.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_computer_player_8cs" kind="file"><name>GinRummyComputerPlayer.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_controller_8cs" kind="file"><name>GinRummyController.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_game_state_8cs" kind="file"><name>GinRummyGameState.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_score_handler_8cs" kind="file"><name>GinRummyScoreHandler.cs</name>
+  </compound>
+  <compound refid="_meld_run_8cs" kind="file"><name>MeldRun.cs</name>
+  </compound>
+  <compound refid="_meld_set_8cs" kind="file"><name>MeldSet.cs</name>
+  </compound>
+  <compound refid="_i_deck_8cs" kind="file"><name>IDeck.cs</name>
+  </compound>
+  <compound refid="_i_gin_rummy_controller_8cs" kind="file"><name>IGinRummyController.cs</name>
+  </compound>
+  <compound refid="_i_meld_8cs" kind="file"><name>IMeld.cs</name>
+  </compound>
+  <compound refid="_i_subscribe_8cs" kind="file"><name>ISubscribe.cs</name>
+  </compound>
+  <compound refid="_eliminate_deadwood_data_8cs" kind="file"><name>EliminateDeadwoodData.cs</name>
+  </compound>
+  <compound refid="_end_of_round_data_8cs" kind="file"><name>EndOfRoundData.cs</name>
+  </compound>
+  <compound refid="_gin_rummy_view_data_8cs" kind="file"><name>GinRummyViewData.cs</name>
+  </compound>
+  <compound refid="_global_suppressions_8cs" kind="file"><name>GlobalSuppressions.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_shared_8_assembly_info_8cs" kind="file"><name>EarnShardsForCards.Shared.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_earn_shards_for_cards_8_shared_8_global_usings_8g_8cs" kind="file"><name>EarnShardsForCards.Shared.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_weather_forecast_8cs" kind="file"><name>WeatherForecast.cs</name>
+  </compound>
+  <compound refid="md__c_s320__designing_gin_rummy__earn_shards_for_cards__earn_shards_for_cards__client_wwwroot_css_open_iconic__r_e_a_d_m_e" kind="page"><name>md_CS320_DesigningGinRummy_EarnShardsForCards_EarnShardsForCards_Client_wwwroot_css_open_iconic_README</name>
+  </compound>
+  <compound refid="dir_fac7a9b7d3fa955ab4fc70ef73122087" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client</name>
+  </compound>
+  <compound refid="dir_4050565deea4bbaf0e299167171b7887" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers</name>
+  </compound>
+  <compound refid="dir_0c1f61f2e4a82176dd31a4a98810d45b" kind="dir"><name>CS320</name>
+  </compound>
+  <compound refid="dir_08bb1e3e4f7831a762e6cdf0e73ce4d5" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/wwwroot/css</name>
+  </compound>
+  <compound refid="dir_d12d2771529513b921bea1b79081b07d" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data</name>
+  </compound>
+  <compound refid="dir_05d7c7b94225336ae684385583d47a3e" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data</name>
+  </compound>
+  <compound refid="dir_68f0e5e225579ef6d634d62e5ee51dfb" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/obj/Debug</name>
+  </compound>
+  <compound refid="dir_5b50b07cca9edcfda0a9c41e077ef0b0" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/obj/Debug</name>
+  </compound>
+  <compound refid="dir_b68fd6b5aebe00819d3f8ebfc9180fe4" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/obj/Debug</name>
+  </compound>
+  <compound refid="dir_4d68c87aa7cae0f2edd719f44ad8a56b" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/obj/Debug</name>
+  </compound>
+  <compound refid="dir_0c712fb387403e4353f56a21f53ad0e8" kind="dir"><name>CS320/DesigningGinRummy</name>
+  </compound>
+  <compound refid="dir_5321e5d4cad0bfdd4cf10ae223f57f47" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards</name>
+  </compound>
+  <compound refid="dir_4a1125d6b11aa226b71873946e6f53dc" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards</name>
+  </compound>
+  <compound refid="dir_96a51eba0b4c83ffabff49679595e481" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test</name>
+  </compound>
+  <compound refid="dir_6f3002e924084bd75b8d190faca9d126" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Enumerations</name>
+  </compound>
+  <compound refid="dir_d0bd0cbbac9fd12fdd3648a480214cf3" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects</name>
+  </compound>
+  <compound refid="dir_6a9241ca10fd6e14a8270c294936ee5b" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy</name>
+  </compound>
+  <compound refid="dir_ee5c59d9cedb892e9a5c6df0e1805da4" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Interfaces</name>
+  </compound>
+  <compound refid="dir_d891c6db129b9e1fea2ac69210388cd8" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations</name>
+  </compound>
+  <compound refid="dir_d7266ddb68df509d8ce9d8075cb175a4" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models</name>
+  </compound>
+  <compound refid="dir_46d0f5926da5668b0e24497fcc1e1628" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Models</name>
+  </compound>
+  <compound refid="dir_1b6e91c5f199391c87356435d798518c" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_cac50d57769372be3e28395d8e6965cc" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_b970fd168de257da8c4a40a0bbe0f752" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_70ab85600e38fe7c0fcc676f13b4f2f8" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_000d99b51a05536bd214bd258faf33f1" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/obj</name>
+  </compound>
+  <compound refid="dir_6e0e7207ca5f0b33853ecef86a6cf4d3" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/obj</name>
+  </compound>
+  <compound refid="dir_391ec9fe7c1cc6628c9c30a906f88efe" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/obj</name>
+  </compound>
+  <compound refid="dir_37a53874c9e85bc170256305f9ba07dd" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/obj</name>
+  </compound>
+  <compound refid="dir_de82f9d4cc6c2912dc78ea0df52c324c" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/wwwroot/css/open-iconic</name>
+  </compound>
+  <compound refid="dir_78fa1238181ed0e909cee7956f0dd805" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Pages</name>
+  </compound>
+  <compound refid="dir_24d4aec03c219ac4f0ced628b4e62d35" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/Records</name>
+  </compound>
+  <compound refid="dir_dc2c0bbecc20d987950766a1183a6bec" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server</name>
+  </compound>
+  <compound refid="dir_dd1b4c69bbc585d84e8bbcd8d9976d56" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared</name>
+  </compound>
+  <compound refid="dir_067c078d043c2b54d902042f4390ce15" kind="dir"><name>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Client/wwwroot</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,80 @@
+.TH "EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCard \- A \fBPlayingCard\fP represents the real-world card from a standard 52-card deck\&. It holds information about its rank and suit\&. It can either be face up or face down with the facedown side revealing no rank or suit information\&. All cards have the same face down representation but each face up representation is unique from the others\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Card\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayingCard\fP (\fBRank\fP rank, \fBSuit\fP suit, int value)"
+.br
+.RI "Create the playing card, assigning it a rank, suit, and point value\&. "
+.ti -1c
+.RI "override bool \fBEquals\fP (object? obj)"
+.br
+.RI "Checks to see if both cards have the same rank and suit combination\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBRank\fP \fBRank\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "\fBSuit\fP \fBSuit\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "int \fBValue\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBPlayingCard\fP represents the real-world card from a standard 52-card deck\&. It holds information about its rank and suit\&. It can either be face up or face down with the facedown side revealing no rank or suit information\&. All cards have the same face down representation but each face up representation is unique from the others\&. 
+
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCard\&.PlayingCard (\fBRank\fP rank, \fBSuit\fP suit, int value)"
+
+.PP
+Create the playing card, assigning it a rank, suit, and point value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrank\fP The alphanumeric character that aids in identification
+.br
+\fIsuit\fP The shape that aids in identification
+.br
+\fIvalue\fP The value that the card has in relation to a game
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCard\&.Equals (object? obj)"
+
+.PP
+Checks to see if both cards have the same rank and suit combination\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP The other object, likely a playing card, to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Are both the same card?
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

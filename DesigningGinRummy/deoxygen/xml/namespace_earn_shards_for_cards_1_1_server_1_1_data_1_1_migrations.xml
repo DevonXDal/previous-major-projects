@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations" kind="namespace" language="C#">
+    <compoundname>EarnShardsForCards::Server::Data::Migrations</compoundname>
+    <innerclass refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_application_db_context_model_snapshot" prot="public">EarnShardsForCards::Server::Data::Migrations::ApplicationDbContextModelSnapshot</innerclass>
+    <innerclass refid="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_migrations_1_1_create_identity_schema" prot="public">EarnShardsForCards::Server::Data::Migrations::CreateIdentitySchema</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/00000000000000_CreateIdentitySchema.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

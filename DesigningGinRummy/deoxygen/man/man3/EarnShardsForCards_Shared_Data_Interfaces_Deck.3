@@ -1,0 +1,68 @@
+.TH "EarnShardsForCards.Shared.Data.Interfaces.Deck" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.Interfaces.Deck \- Interface for a game deck that identifies the common functions of each type of deck\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "abstract int \fBCount\fP ()"
+.br
+.RI "Returns the number of cards that are currently in the deck\&. "
+.ti -1c
+.RI "abstract \fBCard\fP \fBDraw\fP ()"
+.br
+.RI "Remove and return a card from the top of the deck\&. "
+.ti -1c
+.RI "abstract void \fBShuffle\fP ()"
+.br
+.RI "Randomizes the positions of cards in the deck\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface for a game deck that identifies the common functions of each type of deck\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract int EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\&.Count ()\fC [pure virtual]\fP"
+
+.PP
+Returns the number of cards that are currently in the deck\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The number of cards in the deck
+.RE
+.PP
+
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\fP\&.
+.SS "abstract \fBCard\fP EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\&.Draw ()\fC [pure virtual]\fP"
+
+.PP
+Remove and return a card from the top of the deck\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The card from the top of the deck
+.RE
+.PP
+
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\fP\&.
+.SS "abstract void EarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.Deck\&.Shuffle ()\fC [pure virtual]\fP"
+
+.PP
+Randomizes the positions of cards in the deck\&. 
+.PP
+Implemented in \fBEarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.PlayingCardDeck\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

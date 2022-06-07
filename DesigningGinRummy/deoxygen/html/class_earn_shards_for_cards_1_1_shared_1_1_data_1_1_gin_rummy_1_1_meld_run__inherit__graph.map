@@ -1,0 +1,4 @@
+<map id="EarnShardsForCards.Shared.Data.GinRummy.MeldRun" name="EarnShardsForCards.Shared.Data.GinRummy.MeldRun">
+<area shape="rect" id="node1" title="A MeldRun is more of a virtual game support object than a real&#45;world object. It represents the three ..." alt="" coords="5,80,197,121"/>
+<area shape="rect" id="node2" href="$interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_meld.html" title="This IMeld represents melds (sets/runs) from the game, Gin Rummy. It provides the common functionalit..." alt="" coords="75,5,128,32"/>
+</map>

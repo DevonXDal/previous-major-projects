@@ -1,0 +1,303 @@
+\hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller Interface Reference}
+\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller}\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+
+
+Represents the open functionality that can be taken a Gin\+Rummy\+Controller class by other classes. The main purpose of this interface is to allow a mock controller to be used for testing purposes.  
+
+
+
+
+Inheritance diagram for Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a4ea16a5de470406c16b84f1169daea49}{Initialize\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Set up the models and controller objects necessary to run a game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_ab7213d7d60e22c621e5d2bbd8655a0c4}{Reinitialize\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Restart the game, performs similar to initialize the game but ensures that the notifier is recreated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a19569beea69eb5b78afd0f10e22b784e}{Request\+Pass\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Try to pass the human player\textquotesingle{}s turn if validation succeeds. Must be the player\textquotesingle{}s special draw phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_afa30f0d22ffbd80d733f8ac926500596}{Request\+Draw\+From\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Try to perform a draw from deck action after validation for the human player. Must be the player\textquotesingle{}s normal draw phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a702c7c31f0e38bd71473423e47bba037}{Request\+Draw\+From\+Discard}} ()
+\begin{DoxyCompactList}\small\item\em Try to perform a draw from discard action after validation for the human player. Must be the player\textquotesingle{}s draw phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a1fe0abf566a9865f3e8a5b899933458a}{Request\+Discard\+With\+Card\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Try to perform a discard action after validation for the human player. Must be the player\textquotesingle{}s discard phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a858e9170f05a2d60ce1f5253b04f4480}{Request\+Knock\+With\+Card\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Try to perform a knock action after validation for the human player. Must be the player\textquotesingle{}s discard phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_aebca17a253be6a800ae78d27e3de31c0}{Request\+Card\+Reposition}} (int initial\+Index, int new\+Index)
+\begin{DoxyCompactList}\small\item\em Try to reposition the cards within the human player\textquotesingle{}s hand. Must be the player\textquotesingle{}s turn. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_abeb7eeb23585f1d2381e9d916ef020d2}{Check\+Computer\+Player\+Deadwood}} ()
+\begin{DoxyCompactList}\small\item\em Get the deadwood remaining for the computer player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a6a9f38d737d0e88587feaeb79157ef30}{Notify\+That\+End\+Of\+Round\+Is\+Displayed}} ()
+\begin{DoxyCompactList}\small\item\em Receive Indication that display of end of round information has begun displaying \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a4816d74a729913f29897c008d331a918}{End\+Of\+Round\+Display\+Is\+Finished}} ()
+\begin{DoxyCompactList}\small\item\em Recieve notice that the end of round display is done displaying and the next round/game should begin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a7bc7555356b81f5ea8e83ffc70207b6a}{Document\+Round\+Results}} (\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$ winner, int points, \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a6671f737524d08e9dfb66d58d6f5019d}{Gin\+Rummy\+Round\+Ending\+Case}} reason)
+\begin{DoxyCompactList}\small\item\em Recieve results to document about the end of the round. \end{DoxyCompactList}\item 
+Gin\+Rummy\+View\+Data \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_ade360ff0e8a2cb2eaec8a4c2735ad4b3}{Fetch\+View\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Returns data used to render graphical elements to the screen after each state update. \end{DoxyCompactList}\item 
+End\+Of\+Round\+Data \mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_aa49acd270eb35152eb97a53f33a60f66}{Fetch\+End\+Of\+Round\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Returns the data for the end of display to work. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the open functionality that can be taken a Gin\+Rummy\+Controller class by other classes. The main purpose of this interface is to allow a mock controller to be used for testing purposes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_abeb7eeb23585f1d2381e9d916ef020d2}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_abeb7eeb23585f1d2381e9d916ef020d2}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!CheckComputerPlayerDeadwood@{CheckComputerPlayerDeadwood}}
+\index{CheckComputerPlayerDeadwood@{CheckComputerPlayerDeadwood}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{CheckComputerPlayerDeadwood()}{CheckComputerPlayerDeadwood()}}
+{\footnotesize\ttfamily int Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Check\+Computer\+Player\+Deadwood (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the deadwood remaining for the computer player. 
+
+\begin{DoxyReturn}{Returns}
+The deadwood remaining for the computer player
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a700997efaf3fc22271a60ebc10e2df20}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a7bc7555356b81f5ea8e83ffc70207b6a}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a7bc7555356b81f5ea8e83ffc70207b6a}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!DocumentRoundResults@{DocumentRoundResults}}
+\index{DocumentRoundResults@{DocumentRoundResults}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{DocumentRoundResults()}{DocumentRoundResults()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Document\+Round\+Results (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player}{Player}}$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card}{Playing\+Card}} $>$}]{winner,  }\item[{int}]{points,  }\item[{\mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a6671f737524d08e9dfb66d58d6f5019d}{Gin\+Rummy\+Round\+Ending\+Case}}}]{reason }\end{DoxyParamCaption})}
+
+
+
+Recieve results to document about the end of the round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & The reference to the player that won\\
+\hline
+{\em points} & The amount of points won by the player\\
+\hline
+{\em reason} & The round ending reason\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_aa8a766fda28047b177e6cae11b198f20}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a4816d74a729913f29897c008d331a918}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a4816d74a729913f29897c008d331a918}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!EndOfRoundDisplayIsFinished@{EndOfRoundDisplayIsFinished}}
+\index{EndOfRoundDisplayIsFinished@{EndOfRoundDisplayIsFinished}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{EndOfRoundDisplayIsFinished()}{EndOfRoundDisplayIsFinished()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+End\+Of\+Round\+Display\+Is\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Recieve notice that the end of round display is done displaying and the next round/game should begin. 
+
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_af6e429e06f0a984b649d8bb20d9d7af7}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_aa49acd270eb35152eb97a53f33a60f66}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_aa49acd270eb35152eb97a53f33a60f66}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!FetchEndOfRoundData@{FetchEndOfRoundData}}
+\index{FetchEndOfRoundData@{FetchEndOfRoundData}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{FetchEndOfRoundData()}{FetchEndOfRoundData()}}
+{\footnotesize\ttfamily End\+Of\+Round\+Data Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Fetch\+End\+Of\+Round\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the data for the end of display to work. 
+
+\begin{DoxyReturn}{Returns}
+End of round related information
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a9d5048e4bcc6342c7a85dc80113f8995}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_ade360ff0e8a2cb2eaec8a4c2735ad4b3}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_ade360ff0e8a2cb2eaec8a4c2735ad4b3}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!FetchViewData@{FetchViewData}}
+\index{FetchViewData@{FetchViewData}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{FetchViewData()}{FetchViewData()}}
+{\footnotesize\ttfamily Gin\+Rummy\+View\+Data Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Fetch\+View\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns data used to render graphical elements to the screen after each state update. 
+
+\begin{DoxyReturn}{Returns}
+The data the view needs to redisplay itself
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a9ad85b2f68f1564898175c4b982866e2}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a4ea16a5de470406c16b84f1169daea49}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a4ea16a5de470406c16b84f1169daea49}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!InitializeGame@{InitializeGame}}
+\index{InitializeGame@{InitializeGame}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{InitializeGame()}{InitializeGame()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Initialize\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set up the models and controller objects necessary to run a game. 
+
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a128c7aa68553cfeba5ff2f9a38e4602e}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a6a9f38d737d0e88587feaeb79157ef30}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a6a9f38d737d0e88587feaeb79157ef30}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!NotifyThatEndOfRoundIsDisplayed@{NotifyThatEndOfRoundIsDisplayed}}
+\index{NotifyThatEndOfRoundIsDisplayed@{NotifyThatEndOfRoundIsDisplayed}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{NotifyThatEndOfRoundIsDisplayed()}{NotifyThatEndOfRoundIsDisplayed()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Notify\+That\+End\+Of\+Round\+Is\+Displayed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receive Indication that display of end of round information has begun displaying 
+
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_ac39abe0f677341479e0004a9cc40bd2c}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_ab7213d7d60e22c621e5d2bbd8655a0c4}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_ab7213d7d60e22c621e5d2bbd8655a0c4}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!ReinitializeGame@{ReinitializeGame}}
+\index{ReinitializeGame@{ReinitializeGame}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{ReinitializeGame()}{ReinitializeGame()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Reinitialize\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restart the game, performs similar to initialize the game but ensures that the notifier is recreated. 
+
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a4b7d6b9e7e743e0cb4836338ce33b0ab}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_aebca17a253be6a800ae78d27e3de31c0}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_aebca17a253be6a800ae78d27e3de31c0}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!RequestCardReposition@{RequestCardReposition}}
+\index{RequestCardReposition@{RequestCardReposition}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{RequestCardReposition()}{RequestCardReposition()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Request\+Card\+Reposition (\begin{DoxyParamCaption}\item[{int}]{initial\+Index,  }\item[{int}]{new\+Index }\end{DoxyParamCaption})}
+
+
+
+Try to reposition the cards within the human player\textquotesingle{}s hand. Must be the player\textquotesingle{}s turn. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Thrown with a message why the action was not done when an illegal action occured\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a7fe22f1a2c5645a547149b337461092e}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a1fe0abf566a9865f3e8a5b899933458a}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a1fe0abf566a9865f3e8a5b899933458a}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!RequestDiscardWithCardAt@{RequestDiscardWithCardAt}}
+\index{RequestDiscardWithCardAt@{RequestDiscardWithCardAt}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{RequestDiscardWithCardAt()}{RequestDiscardWithCardAt()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Request\+Discard\+With\+Card\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Try to perform a discard action after validation for the human player. Must be the player\textquotesingle{}s discard phase. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Thrown with a message why the action was not done when an illegal action occured\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a67f6ce1fba52989a76eae898601a42a7}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_afa30f0d22ffbd80d733f8ac926500596}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_afa30f0d22ffbd80d733f8ac926500596}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!RequestDrawFromDeck@{RequestDrawFromDeck}}
+\index{RequestDrawFromDeck@{RequestDrawFromDeck}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{RequestDrawFromDeck()}{RequestDrawFromDeck()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Request\+Draw\+From\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Try to perform a draw from deck action after validation for the human player. Must be the player\textquotesingle{}s normal draw phase. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Thrown with a message why the action was not done when an illegal action occured\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_ac81e06c026625206913610e231c17c18}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a702c7c31f0e38bd71473423e47bba037}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a702c7c31f0e38bd71473423e47bba037}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!RequestDrawFromDiscard@{RequestDrawFromDiscard}}
+\index{RequestDrawFromDiscard@{RequestDrawFromDiscard}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{RequestDrawFromDiscard()}{RequestDrawFromDiscard()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Request\+Draw\+From\+Discard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Try to perform a draw from discard action after validation for the human player. Must be the player\textquotesingle{}s draw phase. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Thrown with a message why the action was not done when an illegal action occured\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a124c50c0d101afc1f2ead8106741dcd2}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a858e9170f05a2d60ce1f5253b04f4480}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a858e9170f05a2d60ce1f5253b04f4480}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!RequestKnockWithCardAt@{RequestKnockWithCardAt}}
+\index{RequestKnockWithCardAt@{RequestKnockWithCardAt}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{RequestKnockWithCardAt()}{RequestKnockWithCardAt()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Request\+Knock\+With\+Card\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Try to perform a knock action after validation for the human player. Must be the player\textquotesingle{}s discard phase. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Thrown with a message why the action was not done when an illegal action occured\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a5a549e9c56d647ad626e5d1f449c2c56}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+\mbox{\Hypertarget{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a19569beea69eb5b78afd0f10e22b784e}\label{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller_a19569beea69eb5b78afd0f10e22b784e}} 
+\index{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}!RequestPassTurn@{RequestPassTurn}}
+\index{RequestPassTurn@{RequestPassTurn}!EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController@{EarnShardsForCards.Shared.Data.Interfaces.IGinRummyController}}
+\doxysubsubsection{\texorpdfstring{RequestPassTurn()}{RequestPassTurn()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Interfaces.\+IGin\+Rummy\+Controller.\+Request\+Pass\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Try to pass the human player\textquotesingle{}s turn if validation succeeds. Must be the player\textquotesingle{}s special draw phase. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Thrown with a message why the action was not done when an illegal action occured\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_controller_a70db82dd2420d3ed7b6c8e974509dc15}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Controller}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Interfaces/IGin\+Rummy\+Controller.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_000d99b51a05536bd214bd258faf33f1" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/obj</compoundname>
+    <innerdir refid="dir_68f0e5e225579ef6d634d62e5ee51dfb">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/obj/"/>
+  </compounddef>
+</doxygen>

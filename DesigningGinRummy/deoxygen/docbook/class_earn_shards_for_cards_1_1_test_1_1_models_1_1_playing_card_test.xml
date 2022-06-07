@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_test_1_1_models_1_1_playing_card_test" xml:lang="en-US">
+<title>EarnShardsForCards.Test.Models.PlayingCardTest Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Test.Models.PlayingCardTest</primary></indexterm>
+<para>
+
+<para>Tests the PlayingCard class to ensure that it conforms to that specified in the design document. </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Tests the PlayingCard class to ensure that it conforms to that specified in the design document. </para>
+
+
+
+<para>Axioms: I. (card.new(rank, suit, value)).Rank == rank II. (card.new (rank, suit, value)).Suit == suit III. card.new (rank, suit, value) card.Show() card.GetImageFilePath() == “~/img/PlayingCard/{rank } -{ suit}.webp” IV. card.new (rank, suit, value) card.GetImageFilePath() == “~/ img / PlayingCard / Back.webp” V. card.new (rank, suit, value) card.Value == value VI. card.new(rank, suit, value) card.Equals({another card with the same rank and suit}) == true card.Equals({ another card with a different rank}) == false card.Equals({ another card with a different suit}) == false card.Equals({ another card with both a different rank and a different suit}) == false </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/Models/PlayingCardTest.cs</section>
+</section>

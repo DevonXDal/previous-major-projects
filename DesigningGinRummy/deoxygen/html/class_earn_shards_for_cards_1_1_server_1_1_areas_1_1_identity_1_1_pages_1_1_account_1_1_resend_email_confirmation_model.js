@@ -1,0 +1,5 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_email_confirmation_model =
+[
+    [ "InputModel", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_e5afab8fdfd0fcbc9fac67fdf52700701.html", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_e5afab8fdfd0fcbc9fac67fdf52700701" ],
+    [ "Input", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_email_confirmation_model.html#a976b4bff46c82b37a87d38a4b31727aa", null ]
+];

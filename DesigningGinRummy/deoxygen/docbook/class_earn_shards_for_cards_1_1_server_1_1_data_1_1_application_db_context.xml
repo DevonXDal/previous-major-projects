@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Data.ApplicationDbContext Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Data.ApplicationDbContext</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Data.ApplicationDbContext:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Data.ApplicationDbContext:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_data_1_1_application_db_context_1aa4c20d22aa7fd22f697d52686ab071a4"/><emphasis role="strong">ApplicationDbContext</emphasis> (DbContextOptions options, IOptions&lt; OperationalStoreOptions &gt; operationalStoreOptions)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/ApplicationDbContext.cs</section>

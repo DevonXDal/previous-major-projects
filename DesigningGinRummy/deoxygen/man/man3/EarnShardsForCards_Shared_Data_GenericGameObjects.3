@@ -1,0 +1,39 @@
+.TH "EarnShardsForCards.Shared.Data.GenericGameObjects" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GenericGameObjects
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCard\fP"
+.br
+.RI "A general structuring class used to handle cards for various games\&. It includes the base information of the images for each face and which side of the card is shown\&. "
+.ti -1c
+.RI "class \fBDiscardPile\fP"
+.br
+.RI "A \fBDiscardPile\fP represents the real-world pile of cards that grows throughout the play of the game\&. It is accessible from the top and is able to be cleared out\&. It can be used as a source of cards for various games\&. It may be at points empty and at other points full of cards\&. "
+.ti -1c
+.RI "class \fBNotifier\fP"
+.br
+.RI "A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state\&. It is mostly used to notify view components to state changes but can be used for other uses\&. It does not specify any action that must be taken\&. "
+.ti -1c
+.RI "class \fBPlayer\fP"
+.br
+.RI "A \fBPlayer\fP is representative of a real-world player that is playing a card game\&. They have their own hand of cards\&. Players also pick up and rearrange the cards that they have\&. When each round is over, they then discard their hand\&. "
+.ti -1c
+.RI "class \fBPlayingCard\fP"
+.br
+.RI "A \fBPlayingCard\fP represents the real-world card from a standard 52-card deck\&. It holds information about its rank and suit\&. It can either be face up or face down with the facedown side revealing no rank or suit information\&. All cards have the same face down representation but each face up representation is unique from the others\&. "
+.ti -1c
+.RI "class \fBPlayingCardDeck\fP"
+.br
+.RI "A Playing \fBCard\fP Deck represents a real-world deck of cards\&. It is also used for the draw pile for real-world games\&. It is created usually with 52 playing cards\&. Cards can be drawn from it and return as requested\&. It also randomizes the position of the cards it holds when requested\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

@@ -1,0 +1,6 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model =
+[
+    [ "InputModel", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1fe1f080730abb0fd70f1a9e43414aaf3.html", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1fe1f080730abb0fd70f1a9e43414aaf3" ],
+    [ "Input", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model.html#aab1f2e682fa2f9a84297c4b1d0c33e00", null ],
+    [ "RequirePassword", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model.html#af0502835e0855c7a0771af604c2cd31d", null ]
+];

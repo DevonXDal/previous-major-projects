@@ -1,0 +1,4 @@
+<map id="EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck" name="EarnShardsForCards.Shared.Data.GenericGameObjects.PlayingCardDeck">
+<area shape="rect" id="node1" title="A Playing Card Deck represents a real&#45;world deck of cards. It is also used for the draw pile for real..." alt="" coords="5,80,231,136"/>
+<area shape="rect" id="node2" href="$class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_deck.html" title="Interface for a game deck that identifies the common functions of each type of deck." alt="" coords="92,5,144,32"/>
+</map>

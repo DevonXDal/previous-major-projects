@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Server::Controllers::WeatherForecastController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a29c7cfc086748036765c65e0bb5c7bae" prot="private" static="yes" mutable="no">
+        <type>readonly string[]</type>
+        <definition>readonly string [] EarnShardsForCards.Server.Controllers.WeatherForecastController.Summaries</definition>
+        <argsstring></argsstring>
+        <name>Summaries</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.WeatherForecastController.Summaries</qualifiedname>
+        <initializer>= new[]
+        {
+        &quot;Freezing&quot;, &quot;Bracing&quot;, &quot;Chilly&quot;, &quot;Cool&quot;, &quot;Mild&quot;, &quot;Warm&quot;, &quot;Balmy&quot;, &quot;Hot&quot;, &quot;Sweltering&quot;, &quot;Scorching&quot;
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" line="12" column="40" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a9b538f041acbd15384c9922cfaebb2bf" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller" kindref="compound">WeatherForecastController</ref> &gt;</type>
+        <definition>readonly ILogger&lt;WeatherForecastController&gt; EarnShardsForCards.Server.Controllers.WeatherForecastController._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.WeatherForecastController._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" line="17" column="34" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a86d75a26f218e0b4fe325ccd7ff467b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Server.Controllers.WeatherForecastController.WeatherForecastController</definition>
+        <argsstring>(ILogger&lt; WeatherForecastController &gt; logger)</argsstring>
+        <name>WeatherForecastController</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.WeatherForecastController.WeatherForecastController</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller" kindref="compound">WeatherForecastController</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" line="19" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1aab5a5ea7ad104eb15c6d8823cd1a60a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast" kindref="compound">WeatherForecast</ref> &gt;</type>
+        <definition>IEnumerable&lt; WeatherForecast &gt; EarnShardsForCards.Server.Controllers.WeatherForecastController.Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>EarnShardsForCards.Server.Controllers.WeatherForecastController.Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" line="25" column="28" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" bodystart="25" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Controllers.WeatherForecastController</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>EarnShardsForCards.Server.Controllers.WeatherForecastController</label>
+        <link refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" line="10" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a9b538f041acbd15384c9922cfaebb2bf" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::WeatherForecastController</scope><name>_logger</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1aab5a5ea7ad104eb15c6d8823cd1a60a1" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::WeatherForecastController</scope><name>Get</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a29c7cfc086748036765c65e0bb5c7bae" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::WeatherForecastController</scope><name>Summaries</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a86d75a26f218e0b4fe325ccd7ff467b5" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Server::Controllers::WeatherForecastController</scope><name>WeatherForecastController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+﻿@using EarnShardsForCards.Shared.Data.GinRummy
+@using EarnShardsForCards.Shared.Data.GenericGameObjects
+@using EarnShardsForCards.Client.Data
+
+@inherits SubscriberComponent
+
+<div style="position: relative; text-align: center" ondblclick="@(()=> HandleDoublePress())">
+    @* https://stackoverflow.com/questions/26148740/how-to-add-text-over-the-image-in-bootstrap *@
+    <img src="img/PlayingCard/Back.webp" class="img-fluid" style="align-self: center" />
+    <div class="centered" style="font-weight: bold; font-size: 2em">@_cardsInDeck</div>
+</div>
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    [Parameter]
+    public GinRummyController Controller { get; set; }
+
+    [Parameter]
+    public Notifier Notifier { get; set; }
+
+    private TurnState? _turnState;
+
+    private PhaseState? _phaseState;
+
+    private bool _isSpecialDraw;
+
+    private int _cardsInDeck;
+
+    protected override async Task OnInitializedAsync()
+    {
+        FetchNewData();
+        Notifier.Subscribe(this);
+
+        await base.OnInitializedAsync();
+    }
+
+    public override void Notify()
+    {
+        FetchNewData();
+        StateHasChanged();
+    }
+
+    private void FetchNewData()
+    {
+        var viewData = Controller.FetchViewData();
+
+        _cardsInDeck = viewData.RemainingCardsInDeck;
+
+        _turnState = viewData.CurrentTurn;
+        _phaseState = viewData.CurrentPhase;
+        _isSpecialDraw = viewData.IsSpecialDraw;
+    }
+
+    public void HandleDoublePress()
+    {
+        try
+        {
+            Controller.RequestDrawFromDeck();
+        } catch (InvalidOperationException e)
+        {
+            ModalParameters parameters = new ModalParameters();
+            parameters.Add(nameof(InformativeModalData.TextBody), e.Message);
+
+            Modal.Show<InformativeModalData>("Could not Draw from the Deck", parameters);
+        }
+    }
+}

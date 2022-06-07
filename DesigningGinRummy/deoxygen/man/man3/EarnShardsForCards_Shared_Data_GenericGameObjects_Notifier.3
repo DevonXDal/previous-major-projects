@@ -1,0 +1,60 @@
+.TH "EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier \- A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state\&. It is mostly used to notify view components to state changes but can be used for other uses\&. It does not specify any action that must be taken\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNotifier\fP ()"
+.br
+.RI "Create a notifier that has no subscribers\&. "
+.ti -1c
+.RI "void \fBSubscribe\fP (\fBISubscribe\fP subscriber)"
+.br
+.RI "Adds a subscribe to the list of subscribers to notify\&. "
+.ti -1c
+.RI "void \fBUnsubscribe\fP (\fBISubscribe\fP subscriber)"
+.br
+.RI "Removes a subscriber from the list of subscribers to notify\&. "
+.ti -1c
+.RI "void \fBSendNotice\fP ()"
+.br
+.RI "Notifies all subscribers that an update or event has occured\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state\&. It is mostly used to notify view components to state changes but can be used for other uses\&. It does not specify any action that must be taken\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Notifier\&.Subscribe (\fBISubscribe\fP subscriber)"
+
+.PP
+Adds a subscribe to the list of subscribers to notify\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsubscriber\fP The subscriber to add
+.RE
+.PP
+
+.SS "void EarnShardsForCards\&.Shared\&.Data\&.GenericGameObjects\&.Notifier\&.Unsubscribe (\fBISubscribe\fP subscriber)"
+
+.PP
+Removes a subscriber from the list of subscribers to notify\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsubscriber\fP The subscriber to remove
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

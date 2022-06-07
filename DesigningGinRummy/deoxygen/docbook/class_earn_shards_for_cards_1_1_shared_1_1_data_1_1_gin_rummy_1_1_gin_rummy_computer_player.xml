@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">GinRummyComputerPlayer</link> is a virtual game support object related to a real-world player. This player makes decisions in order to beat the human player. It represents the other player playing against the one playing the game. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty. </para>
+ 
+</para>
+Inheritance diagram for EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1adb3a47ed6efa7909a2be43f3fc82671e"/><emphasis role="strong">GinRummyComputerPlayer</emphasis> ()</para>
+
+<para>Create a new computer player with an empty hand with a skill level of beginner. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1a699689b074c74f0436cd67f868e80cfc">ShouldDrawFromDiscardPile</link> (T topCardOfDiscardPile)</para>
+
+<para>Check to see if the discard pile card will be drawn by the computer player. If the discard pile is not drawn, the computer player will choose to draw a card from the deck or pass. </para>
+</listitem>
+            <listitem><para>T <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1aa3cd569f9020926478cde1b779db6ece">SelectAndRemoveDiscardedCard</link> ()</para>
+
+<para>Return a card that will be removed from the hand as a discard action </para>
+</listitem>
+            <listitem><para>T? <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1abf5862e7896a3f77dea6ff5890d389cd">DetermineKnockOrDiscardAction</link> ()</para>
+
+<para>Determines whether or not to knock or discard. Returns null if a knock is not performed. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1a358895aef81a0b1cc22c5753df809286"/><link linkend="_namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a29d9c7022be5beaaf7d28bfc536bcbed">SkillLevel</link> <emphasis role="strong">SkillLevel</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">GinRummyComputerPlayer</link> is a virtual game support object related to a real-world player. This player makes decisions in order to beat the human player. It represents the other player playing against the one playing the game. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>A playing card or a subtype of playing card</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:PlayingCard</emphasis></para>
+</simplesect>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1abf5862e7896a3f77dea6ff5890d389cd"/><section>
+    <title>DetermineKnockOrDiscardAction()</title>
+<indexterm><primary>DetermineKnockOrDiscardAction</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</primary><secondary>DetermineKnockOrDiscardAction</secondary></indexterm>
+<para><computeroutput>T? <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer</link>&lt; T &gt;.DetermineKnockOrDiscardAction ( )</computeroutput></para><para>
+
+<para>Determines whether or not to knock or discard. Returns null if a knock is not performed. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Either null or a card from the hand that the computer wishes to knock with</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1aa3cd569f9020926478cde1b779db6ece"/><section>
+    <title>SelectAndRemoveDiscardedCard()</title>
+<indexterm><primary>SelectAndRemoveDiscardedCard</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</primary><secondary>SelectAndRemoveDiscardedCard</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer</link>&lt; T &gt;.SelectAndRemoveDiscardedCard ( )</computeroutput></para><para>
+
+<para>Return a card that will be removed from the hand as a discard action </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The card that the computer player removed from their hand to discard</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player_1a699689b074c74f0436cd67f868e80cfc"/><section>
+    <title>ShouldDrawFromDiscardPile()</title>
+<indexterm><primary>ShouldDrawFromDiscardPile</primary><secondary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer&lt; T &gt;</primary><secondary>ShouldDrawFromDiscardPile</secondary></indexterm>
+<para><computeroutput>bool <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player">EarnShardsForCards.Shared.Data.GinRummy.GinRummyComputerPlayer</link>&lt; T &gt;.ShouldDrawFromDiscardPile (T topCardOfDiscardPile)</computeroutput></para><para>
+
+<para>Check to see if the discard pile card will be drawn by the computer player. If the discard pile is not drawn, the computer player will choose to draw a card from the deck or pass. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>topCardOfDiscardPile</entry><entry>
+<para>What the card on the discard pile was</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Whether the computer chose to draw the discard pile card</para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyComputerPlayer.cs</section>
+</section>

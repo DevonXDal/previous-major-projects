@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller" xml:lang="en-US">
+<title>EarnShardsForCards.Server.Controllers.WeatherForecastController Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Server.Controllers.WeatherForecastController</primary></indexterm>
+Inheritance diagram for EarnShardsForCards.Server.Controllers.WeatherForecastController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for EarnShardsForCards.Server.Controllers.WeatherForecastController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1a86d75a26f218e0b4fe325ccd7ff467b5"/><emphasis role="strong">WeatherForecastController</emphasis> (ILogger&lt; <link linkend="_class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller">WeatherForecastController</link> &gt; logger)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_server_1_1_controllers_1_1_weather_forecast_controller_1aab5a5ea7ad104eb15c6d8823cd1a60a1"/>IEnumerable&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast">WeatherForecast</link> &gt; <emphasis role="strong">Get</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/WeatherForecastController.cs</section>

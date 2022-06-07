@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier</primary></indexterm>
+<para>
+
+<para>A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state. It is mostly used to notify view components to state changes but can be used for other uses. It does not specify any action that must be taken. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a123bce7ab6d1226ab95085e00e63e211"/><emphasis role="strong">Notifier</emphasis> ()</para>
+
+<para>Create a notifier that has no subscribers. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8a9fce25a2f5f970dd5ae90bc6516012">Subscribe</link> (<link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe">ISubscribe</link> subscriber)</para>
+
+<para>Adds a subscribe to the list of subscribers to notify. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8df4d4c9e31259039b40858a635116f0">Unsubscribe</link> (<link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe">ISubscribe</link> subscriber)</para>
+
+<para>Removes a subscriber from the list of subscribers to notify. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1acd239fd2cb632075e12c45aca4d8d4e8"/>void <emphasis role="strong">SendNotice</emphasis> ()</para>
+
+<para>Notifies all subscribers that an update or event has occured. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state. It is mostly used to notify view components to state changes but can be used for other uses. It does not specify any action that must be taken. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8a9fce25a2f5f970dd5ae90bc6516012"/><section>
+    <title>Subscribe()</title>
+<indexterm><primary>Subscribe</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier</primary><secondary>Subscribe</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Subscribe (<link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe">ISubscribe</link> subscriber)</computeroutput></para><para>
+
+<para>Adds a subscribe to the list of subscribers to notify. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>subscriber</entry><entry>
+<para>The subscriber to add</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_1a8df4d4c9e31259039b40858a635116f0"/><section>
+    <title>Unsubscribe()</title>
+<indexterm><primary>Unsubscribe</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier</primary><secondary>Unsubscribe</secondary></indexterm>
+<para><computeroutput>void EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier.Unsubscribe (<link linkend="_interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe">ISubscribe</link> subscriber)</computeroutput></para><para>
+
+<para>Removes a subscriber from the list of subscribers to notify. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>subscriber</entry><entry>
+<para>The subscriber to remove</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/Notifier.cs</section>
+</section>

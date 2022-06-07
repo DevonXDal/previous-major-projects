@@ -1,0 +1,43 @@
+.TH "EarnShardsForCards.Shared.Data.GinRummy" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GinRummy
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBGinRummyBoard\fP"
+.br
+.RI "A \fBGinRummyBoard\fP represents the real-world table that Gin Rummy is played on\&. In the aspect of the virtual game, it is used as an object to hold the other objects\&. The one game support capability it includes not typical of a normal table is knowing whether the pass button is being shown\&. "
+.ti -1c
+.RI "class \fBGinRummyComputerPlayer\fP"
+.br
+.RI "A \fBGinRummyComputerPlayer\fP is a virtual game support object related to a real-world player\&. This player makes decisions in order to beat the human player\&. It represents the other player playing against the one playing the game\&. It maintains a hand and makes better or worse decisions based on its set skill level/difficulty\&. "
+.ti -1c
+.RI "class \fBGinRummyController\fP"
+.br
+.RI "A \fBGinRummyController\fP is a virtual game support object specifically for Gin Rummy ' that handles the general game loop taken by the game\&. Once created, only one copy of it will exist and many objects will have references to that one reference\&. When an action is performed the controller can be notified and the action carried out if able\&. When the game is started or restarted, the controller will handle the setup of the game board\&. "
+.ti -1c
+.RI "class \fBGinRummyGameState\fP"
+.br
+.RI "A \fBGinRummyGameState\fP is a virtual game support object that maintains overall state information for the game\&. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes\&. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc\&. Using this state helps the game flow and aids in determining if a player has won the game\&. "
+.ti -1c
+.RI "class \fBGinRummyScoreHandler\fP"
+.br
+.RI "A \fBGinRummyScoreHandler\fP is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class\&. "
+.ti -1c
+.RI "class \fBMeldRun\fP"
+.br
+.RI "A \fBMeldRun\fP is more of a virtual game support object than a real-world object\&. It represents the three or more cards that a player lays down at the end of each round that form a sequence of cards of the same suit that are one rank higher than each other\&. An example of a \fBMeldRun\fP would be the ranks forming (‘Ace of Hearts’, ‘Two of Hearts’, ‘Three of Hearts’, ‘Four of Hearts’)\&. "
+.ti -1c
+.RI "class \fBMeldSet\fP"
+.br
+.RI "A \fBMeldSet\fP is more of a virtual game support object than a real-world object\&. It represents the three or four cards that a player lays down at the end of a round that form a three-of-a-kind or four-of-a-kind such that there are three or four cards with the same rank but differing suits\&. Its primary purpose is to assist the scoring at the end of a round\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

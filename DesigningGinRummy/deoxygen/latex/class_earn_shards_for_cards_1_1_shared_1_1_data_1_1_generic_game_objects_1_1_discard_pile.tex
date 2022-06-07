@@ -1,0 +1,96 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Discard\+Pile\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}\index{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}{Discard\+Pile}} represents the real-\/world pile of cards that grows throughout the play of the game. It is accessible from the top and is able to be cleared out. It can be used as a source of cards for various games. It may be at points empty and at other points full of cards.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_aff837fb155c0ad69ee503ed47ebd0f2b}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_aff837fb155c0ad69ee503ed47ebd0f2b}} 
+{\bfseries Discard\+Pile} ()
+\begin{DoxyCompactList}\small\item\em Create a discard pile with no cards \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a788ebb243e2310518097a0c226adedcd}{Add}} (T card, bool insert\+Face\+Up=true)
+\begin{DoxyCompactList}\small\item\em Add a card to the top of this pile. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a5eec16cc93c287259f0814277a3b14aa}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Remove a card from the top and return it \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a9572bf08cb7fd42dd859a8622841aec5}{Get\+Image\+File\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current image representation for this pile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_aa97e968577dd609dc965cac0f159980b}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_aa97e968577dd609dc965cac0f159980b}} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em Empties the discard pile of all of its cards but does not return them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a4dc17e42928d6249319eedf9e9887208}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a4dc17e42928d6249319eedf9e9887208}} 
+IList$<$ \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card}{Card}} $>$ {\bfseries Cards}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_afde30b8140c6a8edab74c2d2a7c12a85}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_afde30b8140c6a8edab74c2d2a7c12a85}} 
+static string {\bfseries Empty\+Image\+Representation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}{Discard\+Pile}} represents the real-\/world pile of cards that grows throughout the play of the game. It is accessible from the top and is able to be cleared out. It can be used as a source of cards for various games. It may be at points empty and at other points full of cards. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of card that this discard pile contains\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card}{Card}}}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a788ebb243e2310518097a0c226adedcd}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a788ebb243e2310518097a0c226adedcd}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Discard\+Pile}}$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{card,  }\item[{bool}]{insert\+Face\+Up = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Add a card to the top of this pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be added\\
+\hline
+{\em insert\+Face\+Up} & Whether the card should be face up (true by default)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a5eec16cc93c287259f0814277a3b14aa}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a5eec16cc93c287259f0814277a3b14aa}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}!Draw@{Draw}}
+\index{Draw@{Draw}!EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Discard\+Pile}}$<$ T $>$.Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove a card from the top and return it 
+
+\begin{DoxyReturn}{Returns}
+The card removed and returned from the top of the pile
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a9572bf08cb7fd42dd859a8622841aec5}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_a9572bf08cb7fd42dd859a8622841aec5}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}!GetImageFilePath@{GetImageFilePath}}
+\index{GetImageFilePath@{GetImageFilePath}!EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$@{EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetImageFilePath()}{GetImageFilePath()}}
+{\footnotesize\ttfamily string \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile}{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Discard\+Pile}}$<$ T $>$.Get\+Image\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current image representation for this pile. 
+
+\begin{DoxyReturn}{Returns}
+The image representation of this discard pile
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Generic\+Game\+Objects/Discard\+Pile.\+cs\end{DoxyCompactItemize}

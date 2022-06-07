@@ -1,0 +1,4 @@
+var namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy =
+[
+    [ "GinRummyComputerPlayer", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player.html", "class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player" ]
+];

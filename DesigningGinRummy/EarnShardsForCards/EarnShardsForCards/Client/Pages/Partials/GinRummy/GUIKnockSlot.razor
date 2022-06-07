@@ -1,0 +1,62 @@
+﻿@using EarnShardsForCards.Shared.Data.GinRummy
+@using EarnShardsForCards.Shared.Data.GenericGameObjects
+@using EarnShardsForCards.Client.Data
+
+@inherits SubscriberComponent
+
+<div style="position: relative; text-align: center; align-self: center; max-width: 50% !important;" ondragover="event.preventDefault();" draggable="false" ondrop="@(() => HandleDrop())">
+    @* https://stackoverflow.com/questions/26148740/how-to-add-text-over-the-image-in-bootstrap *@
+    <img src="img/No-Card.webp" class="img-fluid" style="align-self: center" />
+    <p class="general-game-text" style="font-size: 0.5em; font-weight: bolder">Drag Here to Knock</p>
+</div>
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    [Parameter]
+    public GinRummyController Controller { get; set; }
+
+    [Parameter]
+    public Notifier Notifier { get; set; }
+
+    private TurnState? _turnState;
+
+    private PhaseState? _phaseState;
+
+    protected override async Task OnInitializedAsync()
+    {
+        FetchNewData();
+        Notifier.Subscribe(this);
+
+        await base.OnInitializedAsync();
+    }
+
+    public override void Notify()
+    {
+        FetchNewData();
+        StateHasChanged();
+    }
+
+    private void FetchNewData()
+    {
+        var viewData = Controller.FetchViewData();
+
+        _turnState = viewData.CurrentTurn;
+        _phaseState = viewData.CurrentPhase;
+    }
+
+    public void HandleDrop()
+    {
+        try
+        {
+            Controller.RequestKnockWithCardAt(Controller.SelectedCardIndex);
+        } catch (InvalidOperationException e)
+        {
+            ModalParameters parameters = new ModalParameters();
+            parameters.Add(nameof(InformativeModalData.TextBody), e.Message);
+
+            Modal.Show<InformativeModalData>("Could not Knock That Card", parameters);
+        }
+    }
+}

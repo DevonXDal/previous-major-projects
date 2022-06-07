@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_d891c6db129b9e1fea2ac69210388cd8" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations</compoundname>
+    <innerfile refid="00000000000000___create_identity_schema_8cs">00000000000000_CreateIdentitySchema.cs</innerfile>
+    <innerfile refid="00000000000000___create_identity_schema_8_designer_8cs">00000000000000_CreateIdentitySchema.Designer.cs</innerfile>
+    <innerfile refid="_application_db_context_model_snapshot_8cs">ApplicationDbContextModelSnapshot.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Data/Migrations/"/>
+  </compounddef>
+</doxygen>

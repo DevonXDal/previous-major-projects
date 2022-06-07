@@ -1,0 +1,61 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Notifier Class Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier}\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier@{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier}}
+
+
+A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state. It is mostly used to notify view components to state changes but can be used for other uses. It does not specify any action that must be taken.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a123bce7ab6d1226ab95085e00e63e211}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a123bce7ab6d1226ab95085e00e63e211}} 
+{\bfseries Notifier} ()
+\begin{DoxyCompactList}\small\item\em Create a notifier that has no subscribers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a8a9fce25a2f5f970dd5ae90bc6516012}{Subscribe}} (\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe}{ISubscribe}} subscriber)
+\begin{DoxyCompactList}\small\item\em Adds a subscribe to the list of subscribers to notify. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a8df4d4c9e31259039b40858a635116f0}{Unsubscribe}} (\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe}{ISubscribe}} subscriber)
+\begin{DoxyCompactList}\small\item\em Removes a subscriber from the list of subscribers to notify. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_acd239fd2cb632075e12c45aca4d8d4e8}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_acd239fd2cb632075e12c45aca4d8d4e8}} 
+void {\bfseries Send\+Notice} ()
+\begin{DoxyCompactList}\small\item\em Notifies all subscribers that an update or event has occured. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A notifier is a virtual game support object whose purpose is to notify its changing list of subscribers to a change in game state. It is mostly used to notify view components to state changes but can be used for other uses. It does not specify any action that must be taken. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a8a9fce25a2f5f970dd5ae90bc6516012}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a8a9fce25a2f5f970dd5ae90bc6516012}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier@{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier@{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Notifier.\+Subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe}{ISubscribe}}}]{subscriber }\end{DoxyParamCaption})}
+
+
+
+Adds a subscribe to the list of subscribers to notify. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subscriber} & The subscriber to add\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a8df4d4c9e31259039b40858a635116f0}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_notifier_a8df4d4c9e31259039b40858a635116f0}} 
+\index{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier@{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier@{EarnShardsForCards.Shared.Data.GenericGameObjects.Notifier}}
+\doxysubsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily void Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Generic\+Game\+Objects.\+Notifier.\+Unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_subscribe}{ISubscribe}}}]{subscriber }\end{DoxyParamCaption})}
+
+
+
+Removes a subscriber from the list of subscribers to notify. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subscriber} & The subscriber to remove\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Generic\+Game\+Objects/Notifier.\+cs\end{DoxyCompactItemize}

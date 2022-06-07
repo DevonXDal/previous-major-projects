@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1aa418830e04da77ad0bf8a815af26f0f4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+        <definition>Player&lt;PlayingCard&gt; EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler._humanPlayer</definition>
+        <argsstring></argsstring>
+        <name>_humanPlayer</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler._humanPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="19" column="24" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a97f35d71dd4bbf22b4880b5e363f3b57" prot="private" static="no" mutable="no">
+        <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player" kindref="compound">GinRummyComputerPlayer</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+        <definition>GinRummyComputerPlayer&lt;PlayingCard&gt; EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler._computerPlayer</definition>
+        <argsstring></argsstring>
+        <name>_computerPlayer</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler._computerPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="20" column="40" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a32b5bbefdc15a4cbd5b1be610d89f428" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller" kindref="compound">IGinRummyController</ref></type>
+        <definition>IGinRummyController EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler._controller</definition>
+        <argsstring></argsstring>
+        <name>_controller</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler._controller</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="21" column="37" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a99fb7bc1d744c3b62d18c93849e9ee48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.GinRummyScoreHandler</definition>
+        <argsstring>(IGinRummyController controller, Player&lt; PlayingCard &gt; player, GinRummyComputerPlayer&lt; PlayingCard &gt; computerPlayer)</argsstring>
+        <name>GinRummyScoreHandler</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.GinRummyScoreHandler</qualifiedname>
+        <param>
+          <type><ref refid="interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller" kindref="compound">IGinRummyController</ref></type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_computer_player" kindref="compound">GinRummyComputerPlayer</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>computerPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler" kindref="compound">GinRummyScoreHandler</ref> with a reference to the controller, human player, and computer player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game controller</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user&apos;s player</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>computerPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The computer player</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="29" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a0b440a2f9c95809767c406c97a8010ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.RewardPoints</definition>
+        <argsstring>(bool isBigGin)</argsstring>
+        <name>RewardPoints</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.RewardPoints</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>isBigGin</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the number of points at the end of around. Once points are calculated it handles notifying of the score and other information to the user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isBigGin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the round ended by Big Gin</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="44" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a3caafaad80f51a61e1987827d68a53d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>EliminateDeadwoodData</type>
+        <definition>EliminateDeadwoodData EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.EliminateDeadwood</definition>
+        <argsstring>(Player&lt; PlayingCard &gt; player, IList&lt; MeldSet &gt;? setsFromOpponent, IList&lt; MeldRun &gt;? runsFromOpponents)</argsstring>
+        <name>EliminateDeadwood</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.EliminateDeadwood</qualifiedname>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>IList&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_set" kindref="compound">MeldSet</ref> &gt;?</type>
+          <declname>setsFromOpponent</declname>
+        </param>
+        <param>
+          <type>IList&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_meld_run" kindref="compound">MeldRun</ref> &gt;?</type>
+          <declname>runsFromOpponents</declname>
+        </param>
+        <briefdescription>
+<para>Determine the largest amount of deadwood that can be eliminated for a player. Also returns the melds created in order allow laying off deadwood if needed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player to view the hand of</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>setsFromOpponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sets the opponent eliminated deadwood using</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>runsFromOpponents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The runs the opponent eliminated deadwood using</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data" kindref="compound">Data</ref> related to removed deadwood</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="68" column="38" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="68" bodyend="74"/>
+        <references refid="namespace_earn_shards_for_cards_1_1_shared_1_1_models_1_1_records_1a867528e3d9e30d4ee6d8e264912783bc" compoundref="_eliminate_deadwood_data_8cs" startline="14" endline="31">EarnShardsForCards.Shared.Models.Records.EliminateDeadwoodData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a540e0274696ce9af106f6b39f8c7f069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.CanPlayerKnock</definition>
+        <argsstring>(Player&lt; PlayingCard &gt; player)</argsstring>
+        <name>CanPlayerKnock</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.CanPlayerKnock</qualifiedname>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Determine if the provided player can knock given the cards in their hand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player to see if knocking is allowed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the player can knock (10 or less deadwood)</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="81" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a96fdac9f2e0967737f413972bec17ab2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.DoesPlayerHaveBigGin</definition>
+        <argsstring>(Player&lt; PlayingCard &gt; player)</argsstring>
+        <name>DoesPlayerHaveBigGin</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.DoesPlayerHaveBigGin</qualifiedname>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Determine if the provided player has gone Big Gin this turn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player to see if they have Big Gin</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the player has Big Gin</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="91" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="91" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1ad32f55b1146f98c1ab4837dd3c04be78" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.DocumentResults</definition>
+        <argsstring>(Player&lt; PlayingCard &gt; winner, int points, GinRummyRoundEndingCase reason)</argsstring>
+        <name>DocumentResults</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyScoreHandler.DocumentResults</qualifiedname>
+        <param>
+          <type><ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_player" kindref="compound">Player</ref>&lt; <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_playing_card" kindref="compound">PlayingCard</ref> &gt;</type>
+          <declname>winner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a6671f737524d08e9dfb66d58d6f5019d" kindref="member">GinRummyRoundEndingCase</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Documents the round results by notifying the controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>winner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to whoever won the round</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The points to award that player</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reason the round ended</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="55" column="22" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler" kindref="compound">GinRummyScoreHandler</ref> is a virtual game support object that separates the handling of deadwood, knocking, Gin, and similar aspects from the main controller class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" line="17" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyScoreHandler.cs" bodystart="18" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a97f35d71dd4bbf22b4880b5e363f3b57" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>_computerPlayer</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a32b5bbefdc15a4cbd5b1be610d89f428" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>_controller</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1aa418830e04da77ad0bf8a815af26f0f4" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>_humanPlayer</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a540e0274696ce9af106f6b39f8c7f069" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>CanPlayerKnock</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1ad32f55b1146f98c1ab4837dd3c04be78" prot="private" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>DocumentResults</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a96fdac9f2e0967737f413972bec17ab2" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>DoesPlayerHaveBigGin</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a3caafaad80f51a61e1987827d68a53d4" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>EliminateDeadwood</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a99fb7bc1d744c3b62d18c93849e9ee48" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>GinRummyScoreHandler</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_score_handler_1a0b440a2f9c95809767c406c97a8010ab" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyScoreHandler</scope><name>RewardPoints</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

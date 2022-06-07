@@ -1,0 +1,5 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1e2190de6c1ed60b9b7b86bd384a98383 =
+[
+    [ "ConfirmPassword", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1e2190de6c1ed60b9b7b86bd384a98383.html#a01d295c7ec18a9a8e0f319866e407f34", null ],
+    [ "NewPassword", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1e2190de6c1ed60b9b7b86bd384a98383.html#ad5190062510bfbdc032218b9dea14ba6", null ]
+];

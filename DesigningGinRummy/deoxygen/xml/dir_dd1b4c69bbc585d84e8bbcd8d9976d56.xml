@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_dd1b4c69bbc585d84e8bbcd8d9976d56" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared</compoundname>
+    <innerdir refid="dir_05d7c7b94225336ae684385583d47a3e">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data</innerdir>
+    <innerdir refid="dir_37a53874c9e85bc170256305f9ba07dd">CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/obj</innerdir>
+    <innerfile refid="_global_suppressions_8cs">GlobalSuppressions.cs</innerfile>
+    <innerfile refid="_weather_forecast_8cs">WeatherForecast.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/"/>
+  </compounddef>
+</doxygen>

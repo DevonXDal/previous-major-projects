@@ -1,0 +1,289 @@
+﻿@page "/"
+@page "/GinRummy"
+@using EarnShardsForCards.Client.Data
+@using EarnShardsForCards.Client.Pages.Partials.GinRummy
+@using EarnShardsForCards.Client.Pages.Partials
+@using EarnShardsForCards.Shared.Data.GenericGameObjects
+@using EarnShardsForCards.Shared.Data.GinRummy
+
+
+@inherits SubscriberComponent
+@inject IConfiguration Configuration
+
+@{ 
+    base.BuildRenderTree(__builder);
+}
+
+<PageTitle>Play Gin Rummy Online</PageTitle>
+
+
+<div class="container-md container-fluid" style="background-color: #FCFCFC">
+@if (_viewData == null)
+{
+    <div class="text-center">
+        <GUIGameButton Controller="_controller" Type="GameButtonType.Start"></GUIGameButton>
+    </div>
+    
+    <div class="row">
+        <div class="col-12" id="unloaded-game-board" style="background-color: #103232; height: 80vh; width: 100%" title="Start the game to view the board"> 
+            <div class="align-self-center w-100 h-50 m-auto" style="transform: translateY(75%); text-align:center; display: block">
+                @*https://www.w3schools.com/howto/howto_css_center-vertical.asp*@
+                <span style="color: #CEE5F2; font-size: 2em;">Game Not Started</span>
+            </div>
+        </div>
+    </div>
+
+} else if (!_viewData.IsRoundOver) 
+{
+   <div class="text-center">
+        <GUIGameButton Controller="_controller" Type="GameButtonType.Restart"></GUIGameButton>
+    </div>
+    
+    <div class="row" style="@_darkenCSS">
+        <div class="col-12" id="loaded-game-board" style="background-color: #103232; height: 120vh; width: 100%"> 
+            <div class="row">
+                <GUIHand Controller="_controller" IsHumanPlayerHand="false" Notifier="_gameUpdateNotifier"></GUIHand>
+            </div>
+            @if (_viewData.IsSpecialDraw && _viewData.CurrentTurn == TurnState.Human)
+            {
+            <div class="text-center">
+                <GUIGameButton Controller="_controller" Type="GameButtonType.Pass"></GUIGameButton>
+            </div>   
+            }
+            <div class="row">
+                <ul class="list-inline row align-content-around" style="list-style: none">
+
+                    <li class="list-inline-item col-md-5 col-4 my-1"></li>
+
+                    <li class="list-inline-item col-md-1 col-2 my-1" style="align-items: center">
+                        <GUIPlayingCardDeck Controller="_controller" Notifier="_gameUpdateNotifier"></GUIPlayingCardDeck>
+                    </li> 
+                    
+                    <li class="list-inline-item col-md-1 col-2 my-1">
+                        <GUIPlayingCardDiscardPile Controller="_controller" Notifier="_gameUpdateNotifier"></GUIPlayingCardDiscardPile>
+                    </li>
+
+                    <li class="list-inline-item col-md-5 col-4 my-1"></li>                    
+                      
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="list-inline row align-content-around" style="list-style: none">
+
+                    <li class="list-inline-item col-md-5 col-5 my-1"></li>
+
+                    <li class="list-inline-item col-md-2 col-2 my-1">
+                        <GUIKnockSlot Controller="_controller" Notifier="_gameUpdateNotifier"></GUIKnockSlot>
+                    </li>        
+
+                    <li class="list-inline-item col-md-5 col-5 my-1"></li>                    
+                      
+                </ul>
+            </div>
+            <div class="row">
+                <GUIHand Controller="_controller" IsHumanPlayerHand="true" Notifier="_gameUpdateNotifier"></GUIHand>
+            </div>
+            <div class="row">
+                <span class="general-game-text">@_turnPhaseIndicator</span>
+            </div>
+        </div>
+        </div>
+    } else
+    {
+    <div class="row">
+    <div class="col-12" id="game-board-scores" style="background-color: #103232; height: 120vh; width: 100%">
+        <GUIGinEndOfRoundDisplay Controller="_controller"></GUIGinEndOfRoundDisplay>
+    </div>
+    </div>
+    }
+
+<div class="row">
+<div class="col-12">
+    <div id="interaction-guide" class="my-2">
+        <h2 style="color: #1D0FBB">How to Interact with this Game</h2>
+
+        Cards can be drag-and-dropped to reposition them in your hand. 
+        They can also be drag-and-dropped into the the discard pile or knock pile. 
+        Double tap the deck or discard pile during the draw phase in order to draw from that pile.
+    </div>
+
+    <div id="rules" class="my-2">
+        <h2 style="color: #1D0FBB">Rules</h2>
+    
+        <p>
+        Gin Rummy starts by dealing ten playing cards from a shuffled 52 card deck to each player. 
+        The remaining 32 cards are placed as the draw pile. 
+        Then, the top card is drawn from the deck and placed face up in the discard pile.
+        </p>
+
+        <p>
+        Aces low and Kings are high for this game (unless the ‘Around the World’ variation is played). 
+        Each card is assigned a point value with face cards being worth ten points, number cards being worth their face value, and aces being worth one point.
+        </p>
+    
+        <p>
+        The goal is not to have many points in your hand, but as few as possible. 
+        In Gin Rummy, your points serve to benefit the opponent. 
+        But Gin Rummy is won by amassing a set number of points over multiple rounds. 
+        You may be thinking something along the lines of, “What? But you just said that the goal is to have as few points as possible in your hand?” 
+        That’s right, but points are earned at the end of a round in a specific way. 
+        In addition to possible bonus points, the main accumulation of points in a round comes from the difference in the points from the 'deadwood' that 
+        you have to the amount of ‘deadwood’ that your opponent has. But before going into what deadwood is, you should first know what a ‘meld’ is.
+        </p>
+    
+        <p>
+        A meld is either a set or a run. 
+        Sets are like having a three of a kind or four of a kind in games like Poker. 
+        Having three or four 10s in your hand would be an example of a set. 
+        If you have played normal Rummy before, you may have heard sets referred to as rises, it is the same thing. 
+        Unlike normal Rummy, these melds are not played to the table during your turn but held in the hand until the time comes to score the round. 
+        Runs are like straights in games like Poker or Yahtzee with something like 4, 5, 6, 7, 8 being a straight. 
+        You must have at least three cards forming the run but there is no upper limit to the number of cards forming the run. 
+        When forming a run, the cards must also be of the same suit (Hearts, Diamonds, Clubs, Spades). 
+        While a card is a part of a meld, you do not suffer the harmful effects from it at the end of the round like you would with a deadwood. 
+        A card can not form multiple melds at the same time. When the round ends, the game will determine where cards should be placed in order to eliminate the most deadwood. 
+        So, to define deadwood, it is the cards (and their point values) that are not a part of meld. 
+        Your goal is to form these melds so that the opponent cannot use it as deadwood against you. 
+        Point values from cards that are a part of a meld do not matter. There is no benefit for having melds with cards that total many points or very few.
+        </p>
+    
+        <p>
+        Who plays first differs based on houserules but for this site, the person who did not get any points the previous round goes first. 
+        The player goes first for new games.
+        </p>
+    
+        <p>
+        Each turn in a round has two phases, the draw phase and the discard phase. 
+        During the draw phase, the person to play chooses to draw a card from either the draw pile or the discard pile. 
+        Unless ‘Big Gin’ is achieved, the person to play chooses a card to either discard or ‘knock’ with. 
+        If the person to play discards a card, then the person to play switches to the other player. 
+        Special rules exist with the first turn each player takes in a round. 
+        The person who is first to play for that round can either draw the card in the discard pile or pass their turn. 
+        If they draw the discard card, then they play the rest of their round normally and their opponent can draw from either pile on their first turn. 
+        If the first person to play chooses to pass their first turn, then the opponent has the same choices available for their first turn. 
+        Regardless of what is chosen by the opponent, every turn after each player’s first is played normally.
+        </p>
+    
+        <p>
+        A person can only knock with a card if they would have ten or less deadwood remaining after discarding that card. 
+        When a player knocks, the round ends and scoring begins. 
+        If the amount of deadwood remaining after discarding the card is equal to zero, then the player has gotten ‘Gin.’ 
+        If a player does not have Big Gin or Gin, then two extra rules apply for scoring. 
+        The first that the knocker’s opponent is allowed to play cards on the knocker’s melds in order to reduce their deadwood total. 
+        This is referred to as ‘laying off’ After laying off happens, the difference in points is calculated. 
+        The second extra rule is that if it turns out that the opponent has equal or lesser amounts of deadwood than the knocker, then the opponent 
+        ‘undercuts’ the knocker and receives points instead of the person who knocked. 
+        If a person were to have 11 cards in their hand (after draw phase) and every card is a part of a meld, then the round ends immediately and the person has Big Gin(ned). 
+        Additionally, if only two cards remain in the deck at the start of a player’s turn, then the round ends and no points are awarded to either player.
+        </p>
+    </div>
+
+    <div id="scoring" class="my-2">
+        <h2>Scoring</h2> 
+
+        <p>
+        Knocking (without Gin and the opponent does not undercut the knocker):
+        Points Awarded (to Knocker) = Opponent’s Deadwood - Knocker’s Deadwood
+        </p>
+
+        <p>
+        Gin:
+        Points Awarded (to Knocker) = 25 + Opponent’s Deadwood
+        </p>
+
+        <p>
+        Big Gin:
+        Points Awarded (to Big Ginner) = 31 + Opponent’s Deadwood
+        </p>
+
+        <p>
+        Undercut:
+        Points Awarded (to Opponent) = 25 + (Knocker’s Deadwood - Opponent’s Deadwood)
+        </p>
+
+        <p>
+        If the winning total amount of points over the rounds of the game has been reached and the winner has won every round, then the winner receives a shutout bonus.
+        </p>
+
+        <p>
+        Shutout Bonus:
+        Winner’s Total Points = Winner’s Previous Total Points * 2
+        </p>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    private GinRummyController? _controller;
+
+    private Notifier? _gameUpdateNotifier;
+
+    private GinRummyViewData? _viewData;
+
+    private string? _turnPhaseIndicator;
+
+    private string? _darkenCSS;
+
+    /// <summary>
+    /// Configure the starting state of the page with the board darkened, three dropdowns, a start game button, and information below on how to play.
+    /// </summary>
+    /// <returns>Nothing</returns>
+    protected override async Task OnInitializedAsync()
+    {
+        _controller = GinRummyController.GetInstance(Configuration); // May need changed later on
+        _gameUpdateNotifier = _controller.FetchNotifier();
+        _gameUpdateNotifier.Subscribe(this); // Subscribe to the notifier so that we can update the page when the game state changes
+
+        _viewData = _controller.FetchViewData();
+
+
+        base.OnInitializedAsync();
+    }
+
+    public override void Notify()
+    {
+        _viewData = _controller.FetchViewData();
+
+        if (_viewData != null)
+        {
+            UpdateTurnPhaseInformation();
+        }
+
+        StateHasChanged();
+    }
+
+    private void UpdateTurnPhaseInformation()
+    {
+        string? turnString;
+
+        // Who's turn it is to play
+        if (_viewData.CurrentTurn == TurnState.Human)
+        {
+            turnString = "Your ";
+            // https://til.hashrocket.com/posts/4jhm8rrq7c-lighten-and-darken-with-css-brightness-filter - Darkening
+            _darkenCSS = "filter: brightness(100%);";
+        } else
+        {
+            turnString = "Opponent's ";
+            _darkenCSS = "filter: brightness(60%);";
+        }
+
+
+        // The Phase of the Turn
+        if (_viewData.CurrentPhase == PhaseState.Draw && _viewData.IsSpecialDraw)
+        {
+            _turnPhaseIndicator = turnString + "Special Draw Phase";
+        } else if (_viewData.CurrentPhase == PhaseState.Draw)
+        {
+            _turnPhaseIndicator = turnString + "Draw Phase";
+        } else {
+            _turnPhaseIndicator = turnString + "Discard Phase";
+        }
+        
+    }
+}

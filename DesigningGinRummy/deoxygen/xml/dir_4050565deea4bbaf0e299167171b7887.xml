@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_4050565deea4bbaf0e299167171b7887" kind="dir">
+    <compoundname>CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers</compoundname>
+    <innerfile refid="_oidc_configuration_controller_8cs">OidcConfigurationController.cs</innerfile>
+    <innerfile refid="_weather_forecast_controller_8cs">WeatherForecastController.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.WeatherForecast Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.WeatherForecast</primary></indexterm>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1af1e59aaf0c1f071f38a92ebc3d306192"/>DateTime <emphasis role="strong">Date</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1af62d90e7834f8357a5340b38598d0555"/>int <emphasis role="strong">TemperatureC</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1ab4efceb5d60ae44590500693ab9727b6"/>string? <emphasis role="strong">Summary</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_weather_forecast_1a47f64debb5ffd926141de2fe0215db91"/>int <emphasis role="strong">TemperatureF</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/WeatherForecast.cs</section>

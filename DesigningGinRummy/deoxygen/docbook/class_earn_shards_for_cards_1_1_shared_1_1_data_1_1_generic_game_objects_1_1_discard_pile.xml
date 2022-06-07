@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile" xml:lang="en-US">
+<title>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">DiscardPile</link> represents the real-world pile of cards that grows throughout the play of the game. It is accessible from the top and is able to be cleared out. It can be used as a source of cards for various games. It may be at points empty and at other points full of cards. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1aff837fb155c0ad69ee503ed47ebd0f2b"/><emphasis role="strong">DiscardPile</emphasis> ()</para>
+
+<para>Create a discard pile with no cards </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a788ebb243e2310518097a0c226adedcd">Add</link> (T card, bool insertFaceUp=true)</para>
+
+<para>Add a card to the top of this pile. </para>
+</listitem>
+            <listitem><para>T <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a5eec16cc93c287259f0814277a3b14aa">Draw</link> ()</para>
+
+<para>Remove a card from the top and return it </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a9572bf08cb7fd42dd859a8622841aec5">GetImageFilePath</link> ()</para>
+
+<para>Returns the current image representation for this pile. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1aa97e968577dd609dc965cac0f159980b"/>void <emphasis role="strong">Clear</emphasis> ()</para>
+
+<para>Empties the discard pile of all of its cards but does not return them. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a4dc17e42928d6249319eedf9e9887208"/>IList&lt; <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link> &gt; <emphasis role="strong">Cards</emphasis><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1afde30b8140c6a8edab74c2d2a7c12a85"/>static string <emphasis role="strong">EmptyImageRepresentation</emphasis><computeroutput> [get, protected set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">DiscardPile</link> represents the real-world pile of cards that grows throughout the play of the game. It is accessible from the top and is able to be cleared out. It can be used as a source of cards for various games. It may be at points empty and at other points full of cards. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>The type of card that this discard pile contains</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:<link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_card">Card</link></emphasis></para>
+</simplesect>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a788ebb243e2310518097a0c226adedcd"/><section>
+    <title>Add()</title>
+<indexterm><primary>Add</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</primary><secondary>Add</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile</link>&lt; T &gt;.Add (T card, bool insertFaceUp = <computeroutput>true</computeroutput>
+)</computeroutput></para><para>
+
+<para>Add a card to the top of this pile. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>card</entry><entry>
+<para>The card to be added</para>
+</entry>
+                            </row>
+                            <row>
+<entry>insertFaceUp</entry><entry>
+<para>Whether the card should be face up (true by default)</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a5eec16cc93c287259f0814277a3b14aa"/><section>
+    <title>Draw()</title>
+<indexterm><primary>Draw</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</primary><secondary>Draw</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile</link>&lt; T &gt;.Draw ( )</computeroutput></para><para>
+
+<para>Remove a card from the top and return it </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The card removed and returned from the top of the pile</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile_1a9572bf08cb7fd42dd859a8622841aec5"/><section>
+    <title>GetImageFilePath()</title>
+<indexterm><primary>GetImageFilePath</primary><secondary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile&lt; T &gt;</primary><secondary>GetImageFilePath</secondary></indexterm>
+<para><computeroutput>string <link linkend="_class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_generic_game_objects_1_1_discard_pile">EarnShardsForCards.Shared.Data.GenericGameObjects.DiscardPile</link>&lt; T &gt;.GetImageFilePath ( )</computeroutput></para><para>
+
+<para>Returns the current image representation for this pile. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The image representation of this discard pile</para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GenericGameObjects/DiscardPile.cs</section>
+</section>

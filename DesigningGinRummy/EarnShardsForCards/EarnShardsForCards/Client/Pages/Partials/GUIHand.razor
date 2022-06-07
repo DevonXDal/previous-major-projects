@@ -1,0 +1,131 @@
+﻿@using EarnShardsForCards.Shared.Data.GinRummy
+@using EarnShardsForCards.Shared.Data.GenericGameObjects
+@using EarnShardsForCards.Client.Data
+
+@inherits SubscriberComponent
+
+@* https://blazorfiddle.com/s/8jurefka - Source of dropdown knowledge*@
+
+<div class="my-2">
+<ul ondragover="event.preventDefault();" class="list-inline row align-content-around" style="list-style: none">
+    @if (IsHumanPlayerHand)
+    {
+        <li class="col-md-1 my-1 general-game-text">Your Hand</li>
+        for (int i = 0; i < _cardsInHand.Count; i++)
+        {
+            string filePath = _cardsInHand[i];
+            <li class="list-inline-item col-md-1 col-2 my-1" draggable="true"  @key="i" tabindex="1" @ondrop="@(()=> Drop(filePath))" @ondrag="@(()=> StartDrag(filePath))">
+                <GUICardSlot Controller="Controller" CardImageFilePath="@filePath" HandPostion="@i" IsHumanPlayerCard="true"></GUICardSlot>
+            </li>
+        }
+        <li class="col-md-1 my-1"></li>
+    } else
+    {
+        <li class="col-md-1 my-1 general-game-text" >The Computer's Hand</li>
+        for (int i = 0; i < _cardsInHand.Count; i++)
+        {
+            string filePath = _cardsInHand[i];
+            <li class="list-inline-item col-md-1 col-2 my-1" draggable="false">
+                <GUICardSlot Controller="Controller" CardImageFilePath="@filePath" HandPostion="@i" IsHumanPlayerCard="false"></GUICardSlot>
+            </li>
+        }
+        <li class="col-md-1 my-1"></li>
+    }
+
+</ul>
+</div>
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    [Parameter]
+    public GinRummyController Controller { get; set; }
+
+    [Parameter]
+    public Notifier Notifier { get; set; }
+
+    [Parameter]
+    public bool IsHumanPlayerHand { get; set; }
+
+    private TurnState? _turnState;
+
+    private PhaseState? _phaseState;
+
+    private IList<string>? _cardsInHand;
+
+    private int currentIndex;
+
+    protected override async Task OnInitializedAsync()
+    {
+        FetchNewData();
+        Notifier.Subscribe(this);
+        currentIndex = 0;
+
+        await base.OnInitializedAsync();
+    }
+
+
+
+    void StartDrag(string cardInList)
+    {
+        currentIndex = GetIndex(cardInList);
+        Controller.SelectedCardIndex = currentIndex;
+    }
+
+    void ClickCardInList(string cardInList)
+    {
+        currentIndex = GetIndex(cardInList);
+        StateHasChanged();
+    }
+
+    int GetIndex(string cardInList)
+    {
+        return _cardsInHand.IndexOf(cardInList);
+    }
+
+    void Drop(string cardInList)
+    {
+        if (cardInList != null)
+        {
+            var index = GetIndex(cardInList);
+
+            // move the card in the hand
+            try
+            {
+                Controller.RequestCardReposition(currentIndex, index);
+            } catch (InvalidOperationException e)
+            {
+                ModalParameters parameters = new ModalParameters();
+                parameters.Add(nameof(InformativeModalData.TextBody), e.Message);
+
+                Modal.Show<InformativeModalData>("Could not Reposition the Cards in Your Hand", parameters);
+            }
+            
+
+            // update current selection
+            currentIndex = index;
+        } 
+    }
+
+    public override void Notify()
+    {
+        FetchNewData();
+        StateHasChanged();
+    }
+
+    void FetchNewData()
+    {
+        var viewData = Controller.FetchViewData();
+
+        if (IsHumanPlayerHand)
+        {
+            _cardsInHand = viewData.HumanPlayerHandImages;
+        } else
+        {
+            _cardsInHand = viewData.ComputerPlayerHandImages;
+        }
+
+        _turnState = viewData.CurrentTurn;
+        _phaseState = viewData.CurrentPhase;
+    }
+}

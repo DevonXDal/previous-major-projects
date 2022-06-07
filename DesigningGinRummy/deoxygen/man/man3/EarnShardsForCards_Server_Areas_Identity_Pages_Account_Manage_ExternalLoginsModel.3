@@ -1,0 +1,53 @@
+.TH "EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel" 3 "Sat Apr 23 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Server.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits PageModel\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExternalLoginsModel\fP (UserManager< \fBApplicationUser\fP > userManager, SignInManager< \fBApplicationUser\fP > signInManager, IUserStore< \fBApplicationUser\fP > userStore)"
+.br
+.ti -1c
+.RI "async Task< IActionResult > \fBOnGetAsync\fP ()"
+.br
+.ti -1c
+.RI "async Task< IActionResult > \fBOnPostRemoveLoginAsync\fP (string loginProvider, string providerKey)"
+.br
+.ti -1c
+.RI "async Task< IActionResult > \fBOnPostLinkLoginAsync\fP (string provider)"
+.br
+.ti -1c
+.RI "async Task< IActionResult > \fBOnGetLinkLoginCallbackAsync\fP ()"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "IList< UserLoginInfo > \fBCurrentLogins\fP\fC [get, set]\fP"
+.br
+.RI "This API supports the ASP\&.NET Core \fBIdentity\fP default UI infrastructure and is not intended to be used directly from your code\&. This API may change or be removed in future releases\&. "
+.ti -1c
+.RI "IList< AuthenticationScheme > \fBOtherLogins\fP\fC [get, set]\fP"
+.br
+.RI "This API supports the ASP\&.NET Core \fBIdentity\fP default UI infrastructure and is not intended to be used directly from your code\&. This API may change or be removed in future releases\&. "
+.ti -1c
+.RI "bool \fBShowRemoveButton\fP\fC [get, set]\fP"
+.br
+.RI "This API supports the ASP\&.NET Core \fBIdentity\fP default UI infrastructure and is not intended to be used directly from your code\&. This API may change or be removed in future releases\&. "
+.ti -1c
+.RI "string \fBStatusMessage\fP\fC [get, set]\fP"
+.br
+.RI "This API supports the ASP\&.NET Core \fBIdentity\fP default UI infrastructure and is not intended to be used directly from your code\&. This API may change or be removed in future releases\&. "
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

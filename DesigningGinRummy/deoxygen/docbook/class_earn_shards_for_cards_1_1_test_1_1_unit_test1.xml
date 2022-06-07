@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_earn_shards_for_cards_1_1_test_1_1_unit_test1" xml:lang="en-US">
+<title>EarnShardsForCards.Test.UnitTest1 Class Reference</title>
+<indexterm><primary>EarnShardsForCards.Test.UnitTest1</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_earn_shards_for_cards_1_1_test_1_1_unit_test1_1ad5f98791940c85d2d24d56e955d98b5a"/>void <emphasis role="strong">Test1</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards.Test/UnitTest1.cs</section>

@@ -1,0 +1,4 @@
+var class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_reset_password_confirmation_model =
+[
+    [ "OnGet", "class_earn_shards_for_cards_1_1_server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_reset_password_confirmation_model.html#ade2ba838ca694df36c6eebe34757311c", null ]
+];

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state" kind="class" language="C#" prot="public">
+    <compoundname>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a24680e20f8da99d4d68b49d945fb6b85" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.PointsRequiredForWin</definition>
+        <argsstring></argsstring>
+        <name>PointsRequiredForWin</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.PointsRequiredForWin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="21" column="20" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a0b48257b55f51f6a00c1fbb316088a31" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IList&lt; int &gt;</type>
+        <definition>IList&lt;int&gt; EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.PointsForHumanPlayerPerRound</definition>
+        <argsstring></argsstring>
+        <name>PointsForHumanPlayerPerRound</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.PointsForHumanPlayerPerRound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="22" column="22" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a6dcfd2d9ab233f4bbf13a8ff3aa1e92f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IList&lt; int &gt;</type>
+        <definition>IList&lt;int&gt; EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.PointsForComputerPlayerPerRound</definition>
+        <argsstring></argsstring>
+        <name>PointsForComputerPlayerPerRound</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.PointsForComputerPlayerPerRound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="23" column="22" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1af73d71d459179a022d396e3fe14a1a15" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.RoundNumber</definition>
+        <argsstring></argsstring>
+        <name>RoundNumber</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.RoundNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="24" column="20" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a0d5bda538aa8b6d4e83e5e4f57db52b1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.IsAroundTheWorld</definition>
+        <argsstring></argsstring>
+        <name>IsAroundTheWorld</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.IsAroundTheWorld</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="25" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a131730cc1631e4b815423001ea0382d0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04" kindref="member">TurnState</ref></type>
+        <definition>TurnState EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.CurrentPlayersTurn</definition>
+        <argsstring></argsstring>
+        <name>CurrentPlayersTurn</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.CurrentPlayersTurn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="26" column="26" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a1ecfa43c65ef05503b82dcbf6c79aae7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1a4eb573d2fc22fe65f0a36a855679c785" kindref="member">PhaseState</ref></type>
+        <definition>PhaseState EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.CurrentTurnPhase</definition>
+        <argsstring></argsstring>
+        <name>CurrentTurnPhase</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.CurrentTurnPhase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="27" column="27" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a75e9b98c11441a5476dbd9bca4fff333" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.IsSpecialDraw</definition>
+        <argsstring></argsstring>
+        <name>IsSpecialDraw</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.IsSpecialDraw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="28" column="21" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1ae438465acb17197cea70e79fa1a7ca39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.GinRummyGameState</definition>
+        <argsstring>(bool isAroundTheWorld, int winCondition, TurnState firstToPlay)</argsstring>
+        <name>GinRummyGameState</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.GinRummyGameState</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>isAroundTheWorld</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>winCondition</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_1ac745e0e385c57176bf0a38fba72c7a04" kindref="member">TurnState</ref></type>
+          <declname>firstToPlay</declname>
+        </param>
+        <briefdescription>
+<para>I. Create a <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state" kindref="compound">GinRummyGameState</ref> object using whether around the world is in play, the number of points required to win, and a path to the first player to play. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isAroundTheWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether runs can loop around from King to Ace</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>winCondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many points is necessary for a player to win the entire game</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>firstToPlay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Who is the first player to play the game</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="37" column="16" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a141ca930393c4c47a530690468c7516a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.CheckIfGameIsWon</definition>
+        <argsstring>()</argsstring>
+        <name>CheckIfGameIsWon</name>
+        <qualifiedname>EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState.CheckIfGameIsWon</qualifiedname>
+        <briefdescription>
+<para>Determines if the game has been won i. Returns -1 if the computer won ii. Returns 0 if no one has won iii.Returns 1 if the human player won </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The integer value that matches the current state of the game information</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="49" column="20" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state" kindref="compound">GinRummyGameState</ref> is a virtual game support object that maintains overall state information for the game. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc. Using this state helps the game flow and aids in determining if a player has won the game. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" line="19" column="11" bodyfile="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Shared/Data/GinRummy/GinRummyGameState.cs" bodystart="20" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a141ca930393c4c47a530690468c7516a" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>CheckIfGameIsWon</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a131730cc1631e4b815423001ea0382d0" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>CurrentPlayersTurn</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a1ecfa43c65ef05503b82dcbf6c79aae7" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>CurrentTurnPhase</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1ae438465acb17197cea70e79fa1a7ca39" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>GinRummyGameState</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a0d5bda538aa8b6d4e83e5e4f57db52b1" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>IsAroundTheWorld</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a75e9b98c11441a5476dbd9bca4fff333" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>IsSpecialDraw</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a6dcfd2d9ab233f4bbf13a8ff3aa1e92f" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>PointsForComputerPlayerPerRound</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a0b48257b55f51f6a00c1fbb316088a31" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>PointsForHumanPlayerPerRound</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1a24680e20f8da99d4d68b49d945fb6b85" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>PointsRequiredForWin</name></member>
+      <member refid="class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_1af73d71d459179a022d396e3fe14a1a15" prot="public" virt="non-virtual"><scope>EarnShardsForCards::Shared::Data::GinRummy::GinRummyGameState</scope><name>RoundNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+.TH "EarnShardsForCards.Test.Models.PlayingCardTest" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Test.Models.PlayingCardTest \- Tests the PlayingCard class to ensure that it conforms to that specified in the design document\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Tests the PlayingCard class to ensure that it conforms to that specified in the design document\&. 
+
+Axioms: I\&. (card\&.new(rank, suit, value))\&.Rank == rank II\&. (card\&.new (rank, suit, value))\&.Suit == suit III\&. card\&.new (rank, suit, value) card\&.Show() card\&.GetImageFilePath() == “~/img/PlayingCard/{rank } -{ suit}\&.webp” IV\&. card\&.new (rank, suit, value) card\&.GetImageFilePath() == “~/ img / PlayingCard / Back\&.webp” V\&. card\&.new (rank, suit, value) card\&.Value == value VI\&. card\&.new(rank, suit, value) card\&.Equals({another card with the same rank and suit}) == true card\&.Equals({ another card with a different rank}) == false card\&.Equals({ another card with a different suit}) == false card\&.Equals({ another card with both a different rank and a different suit}) == false 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

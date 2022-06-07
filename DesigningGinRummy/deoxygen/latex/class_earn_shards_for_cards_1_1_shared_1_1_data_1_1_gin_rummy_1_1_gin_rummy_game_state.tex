@@ -1,0 +1,87 @@
+\hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state}{}\doxysection{Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Game\+State Class Reference}
+\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state}\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState}}
+
+
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state}{Gin\+Rummy\+Game\+State}} is a virtual game support object that maintains overall state information for the game. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc. Using this state helps the game flow and aids in determining if a player has won the game.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_ae438465acb17197cea70e79fa1a7ca39}{Gin\+Rummy\+Game\+State}} (bool is\+Around\+The\+World, int win\+Condition, \mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac745e0e385c57176bf0a38fba72c7a04}{Turn\+State}} first\+To\+Play)
+\begin{DoxyCompactList}\small\item\em I. Create a \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state}{Gin\+Rummy\+Game\+State}} object using whether around the world is in play, the number of points required to win, and a path to the first player to play. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a141ca930393c4c47a530690468c7516a}{Check\+If\+Game\+Is\+Won}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the game has been won i. Returns -\/1 if the computer won ii. Returns 0 if no one has won iii.\+Returns 1 if the human player won \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a24680e20f8da99d4d68b49d945fb6b85}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a24680e20f8da99d4d68b49d945fb6b85}} 
+int {\bfseries Points\+Required\+For\+Win}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a0b48257b55f51f6a00c1fbb316088a31}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a0b48257b55f51f6a00c1fbb316088a31}} 
+IList$<$ int $>$ {\bfseries Points\+For\+Human\+Player\+Per\+Round}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a6dcfd2d9ab233f4bbf13a8ff3aa1e92f}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a6dcfd2d9ab233f4bbf13a8ff3aa1e92f}} 
+IList$<$ int $>$ {\bfseries Points\+For\+Computer\+Player\+Per\+Round}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_af73d71d459179a022d396e3fe14a1a15}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_af73d71d459179a022d396e3fe14a1a15}} 
+int {\bfseries Round\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a0d5bda538aa8b6d4e83e5e4f57db52b1}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a0d5bda538aa8b6d4e83e5e4f57db52b1}} 
+bool {\bfseries Is\+Around\+The\+World}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a131730cc1631e4b815423001ea0382d0}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a131730cc1631e4b815423001ea0382d0}} 
+\mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac745e0e385c57176bf0a38fba72c7a04}{Turn\+State}} {\bfseries Current\+Players\+Turn}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a1ecfa43c65ef05503b82dcbf6c79aae7}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a1ecfa43c65ef05503b82dcbf6c79aae7}} 
+\mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_a4eb573d2fc22fe65f0a36a855679c785}{Phase\+State}} {\bfseries Current\+Turn\+Phase}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a75e9b98c11441a5476dbd9bca4fff333}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a75e9b98c11441a5476dbd9bca4fff333}} 
+bool {\bfseries Is\+Special\+Draw}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state}{Gin\+Rummy\+Game\+State}} is a virtual game support object that maintains overall state information for the game. It is necessary to have this to separate concerns from other objects and to track conditions for actions either player takes. This information includes the current round, scores for each player per round, which variations of the rules are in use, whose turn it is and the phase, etc. Using this state helps the game flow and aids in determining if a player has won the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_ae438465acb17197cea70e79fa1a7ca39}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_ae438465acb17197cea70e79fa1a7ca39}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState}!GinRummyGameState@{GinRummyGameState}}
+\index{GinRummyGameState@{GinRummyGameState}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState}}
+\doxysubsubsection{\texorpdfstring{GinRummyGameState()}{GinRummyGameState()}}
+{\footnotesize\ttfamily Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Game\+State.\+Gin\+Rummy\+Game\+State (\begin{DoxyParamCaption}\item[{bool}]{is\+Around\+The\+World,  }\item[{int}]{win\+Condition,  }\item[{\mbox{\hyperlink{namespace_earn_shards_for_cards_1_1_shared_1_1_data_1_1_enumerations_ac745e0e385c57176bf0a38fba72c7a04}{Turn\+State}}}]{first\+To\+Play }\end{DoxyParamCaption})}
+
+
+
+I. Create a \mbox{\hyperlink{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state}{Gin\+Rummy\+Game\+State}} object using whether around the world is in play, the number of points required to win, and a path to the first player to play. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Around\+The\+World} & Whether runs can loop around from King to Ace\\
+\hline
+{\em win\+Condition} & How many points is necessary for a player to win the entire game\\
+\hline
+{\em first\+To\+Play} & Who is the first player to play the game\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a141ca930393c4c47a530690468c7516a}\label{class_earn_shards_for_cards_1_1_shared_1_1_data_1_1_gin_rummy_1_1_gin_rummy_game_state_a141ca930393c4c47a530690468c7516a}} 
+\index{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState}!CheckIfGameIsWon@{CheckIfGameIsWon}}
+\index{CheckIfGameIsWon@{CheckIfGameIsWon}!EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState@{EarnShardsForCards.Shared.Data.GinRummy.GinRummyGameState}}
+\doxysubsubsection{\texorpdfstring{CheckIfGameIsWon()}{CheckIfGameIsWon()}}
+{\footnotesize\ttfamily int Earn\+Shards\+For\+Cards.\+Shared.\+Data.\+Gin\+Rummy.\+Gin\+Rummy\+Game\+State.\+Check\+If\+Game\+Is\+Won (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if the game has been won i. Returns -\/1 if the computer won ii. Returns 0 if no one has won iii.\+Returns 1 if the human player won 
+
+\begin{DoxyReturn}{Returns}
+The integer value that matches the current state of the game information
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CS320/\+Designing\+Gin\+Rummy/\+Earn\+Shards\+For\+Cards/\+Earn\+Shards\+For\+Cards/\+Shared/\+Data/\+Gin\+Rummy/Gin\+Rummy\+Game\+State.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="EarnShardsForCards.Shared.Data.GinRummy.GinRummyController" name="EarnShardsForCards.Shared.Data.GinRummy.GinRummyController">
+<area shape="rect" id="node1" title="A GinRummyController is a virtual game support object specifically for Gin Rummy &#39; that handles the g..." alt="" coords="5,80,248,121"/>
+<area shape="rect" id="node2" href="$interface_earn_shards_for_cards_1_1_shared_1_1_data_1_1_interfaces_1_1_i_gin_rummy_controller.html" title="Represents the open functionality that can be taken a GinRummyController class by other classes...." alt="" coords="54,5,199,32"/>
+</map>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_earn_shards_for_cards_1_1_server" kind="namespace" language="C#">
+    <compoundname>EarnShardsForCards::Server</compoundname>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server_1_1_controllers">EarnShardsForCards::Server::Controllers</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server_1_1_data">EarnShardsForCards::Server::Data</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server_1_1_models">EarnShardsForCards::Server::Models</innernamespace>
+    <innernamespace refid="namespace_earn_shards_for_cards_1_1_server_1_1_pages">EarnShardsForCards::Server::Pages</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CS320/DesigningGinRummy/EarnShardsForCards/EarnShardsForCards/Server/Controllers/OidcConfigurationController.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

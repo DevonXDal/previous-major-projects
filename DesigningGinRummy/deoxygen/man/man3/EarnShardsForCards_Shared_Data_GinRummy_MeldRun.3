@@ -1,0 +1,109 @@
+.TH "EarnShardsForCards.Shared.Data.GinRummy.MeldRun" 3 "Tue Apr 26 2022" "Earn Cards for Shards" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EarnShardsForCards.Shared.Data.GinRummy.MeldRun \- A \fBMeldRun\fP is more of a virtual game support object than a real-world object\&. It represents the three or more cards that a player lays down at the end of each round that form a sequence of cards of the same suit that are one rank higher than each other\&. An example of a \fBMeldRun\fP would be the ranks forming (‘Ace of Hearts’, ‘Two of Hearts’, ‘Three of Hearts’, ‘Four of Hearts’)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBCanAddNewCard\fP (\fBPlayingCard\fP newCard)"
+.br
+.RI "Verifies that a new card can be added to the meld run "
+.ti -1c
+.RI "int \fBDeadwoodRemovedByMeld\fP ()"
+.br
+.RI "Determines the deadwood that is removed from this run being formed\&. "
+.ti -1c
+.RI "\fBIMeld\fP? \fBGenerateMeldFromCards\fP (IList< \fBPlayingCard\fP > cards)"
+.br
+.RI "Create a meld run from three or four cards that have the same rank "
+.ti -1c
+.RI "\fBIMeld\fP \fBInsert\fP (\fBPlayingCard\fP card)"
+.br
+.RI "Adds a card to the meld without verification that the card can be added\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "IList< \fBPlayingCard\fP > \fBCards\fP\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBMeldRun\fP is more of a virtual game support object than a real-world object\&. It represents the three or more cards that a player lays down at the end of each round that form a sequence of cards of the same suit that are one rank higher than each other\&. An example of a \fBMeldRun\fP would be the ranks forming (‘Ace of Hearts’, ‘Two of Hearts’, ‘Three of Hearts’, ‘Four of Hearts’)\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\&.CanAddNewCard (\fBPlayingCard\fP newCard)"
+
+.PP
+Verifies that a new card can be added to the meld run 
+.PP
+\fBParameters\fP
+.RS 4
+\fInewCard\fP The new card to be added to the set
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Whether the new card can be added
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\fP\&.
+.SS "int EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\&.DeadwoodRemovedByMeld ()"
+
+.PP
+Determines the deadwood that is removed from this run being formed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The deadwood removed by the set
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\fP\&.
+.SS "\fBIMeld\fP? EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\&.GenerateMeldFromCards (IList< \fBPlayingCard\fP > cards)"
+
+.PP
+Create a meld run from three or four cards that have the same rank 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcards\fP The cards used to create the meld
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Either the meld that was created, or if the meld cannot be formed by the cards, null
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\fP\&.
+.SS "\fBIMeld\fP EarnShardsForCards\&.Shared\&.Data\&.GinRummy\&.MeldRun\&.Insert (\fBPlayingCard\fP card)"
+
+.PP
+Adds a card to the meld without verification that the card can be added\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcard\fP The card to be added
+.RE
+.PP
+
+.PP
+Implements \fBEarnShardsForCards\&.Shared\&.Data\&.Interfaces\&.IMeld\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Earn Cards for Shards from the source code\&.

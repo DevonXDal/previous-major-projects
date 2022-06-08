@@ -29,7 +29,7 @@ It uses a custom configuration file as I was not that knowledgeable about XML, J
 Unlike others on this list, this was not a final project, but my first project to learn how to make a Web application using .NET Core 2.1. It features a few simple unit
 conversions in addition to some more humorous ones such as converting the power released by tons of TNT to how many phones with a battery of 4000mAh being charged.
 
-## Weather Mobile App - Spring 2022 (CS 320)
+## Weather Mobile App - Spring 2021 (CS 320)
 
 This application has a number of bugs as it was quickly written and rewritten in two weeks. It is a Flutter (Dart) app that pulls information about the weather from
 an online API and displays it to the user. Part of its unfinished nature comes from switching the state handling pattern from BLoC to ChangeProvider. This was done

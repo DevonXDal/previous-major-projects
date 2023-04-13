@@ -22,7 +22,7 @@ namespace EarnShardsForCards.Shared.Data.Interfaces
         /// <param name="cards">The cards used to create the meld</param>
         /// <param name="isAroundTheWorld">Whether the meld is for the around the world variation</param>
         /// <returns>Either the meld that was created, or if the meld cannot be formed by the cards, null</returns>
-        public static abstract IMeld? GenerateMeldFromCards(IList<PlayingCard> cards, bool isAroundTheWorld = false);
+        public static virtual IMeld? GenerateMeldFromCards(IList<PlayingCard> cards, bool isAroundTheWorld = false) => throw new InvalidOperationException("Must override this");
 
         /// <summary>
         /// Verifies that a new card is able to become part of the meld.

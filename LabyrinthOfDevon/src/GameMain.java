@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
-
 
 /**
  * Kick starts the game, creates a public, static game object that will be used to greatly reduce coupling.

@@ -1,0 +1,35 @@
+<div class="card my-3 core-card">
+    <div class="card-body">
+        <h5 class="card-title">Quick Access Menu</h5>
+        <h6 class="card-subtitle">Press any button to jump to the related page</h6>
+        <div class="row mt-2">
+            <div class="col-lg-3 col-6">
+                Host Staff:
+                <hr>
+                <a [routerLink]="['/Host']"><button pButton type="button" label="Main Page" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Host/AddToWaitQueue']"><button pButton type="button" label="Add to Wait Queue" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Host/SeatATable']"><button pButton type="button" label="Seat a Table" class="p-button-help my-1 w-100"></button></a>
+            </div>
+            <div class="col-lg-3 col-6">
+                Wait Staff:
+                <hr>
+                <a [routerLink]="['/Wait']"><button pButton type="button" label="Main Page" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Wait/InsertTakenOrder']"><button pButton type="button" label="Take Table's Order" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Wait/MarkOrderPaid']"><button pButton type="button" label="Mark Table as Paid" class="p-button-help my-1 w-100"></button></a>
+            </div>
+            <div class="col-lg-3 col-6">
+                Kitchen Staff:
+                <hr>
+                <a [routerLink]="['/Kitchen']"><button pButton type="button" label="Main Page" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Kitchen/StartCookingOrder']"><button pButton type="button" label="Start on Order" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Kitchen/MarkOrderFinished']"><button pButton type="button" label="Mark Order as Finished" class="p-button-help my-1"></button></a>
+            </div>
+            <div class="col-lg-3 col-6">
+                Bus Staff:
+                <hr>
+                <a [routerLink]="['/Bus']"><button pButton type="button" label="Main Page" class="p-button-help my-1 w-100"></button></a>
+                <a [routerLink]="['/Bus/MarkTableAsCleaned']"><button pButton type="button" label="Mark Table as Cleaned" class="p-button-help my-1 w-100"></button></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<h1>{{pageTitle}} <i class="bi bi-droplet-fill"></i></h1>
+<h5>Checks every 15 seconds</h5>
+
+
+<div class="row mt-2 mb-4">
+    <div class="col-4">
+        <a [routerLink]="['/Bus/MarkTableAsCleaned']" class="btn btn-info w-75" role="button">Mark a Table as Clean and Ready</a>
+    </div>
+    <div class="col-4">
+        <button class="btn btn-info w-75" type="button" (click)="toggleData()">{{showData ? 'Hide Data' : 'Show Data'}}</button>
+    </div>
+    <div class="col-4">
+        
+    </div>
+</div>
+
+<div class="mb-4" [hidden]="!showData">
+    <!-- Cards indicating table and order status -->
+    <div class="" *ngIf="status">
+        
+        <div class="card mb-2" *ngFor="let table of status.Tables">
+            <div class="card-header">
+                Table {{table.id}}
+            </div>
+            <div class="card-body">
+                <div>Has Paid: {{table.hasPaid ? 'Yes' : 'No'}}</div>
+                <div>Is Needing Cleaned?: {{table.isNeedingCleaned ? 'Yes' : 'No'}}</div>
+            </div>
+            <div class="card-footer">Last Update: {{table.lastUpdate}}</div>
+        </div>
+    </div>
+    <b *ngIf="!status">Waiting for status from server</b>
+</div>
+
+<router-outlet></router-outlet> 

@@ -1,0 +1,79 @@
+﻿using BarebonesEFCoreRepositoryPatternStarter.Data;
+using BarebonesRabbitMQImplementation.Helpers.RabbitMQ;
+using BarebonesRabbitMQImplementationLibrary.Helpers;
+using BarebonesRabbitMQImplementationLibrary.Helpers.RabbitMQ;
+using BarebonesRabbitMQImplementationLibrary.Models;
+using WaitStaffService.Database.Data;
+using WaitStaffService.Database.Models;
+using WaitStaffService.Models.DTO.StatusUpdate;
+using Serilog;
+
+namespace WaitStaffService.EventHandlers
+{
+    /// <summary>
+    /// This StatusUpdateEventHandler class handles retreiving the current state of information
+    /// needed by this group of staff.
+    /// 
+    /// Author: Devon X. Dalrymple
+    /// </summary>
+    public class StatusUpdateEventHandler : EventHandlerBase
+    {
+        private readonly RepositoryBase<ApplicationDbContext, Table> _tableRepo;
+        private readonly RepositoryBase<ApplicationDbContext, Order> _orderRepo;
+        public const string EVENT = "StatusUpdate-WaitStaff";
+
+
+        public StatusUpdateEventHandler(
+            IMessageProducer messageProducer, 
+            RepositoryBase<ApplicationDbContext, Table> tableRepo,
+            RepositoryBase<ApplicationDbContext, Order> orderRepo)
+        {
+            _messageProducer = messageProducer;
+            _tableRepo = tableRepo;
+            _orderRepo = orderRepo;
+        }
+
+        /// <summary>
+        /// Handles the event and sends a response message indicating a success or failure.
+        /// </summary>
+        public async Task Handle(DataWithCorrelation dto)
+        {
+            WaitStaffFullStatusDTO status = new();
+            var tables = _tableRepo.Get();
+            var orders = _orderRepo.Get();
+
+            status.Tables = tables.Select(t => FormTableStatus(t)).ToList();
+
+            Log.Information(LoggingHelper.FormatMessageWithCorrelationInformation("Successfully retrieved an update on the tables and orders", dto));
+
+            _messageProducer.SendMessage($"{EVENT}--{dto.CorrelationGuid}",
+                status,
+                args: RabbitMQOptionPresets.SHOULD_EXPIRE_AFTER_2_MINUTES
+            );
+
+            // Reads from the orders list in the outer method
+            WaitStaffTableStatusDTO FormTableStatus(Table t)
+            {
+                WaitStaffTableStatusDTO tableStatus = new()
+                {
+                    Id = t.Id,
+                    SeatsUsed = t.SeatsUsed,
+                    LastUpdate = t.LastModified
+                };
+
+                if (t.OrderId != null)
+                {
+                    var order = orders.FirstOrDefault(o => o.Id == t.OrderId);
+
+                    tableStatus.OrderGuid = order.OrderGuid;
+                    tableStatus.OrderDescription = order.Description;
+                    tableStatus.IsOrderFinished = order.IsFinished;
+                    
+                    if (order.LastModified > t.LastModified) tableStatus.LastUpdate = order.LastModified;
+                }
+
+                return tableStatus;
+            }
+        }
+    }
+}

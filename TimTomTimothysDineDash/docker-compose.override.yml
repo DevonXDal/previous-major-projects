@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  spaservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  coreapiservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+

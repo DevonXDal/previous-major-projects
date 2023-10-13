@@ -1,0 +1,19 @@
+<form #markTableAsCleaned="ngForm" (ngSubmit)="submit(markTableAsCleaned)">
+    <div class="card">
+        <div class="card-header text-center fw-bold">Mark Table as Having Been Cleaned</div>
+        <div class="card-body text-center">
+            Which Table: 
+            <p-dropdown [(ngModel)]="tableId" [options]="currStatus!.Tables" name="tableId" optionLabel="id" optionValue="id" 
+                *ngIf="emptyUncleanTables && currStatus"></p-dropdown>
+            <b *ngIf="!emptyUncleanTables && currStatus">No tables are empty and needing cleaning</b>
+        </div>
+        <div class="card-footer row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <button class="btn btn-primary m-100" type="submit" *ngIf="!isLoading" [title]="emptyUncleanTables ? 'Submit' : 'No tables are needing cleaned'" [disabled]="!emptyUncleanTables">Mark Table as Cleaned and Readied</button>
+                <p-progressSpinner *ngIf="isLoading"></p-progressSpinner>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</form>

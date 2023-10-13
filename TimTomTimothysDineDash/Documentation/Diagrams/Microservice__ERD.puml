@@ -1,0 +1,71 @@
+@startuml Microservice__ERD
+' This shows the entity-relationship structure across the various databases in this project
+
+skinparam {
+    Linetype ortho
+}
+
+namespace BusStaff {
+     entity BS_Table {
+        * Id : INT <<generated>>
+        -- 
+        * IsNeedingCleaned : BOOLEAN
+        * HasPaid : BOOLEAN
+    }
+}
+
+namespace WaitStaff {
+    entity WS_Table {
+        * Id : INT <<generated>>
+        -- 
+        * SeatsUsed : INT
+        OrderId : TEXT <color:DarkOrchid><<FK>>
+    }
+
+    entity WS_Order {
+        * Id : INT <<generated>>
+        --
+        * Description : TEXT
+        * OrderGuid : TEXT 
+        * IsFinished : BOOLEAN
+    }
+
+    WS_Table ||..o| WS_Order
+}
+
+namespace KitchenStaff {
+    entity KS_Table {
+        * Id : INT <<generated>>
+        -- 
+        OrderId : TEXT <color:DarkOrchid><<FK>>
+    }
+
+    entity KS_Order{
+        * Id : INT <<generated>>
+        --
+        * Description : TEXT
+        * IsStarted : BOOLEAN
+        * IsFinished : BOOLEAN
+        * OrderGuid : TEXT
+    }
+
+    KS_Table ||..o| KS_Order
+}
+
+namespace HostStaff {
+    entity HS_Table {
+        * Id : INT <<generated>>
+        -- 
+        * IsAvailable : BOOLEAN
+    }
+
+    entity HS_CustomerQueue {
+        * Id : INT <<generated>>
+        --
+        * NumToSeat : INT
+        * HasBeenSeated : BOOLEAN
+    }
+}
+
+
+@enduml

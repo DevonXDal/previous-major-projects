@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WaitStaffService": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

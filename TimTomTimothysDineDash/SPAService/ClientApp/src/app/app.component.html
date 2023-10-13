@@ -1,0 +1,26 @@
+<body>
+  <app-nav-menu></app-nav-menu>
+  <p-toast key="main"></p-toast>
+
+  <div class="container">
+    <div class="">
+      Status: 
+      <span class="badge bg-success" *ngIf="isOnline">Online</span>
+      <span class="badge bg-danger" *ngIf="!isOnline">Offline</span>
+    </div>
+    <div class="spinner mx-3 my-2 inline"></div>
+
+    <hr>
+    
+    <div class="row gx-5">
+      <div class="col-lg-9">
+        <router-outlet #primary="outlet" name="primary"></router-outlet>
+      </div>
+      <div class="col-lg-3">
+        <router-outlet name="secondary"></router-outlet>
+        
+      </div>
+    </div>
+    
+  </div>
+</body>

@@ -1,0 +1,45 @@
+<h1>{{pageTitle}} <i class="bi bi-receipt-cutoff"></i></h1>
+<h5>Checks every 15 seconds</h5>
+
+
+<div class="row mt-2 mb-4">
+    <div class="col-4">
+        <a [routerLink]="['/Wait/InsertTakenOrder']" class="btn btn-info w-75" role="button">Insert a Taken Order</a>
+    </div>
+    <div class="col-4">
+        <button class="btn btn-info w-75" type="button" (click)="toggleData()">{{showData ? 'Hide Data' : 'Show Data'}}</button>
+    </div>
+    <div class="col-4">
+        <a [routerLink]="['/Wait/MarkOrderPaid']" class="btn btn-info w-75" role="button">Mark Group as Paid and Leaving</a>
+    </div>
+</div>
+
+<div class="mb-4" [hidden]="!showData">
+    <!-- Cards indicating table and order status -->
+    <div class="" *ngIf="status">
+        
+        <div class="card mb-2" *ngFor="let table of status.Tables">
+            <div class="card-header">
+                Table {{table.id}}
+            </div>
+            <div class="card-body" *ngIf="table.seatsUsed > 0">
+                <div>Seats Used: {{table.seatsUsed}}</div>
+                <div *ngIf="table.orderGuid">
+                    <div>Order Guid: {{table.orderGuid}}</div>
+                    <div>Order Description: {{table.orderDescription}}</div>
+                    <div>Is Order Finished?: {{table.isOrderFinished ? 'Yes' : 'No'}}</div>
+                </div>
+                <div *ngIf="!table.orderGuid">
+                    No Order Taken Yet
+                </div>
+            </div>
+            <div class="card-body" *ngIf="table.seatsUsed === 0">
+                Table is Available
+            </div>
+            <div class="card-footer">Last Update: {{table.lastUpdate}}</div>
+        </div>
+    </div>
+    <b *ngIf="!status">Waiting for status from server</b>
+</div>
+
+<router-outlet></router-outlet>

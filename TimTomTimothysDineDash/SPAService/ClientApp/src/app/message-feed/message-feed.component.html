@@ -1,0 +1,18 @@
+
+<h2>{{pageTitle}} <i class="bi bi-chat-left-dots"></i></h2>
+<h5>Checks every 10 seconds</h5>
+
+<div class="row my-1" *ngIf="status">
+    <div class="col-12 card my-1" *ngFor="let message of status.Messages" @fadeSlideInOut>
+        <div class="card-header">
+            {{message.title}}
+        </div>
+        <div class="card-body">
+            {{message.content}}
+        </div>
+        <div class="card-footer">
+            Created: {{message.created}}
+        </div>
+    </div>
+</div>
+<b *ngIf="!status">Waiting for the message feed...</b>

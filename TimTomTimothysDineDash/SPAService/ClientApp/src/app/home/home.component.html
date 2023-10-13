@@ -1,0 +1,15 @@
+<h2>Front Page <i class="bi bi-star"></i></h2>
+
+<p-galleria [value]="images" style="width: 50;" [circular]="true" [autoPlay]="true" [transitionInterval]="5000">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" [alt]="item.alt" [title]="item.title"/>
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center galleria-thumbnail">
+            <img class="galleria-thumbnail" [src]="item.thumbnailImageSrc" [alt]="item.alt" [title]="item.title" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+
+<qam></qam>

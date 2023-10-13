@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HostStaffService": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

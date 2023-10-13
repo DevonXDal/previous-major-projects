@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BusStaffService": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

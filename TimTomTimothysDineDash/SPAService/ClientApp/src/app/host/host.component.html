@@ -1,0 +1,75 @@
+<h1>{{pageTitle}} <i class="bi bi-door-open"></i></h1>
+<h5>Checks every 15 seconds</h5>
+
+
+<div class="row mt-2 mb-4">
+    <div class="col-4">
+        <a [routerLink]="['/Host/AddToWaitQueue']" class="btn btn-info w-75" role="button">Add to Wait Queue</a>
+    </div>
+    <div class="col-4">
+        <button class="btn btn-info w-75" type="button" (click)="toggleData()">{{showData ? 'Hide Data' : 'Show Data'}}</button>
+    </div>
+    <div class="col-4">
+        <a [routerLink]="['/Host/SeatATable']" class="btn btn-info w-75" role="button">Seat a Table</a>
+    </div>
+</div>
+
+<div class="row gx-5 mb-4" [hidden]="!showData">
+
+<!-- Table of Parties in the Queue -->
+<div class="card col-12 col-lg-6">
+    <div class="card-header">
+        Parties in the Queue
+    </div>
+    <div class="card-body table-responsive">
+        <table class="table mb-0" *ngIf="status">
+            <thead>
+                <tr>
+                    <th>
+                        Party Id
+                    </th>
+                    <th>
+                        Number of People
+                    </th>
+                    <th>
+                        Time of Arrival
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let party of status.QueueParties">
+                    <td>
+                        {{party.id}}
+                    </td>
+                    <td>
+                        {{party.numToSeat}}
+                    </td>
+                    <td>
+                        {{party.lastUpdate}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <b *ngIf="!status">Waiting for status from server</b>
+    </div>
+</div>
+
+<!-- Cards indicating table status -->
+<div class="col-lg-6 col-12" *ngIf="status">
+    <div class="row">
+        <b *ngIf="!status">Waiting for status from server</b>
+        <div class="card mb-2" *ngFor="let table of status.Tables">
+            <div class="card-header">
+                Table {{table.id}}
+            </div>
+            <div class="card-body table-responsive">
+                Is Available: {{(table.isAvailable) ? 'Yes' : 'No'}}
+            </div>
+            <div class="card-footer">Last Update: {{table.lastUpdate}}</div>
+        </div>
+    </div>
+</div>
+
+</div>
+<router-outlet></router-outlet>
+

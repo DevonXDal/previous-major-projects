@@ -1,0 +1,22 @@
+<form #addToQueueForm="ngForm" (ngSubmit)="submit(addToQueueForm)">
+    <div class="card">
+        <div class="card-header text-center fw-bold">Add a Group to the Wait Queue</div>
+        <div class="card-body">
+            <label for="numOfCustomers" class="my-2">How many customers are in this group?</label>
+            <p-slider [(ngModel)]="numOfCustomers" id="numOfCustomers" name="numOfCustomers" [min]="1" [max]="6"></p-slider>
+            <div class="row">
+                <div class="col-2 py-3" *ngFor="let item of [].constructor(numOfCustomers); let indexOfElement = index">
+                    <i class="bi bi-person-fill fs-4"></i> {{indexOfElement + 1}}
+                </div>
+            </div>
+        </div>
+        <div class="card-footer row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <button class="btn btn-primary m-100" type="submit" *ngIf="!isLoading">Add Party</button>
+                <p-progressSpinner *ngIf="isLoading"></p-progressSpinner>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</form>

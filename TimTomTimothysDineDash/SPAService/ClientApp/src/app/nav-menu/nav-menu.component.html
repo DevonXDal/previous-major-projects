@@ -1,0 +1,57 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img class="rounded" width="50" src="../../assets/img/logo/tim-tom-timothys-dinedash-logo.webp" alt="Logo: Tim Tom Timothy's Dine&Dash">
+        Tim Tom Timothy's Dine&Dash
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['nav-link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link " [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['nav-link-active']">
+            <a class="nav-link " [routerLink]="['/Host']"
+              >Host</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['nav-link-active']">
+            <a class="nav-link " [routerLink]="['/Wait']"
+              >Wait</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['nav-link-active']">
+            <a class="nav-link " [routerLink]="['/Kitchen']"
+              >Kitchen</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['nav-link-active']">
+            <a class="nav-link " [routerLink]="['/Bus']"
+              >Bus</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

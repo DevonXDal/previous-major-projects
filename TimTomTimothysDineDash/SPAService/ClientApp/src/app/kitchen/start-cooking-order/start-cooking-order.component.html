@@ -1,0 +1,19 @@
+<form #markOrderAsStarted="ngForm" (ngSubmit)="submit(markOrderAsStarted)">
+    <div class="card">
+        <div class="card-header text-center fw-bold">Mark Order for Table as Started</div>
+        <div class="card-body text-center">
+            Which Table: 
+            <p-dropdown [(ngModel)]="orderGuid" [options]="currStatus!.Tables" name="tableId" optionLabel="id" optionValue="orderGuid" 
+                *ngIf="tablesWithUnstartedOrders && currStatus"></p-dropdown>
+            <b *ngIf="!tablesWithUnstartedOrders && currStatus">No tables have unstarted orders</b>
+        </div>
+        <div class="card-footer row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <button class="btn btn-primary m-100" type="submit" *ngIf="!isLoading" [title]="tablesWithUnstartedOrders ? 'Submit' : 'No tables have unstarted orders'" [disabled]="!tablesWithUnstartedOrders">Mark Order for Table as Started</button>
+                <p-progressSpinner *ngIf="isLoading"></p-progressSpinner>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,19 @@
+<form #markOrderPaid="ngForm" (ngSubmit)="submit(markOrderPaid)">
+    <div class="card">
+        <div class="card-header text-center fw-bold">Mark Table as Having Paid and Left</div>
+        <div class="card-body text-center">
+            Which Table: 
+            <p-dropdown [(ngModel)]="tableId" [options]="currStatus!.Tables" name="tableId" optionLabel="id" optionValue="id" 
+                *ngIf="tablesWithFood && currStatus"></p-dropdown>
+            <b *ngIf="!tablesWithFood && currStatus">No tables are in a state where they are ready to pay and leave</b>
+        </div>
+        <div class="card-footer row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <button class="btn btn-primary m-100" type="submit" *ngIf="!isLoading" [title]="tablesWithFood ? 'Submit' : 'No tables are seated and have already received food'" [disabled]="!tablesWithFood">Mark Table as Paid</button>
+                <p-progressSpinner *ngIf="isLoading"></p-progressSpinner>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</form>

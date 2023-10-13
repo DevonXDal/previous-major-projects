@@ -1,0 +1,32 @@
+[HTTPWHAT]
+public async Task<IActionResult> UNNAMED()
+{
+    // Queue Name
+    const string queueName = "";
+
+    // Initial DTO
+    DataWithCorrelation dto = new();
+    dto.ClientUUID = ControllerAids.SearchRequestForClientUUID(Request.Headers, dto.CorrelationGuid);
+
+    // Send Message
+    _messageProducer.SendMessage(queueName, dto);
+    Log.Information(LoggingHelper.FormatMessageWithCorrelationInformation("", dto));
+
+    // Allow time for the data to be handled
+    await Task.Delay(2000); // 2 seconds
+
+    // Await Response
+    var response = await ControllerAids.TaskListenForEventResponse<EventResponse>(_messageSubscriber, dto.CorrelationGuid, queueName);
+
+    if (response == null)
+    {
+        Log.Warning(LoggingHelper.FormatMessageWithCorrelationInformation("",
+            dto));
+        return StatusCode(503, "No response from service, the request may or may not have been successful");
+    }
+    if (response.ResponseCode < 0) return StatusCode(400, $"START, reason {response.Message}");
+
+    // Handle Response
+    _messageFeedHandler.TrackNewEvent(TYPE_STAFF, $"The TYPE staff have ");
+    return Ok();
+}

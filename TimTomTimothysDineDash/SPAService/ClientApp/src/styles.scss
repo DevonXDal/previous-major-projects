@@ -1,0 +1,59 @@
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+body {
+  background-color: $lavender-blush;
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.navbar {
+  background-color: $violet-red;
+  color: $near-white;
+}
+
+.nav-link, .navbar-brand {
+  color: $near-white;
+
+  &:hover {
+    color: $green-sheen;
+  }
+}
+
+.nav-link-active > *:visited {
+  color: $yellow-text;
+}
+
+.p-galleria-item > * {
+  width      : 100%;
+  height     : 33em;
+  object-fit : fill;
+}
+
+.galleria-thumbnail {
+  width: 5em;
+  height: 5em;
+  object-fit: fill;
+}
+
+div.core-card.card :not(button):not(span) {
+  background-color: $green-sheen;
+
+}
+
+.hide {
+  display: hidden;
+}

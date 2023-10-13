@@ -1,0 +1,42 @@
+<h1>{{pageTitle}} <i class="bi bi-egg-fried"></i></h1>
+<h5>Checks every 15 seconds</h5>
+
+
+<div class="row mt-2 mb-4">
+    <div class="col-4">
+        <a [routerLink]="['/Kitchen/StartCookingOrder']" class="btn btn-info w-75" role="button">Mark an Order as Started</a>
+    </div>
+    <div class="col-4">
+        <button class="btn btn-info w-75" type="button" (click)="toggleData()">{{showData ? 'Hide Data' : 'Show Data'}}</button>
+    </div>
+    <div class="col-4">
+        <a [routerLink]="['/Kitchen/MarkOrderFinished']" class="btn btn-info w-75" role="button">Mark an Order as Finished</a>
+    </div>
+</div>
+
+<div class="mb-4" [hidden]="!showData">
+    <!-- Cards indicating table and order status -->
+    <div class="" *ngIf="status">
+        
+        <div class="card mb-2" *ngFor="let table of status.Tables">
+            <div class="card-header">
+                Table {{table.id}}
+            </div>
+            <div class="card-body">
+                <div *ngIf="table.orderGuid">
+                    <div>Order Guid: {{table.orderGuid}}</div>
+                    <div>Order Description: {{table.orderDescription}}</div>
+                    <div>Is Order Started?: {{table.isOrderStarted ? 'Yes' : 'No'}}</div>
+                    <div>Is Order Finished?: {{table.isOrderFinished ? 'Yes' : 'No'}}</div>
+                </div>
+                <div *ngIf="!table.orderGuid">
+                    No Order Taken Yet
+                </div>
+            </div>
+            <div class="card-footer">Last Update: {{table.lastUpdate}}</div>
+        </div>
+    </div>
+    <b *ngIf="!status">Waiting for status from server</b>
+</div>
+
+<router-outlet></router-outlet>

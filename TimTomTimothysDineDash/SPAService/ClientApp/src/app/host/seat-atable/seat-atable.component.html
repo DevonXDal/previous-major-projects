@@ -1,0 +1,19 @@
+<form #seatATableForm="ngForm" (ngSubmit)="submit(seatATableForm)">
+    <div class="card">
+        <div class="card-header text-center fw-bold">Seat a Table</div>
+        <div class="card-body text-center">
+            Which Table: 
+            <p-dropdown [(ngModel)]="tableId" [options]="currStatus!.Tables" name="tableId" optionLabel="id" optionValue="id" 
+                *ngIf="availableTables && currStatus"></p-dropdown>
+                <b *ngIf="!availableTables && currStatus">No tables are available</b>
+        </div>
+        <div class="card-footer row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <button class="btn btn-primary m-100" type="submit" *ngIf="!isLoading" [title]="availableTables ? 'Submit' : 'No tables are available'" [disabled]="!availableTables || (currStatus && currStatus.QueueParties.length == 0)">Seat Next Group at Table</button>
+                <p-progressSpinner *ngIf="isLoading"></p-progressSpinner>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</form>

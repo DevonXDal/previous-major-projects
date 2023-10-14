@@ -45,7 +45,7 @@ const NavBar = () => {
             >
                 <ul className="navbar-nav flex-grow">
                 <li className="nav-item">
-                    <NavLink exact className={({isActive}) => (isActive ? 'nav-link nav-link-active' : 'nav-link') } to='/'>Home</NavLink>
+                    <NavLink exact='true' className={({isActive}) => (isActive ? 'nav-link nav-link-active' : 'nav-link') } to='/'>Home</NavLink>
                 </li>
                 <li className="nav-item" >
                     <NavLink  className={({isActive}) => (isActive ? 'nav-link nav-link-active' : 'nav-link') } to='/Host'>Host</NavLink>

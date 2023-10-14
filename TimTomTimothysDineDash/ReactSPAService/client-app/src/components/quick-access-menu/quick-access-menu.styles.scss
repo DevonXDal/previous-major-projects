@@ -1,0 +1,8 @@
+@import '../../variables';
+
+.quick-access-menu {
+    & :not(button):not(span) {
+        background-color: $green-sheen;
+    }
+
+}

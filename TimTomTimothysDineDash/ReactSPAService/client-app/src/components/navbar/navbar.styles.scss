@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.navbar {
+    background-color: $violet-red;
+    color: $near-white;
+}
+
+.nav-link, .navbar-brand {
+    color: $near-white;
+  
+    &:hover {
+      color: $green-sheen;
+    }
+}
+
+.nav-link-active {
+    color: $yellow-text;
+}

@@ -1,3 +1,5 @@
+@import "variables";    
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $lavender-blush;
 }
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.p-galleria-item > * {
+  width      : 100%;
+  height     : 33em;
+  object-fit : fill;
+}
+
+.galleria-thumbnail {
+  width: 5em;
+  height: 5em;
+  object-fit: fill;
+}
+
+.p-galleria-thumbnail-container {
+  background-color: #141414;
+}
+
+.p-galleria-thumbnail-prev-icon, .p-galleria-thumbnail-next-icon {
+  color: $near-white;
+}
+
+.hide {
+  display: hidden;
+}
+
+a {
+  color: #0366d6;
+}
+
+button, Button {
+  border-radius: .75rem;
 }

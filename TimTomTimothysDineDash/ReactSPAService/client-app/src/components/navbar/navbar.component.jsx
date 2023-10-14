@@ -3,6 +3,10 @@ import logo from '../../assets/img/logo/tim-tom-timothys-dinedash-logo.webp';
 import {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+/**
+ * Renders the navigation bar that appears along the top of the screen showing the logo,
+ * title and main page paths.
+ */
 const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   

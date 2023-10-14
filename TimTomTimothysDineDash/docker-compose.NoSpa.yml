@@ -1,0 +1,277 @@
+version: '3.4'
+
+# This version omits using a SPA service and is meant for development use
+
+services:
+
+  # Reverse Proxy
+  reverseproxy:
+    restart: unless-stopped
+    image: nginx:alpine
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - spaservice
+      - coreapiservice
+    ports:
+      - 80:80
+    networks:
+      - ttt-network
+    env_file:
+      - production.fenv
+
+  # Database
+  adminer:
+    image: adminer
+    restart: unless-stopped
+    env_file:
+      - production.fenv
+    ports:
+      - "2000:8080"
+    networks:
+      - ttt-network
+
+  db:
+    image: mariadb
+    restart: unless-stopped
+    env_file:
+      - production.fenv
+    expose:
+      - "3306"
+    networks:
+      - ttt-network
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    volumes: 
+        - ./init:/docker-entrypoint-initdb.d
+        - db-data:/var/lib/mysql
+
+  # Flyway Migration System
+  core-api-flyway:
+    image: flyway/flyway:6.3.1
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_versions/core_api:/flyway/sql
+    depends_on:
+      - db
+    env_file:
+      - production.fenv
+    environment:
+      - FLYWAY_URL=jdbc:mysql://db:3306/core_api?useSSL=false
+    networks:
+      - ttt-network
+
+  host-staff-flyway:
+    image: flyway/flyway:6.3.1
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_versions/host_staff:/flyway/sql
+    depends_on:
+      - db
+    env_file:
+      - production.fenv
+    environment:
+      - FLYWAY_URL=jdbc:mysql://db:3306/host_staff?useSSL=false
+    networks:
+      - ttt-network
+
+  wait-staff-flyway:
+    image: flyway/flyway:6.3.1
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_versions/wait_staff:/flyway/sql
+    depends_on:
+      - db
+    env_file:
+      - production.fenv
+    environment:
+      - FLYWAY_URL=jdbc:mysql://db:3306/wait_staff?useSSL=false
+    networks:
+      - ttt-network
+
+  kitchen-staff-flyway:
+    image: flyway/flyway:6.3.1
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_versions/kitchen_staff:/flyway/sql
+    depends_on:
+      - db
+    env_file:
+      - production.fenv
+    environment:
+      - FLYWAY_URL=jdbc:mysql://db:3306/kitchen_staff?useSSL=false
+    networks:
+      - ttt-network
+
+  bus-staff-flyway:
+    image: flyway/flyway:6.3.1
+    command: -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./sql_versions/bus_staff:/flyway/sql
+    depends_on:
+      - db
+    env_file:
+      - production.fenv
+    environment:
+      - FLYWAY_URL=jdbc:mysql://db:3306/bus_staff?useSSL=false
+    networks:
+      - ttt-network
+
+  # Logs and Visualization
+  elasticsearch:
+   container_name: elasticsearch
+   image: docker.elastic.co/elasticsearch/elasticsearch:8.7.0
+   ports:
+    - 9200
+   volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data
+   environment:
+    - xpack.monitoring.collection.enabled=true
+    - xpack.security.enabled=false
+    - xpack.watcher.enabled=false
+    - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    - discovery.type=single-node
+   networks:
+    - ttt-network
+
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:8.7.0
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    networks:
+      - ttt-network
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -s -I http://localhost:5601 | grep -q 'HTTP/1.1 302 Found'",
+        ]
+      interval: 10s
+      timeout: 10s
+      retries: 120
+     
+
+
+  # Message Broker
+  rabbitmq:
+    restart: unless-stopped
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - "~/docker-temp/rabbitmq/data/:/var/lib/rabbitmq/"
+      - "~/docker-temp/rabbitmq/log/:/var/log/rabbitmq"
+    networks:
+      - ttt-network
+    env_file:
+      - production.fenv
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  # User-Targeted Microservices
+  coreapiservice:
+    restart: always
+    image: ${DOCKER_REGISTRY-}coreapiservice
+    build:
+      context: .
+      dockerfile: CoreAPIService/Dockerfile
+    depends_on:
+      - hoststaffservice
+      - waitstaffservice
+      - kitchenstaffservice
+      - busstaffservice
+      - core-api-flyway
+    expose:
+      - 80
+    networks:
+      - ttt-network
+    stdin_open: true
+    tty: true
+    env_file:
+      - production.fenv
+
+  # Assistent Microservices
+  hoststaffservice:
+    restart: always
+    image: ${DOCKER_REGISTRY-}hoststaffservice
+    build:
+      context: .
+      dockerfile: HostStaffService/Dockerfile
+    networks:
+      - ttt-network
+    stdin_open: true
+    tty: true
+    env_file:
+      - production.fenv
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+
+  waitstaffservice:
+    restart: always
+    image: ${DOCKER_REGISTRY-}waitstaffservice
+    build:
+      context: .
+      dockerfile: WaitStaffService/Dockerfile
+    networks:
+      - ttt-network
+    stdin_open: true
+    tty: true
+    env_file:
+      - production.fenv
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+
+  kitchenstaffservice:
+    restart: always
+    image: ${DOCKER_REGISTRY-}kitchenstaffservice
+    build:
+      context: .
+      dockerfile: KitchenStaffService/Dockerfile
+    networks:
+      - ttt-network
+    stdin_open: true
+    tty: true
+    env_file:
+      - production.fenv
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+
+  busstaffservice:
+    restart: always
+    image: ${DOCKER_REGISTRY-}busstaffservice
+    build:
+      context: .
+      dockerfile: BusStaffService/Dockerfile
+    networks:
+      - ttt-network
+    stdin_open: true
+    tty: true
+    env_file:
+      - production.fenv
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+networks:
+  ttt-network:
+    driver: bridge
+
+volumes:
+  db-data:
+  elasticsearch-data:

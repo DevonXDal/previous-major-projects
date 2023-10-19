@@ -27,7 +27,7 @@ const MessageFeed = () => {
         }, TEN_SECONDS); 
 
         return () => clearInterval(messageFeedUpdateInterval); // Clear on destroy
-    }, []);
+    }, [messages]);
 
     return (
         <Fragment>
@@ -36,7 +36,7 @@ const MessageFeed = () => {
 
             <div className="row my-1" >
             {
-                messages.toReversed().map(message => {
+                messages.map(message => {
                     return (
                     <div className="col-12 card my-1">
                         <div className="card-header">

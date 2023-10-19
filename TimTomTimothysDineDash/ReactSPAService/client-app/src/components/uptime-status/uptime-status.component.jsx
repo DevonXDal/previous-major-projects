@@ -4,20 +4,39 @@ import './uptime-status.styles.scss';
 
 const TEN_SECONDS = 10000;
 
-const UptimeStatus = () => {
+const UptimeStatus = ({toastHandler}) => {
     const [isOnline, setIsOnline] = useState(false);
 
+    const handleOnlineStatus = (apiStatus, showToasts) => {
+        if (isOnline !== apiStatus) {
+            if (showToasts) {
+                if (apiStatus) {
+                    toastHandler('info', 'Connection Reestablished', 'The system can now communicate with the API');
+                } else {
+                    toastHandler('warn', 'Connection Lost', 'The system is currently unable to communicate with the API');
+                }
+            }
+
+            setIsOnline(apiStatus);
+        }
+    }
+
+    // Lesson Learned: never use a run once useEffect with an interval
+    // it will only see the old variable due to stale closure.
+    // useEffect will clear the interval to restart it when the variable is set
     useEffect(() => {
         const healthCheckInterval = setInterval(async () => {
-            const apiStatus = await runApiHealthCheck();
-
-            if (isOnline !== apiStatus) {
-                setIsOnline(apiStatus);
-            }
+            performHealthCheck(true);
         }, TEN_SECONDS); 
 
+        const performHealthCheck = async (showToasts) => {
+            const apiStatus = await runApiHealthCheck();
+            handleOnlineStatus(apiStatus, showToasts);
+        }
+        
+        performHealthCheck(false);
         return () => clearInterval(healthCheckInterval); // Clear on destroy
-    }, [])
+    }, [isOnline]);
 
     return (
     <Fragment>

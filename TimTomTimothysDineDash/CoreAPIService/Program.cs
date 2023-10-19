@@ -87,6 +87,8 @@ namespace CoreAPIService
 
             var app = builder.Build();
 
+            app.UseHttpLogging();
+
             app.UsePathBase("/api");
 
             app.UseCors(x => x
